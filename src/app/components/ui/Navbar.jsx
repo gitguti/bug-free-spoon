@@ -43,7 +43,7 @@ const Navbar = () => {
               </Link>
             </div>
               {/* primary */}
-              <div className="hidden lg:flex gap-8 items-center">
+              <div className="hidden lg:flex gap-8 items-center transition transition-colors transition-opacity duration-300 ">
                 <a href="#">Features</a>
                 <a href="#">About us</a>
                 <Button variant="filled" className="text-red-500">Go to marketplace</Button>
@@ -64,7 +64,7 @@ const Navbar = () => {
               {/* Mobile navigation toggle */}
               <div className="lg:hidden flex items-center">
                  <button onClick={toggleMenu}>
-        {isMenuOpen ? <XMark className="w-6 h-6" /> : <Hamburguer className="w-6 h-6" />}
+        {isMenuOpen ? <XMark className="w-6 h-6 text-new-black" /> : <Hamburguer className="w-6 h-6 text-new-black" />}
       </button>
               </div>
             </div>
@@ -72,12 +72,12 @@ const Navbar = () => {
         </div>
         {/* mobile navigation */}
         <div
-          className={`fixed z-40 w-full  bg-gray-100 overflow-hidden flex flex-col lg:hidden gap-12  origin-top duration-700 ${
+          className={`fixed z-40 w-full  bg-light-grey overflow-hidden flex flex-col lg:hidden gap-12  origin-top duration-700 ${
             !isMenuOpen ? "h-0" : "h-full"
           }`}
         >
-          <div className="px-8">
-            <div className="flex flex-col gap-8 font-bold tracking-wider">
+          <div className="px-8 text-new-black bg-light-grey">
+            <div className="flex flex-col gap-8 tracking-wider">
             <a href="#" className="">
                   Home
                 </a>
