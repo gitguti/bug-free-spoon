@@ -32,3 +32,19 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.button-outlined {
+  border-radius: 12px;
+border: 1px solid var(--text, #690F8D);
+}
+
+/* En tu archivo CSS (por ejemplo, globals.css) */
+.card {
+  background-size: cover; /* Asegura que la imagen de fondo cubra todo el Card */
+  background-position: center; /* Centra la imagen de fondo */
+  transition: transform 0.3s ease; /* Transición suave para efectos de hover */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el ratón por encima */
+}

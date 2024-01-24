@@ -14,7 +14,8 @@ module.exports = {
       },
         colors: {
           'light-grey': '#E5E5E533',
-          'new-black': '#212121'
+          'new-black': '#212121',
+          'lila': 'rgba(60, 13, 159, 0.04)', // Color con opacidad del 4%
     },
     },
   },
