@@ -25,3 +25,10 @@ body {
     text-wrap: balance;
   }
 }
+
+.text-gradient {
+  background: linear-gradient(113deg, #690F8D 1.26%, rgba(25, 14, 175, 0.35) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
