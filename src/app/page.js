@@ -5,8 +5,7 @@ import Footer from "./components/ui/Footer.jsx"
 export default function Home() {
   return (
    <main>
-    <Navbar/>
-    <Footer/>
+
    </main>
   );
 }
