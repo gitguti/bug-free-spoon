@@ -49,8 +49,8 @@ const Footer = () => {
                     </div>
                     <div className='flex sm:items-end md:items-start flex-col md:flex-row gap-8 text-sm md:text-base sm:col-start-1 sm:col-span-3 sm:row-start-3'>
                         <div className='flex flex-row  md:order-last gap-8 '>
-                            <p>Privacy policy</p>
-                            <p>Terms of Use</p>
+                             <Link href="/" className="text-new-black transition-colors duration-300  hover:underline hover:cursor-pointer text-center">Privacy policy</Link>
+                             <Link href="/" className="text-new-black transition-colors duration-300  hover:underline hover:cursor-pointer text-center">Terms of Use</Link>
                         </div>
                         <div>
                             <p className="font-sans text-start">© 2024 Betsell.io</p>
