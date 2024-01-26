@@ -33,6 +33,12 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.text-gradient2 {
+  background: linear-gradient(180deg, #FFF 0%, rgba(250, 250, 250, 0.41) 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
 
 
 /* En tu archivo CSS (por ejemplo, globals.css) */
