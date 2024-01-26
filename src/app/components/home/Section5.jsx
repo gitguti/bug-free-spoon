@@ -5,14 +5,14 @@ import Button from "../ui/Button";
 
 const Section5 = () => {
   return (
-    <div className="bg-dirty-grey p-12 md:p-16 bg-[#EEF0FF] mx-auto">
+    <div className="bg-dirty-grey p-12 md:p-16 bg-[#lila] mx-auto">
       <div className="mb-12 ">
       </div>
       <div className="flex gap-8 md:gap-16">
         <Card />
         <CTAApp/>
       </div>
-      <div className="mx-auto w-5/12 my-12 text-center">
+      <div className="mx-auto w-11/12 md:w-5/12 my-12 text-center">
   <h2 className="text-3xl md:text-5xl font-semibold leading-normal mb-4 text-gradient">
     Make your bets accessible to players worldwide
   </h2>

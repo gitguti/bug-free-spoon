@@ -33,10 +33,18 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.button-outlined {
-  border-radius: 12px;
-border: 1px solid var(--text, #690F8D);
+
+
+.module-border-wrap {
+  @apply rounded-lg p-px relative; /* Tailwind classes for max-width and padding */
+  background: linear-gradient(113deg, #690F8D 100%, rgba(25, 14, 175, 0.35) 35%);
 }
+
+.module {
+  @apply bg-[#EEF0FF] rounded-md text-white p-4 text-center; /* Centrado y estilo de fondo */
+}
+
+
 
 /* En tu archivo CSS (por ejemplo, globals.css) */
 .card {
@@ -47,4 +55,26 @@ border: 1px solid var(--text, #690F8D);
 
 .card:hover {
   transform: scale(1.05); /* Efecto de zoom al pasar el ratón por encima */
+}
+
+/* En styles/fonts.css */
+@font-face {
+  font-family: 'Tomato Grotesk';
+  src: url('/TomatoGrotesk-Regular.ttf') format('truetype');
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tomato Grotesk';
+  src: url('/TomatoGrotesk-Medium.ttf') format('truetype');
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tomato Grotesk';
+  src: url('/TomatoGrotesk-SemiBold.ttf') format('truetype');
+  font-weight: 600; /* Semibold */
+  font-style: normal;
 }
