@@ -73,3 +73,9 @@ background-clip: text;
   font-weight: 600; /* Semibold */
   font-style: normal;
 }
+
+@layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
+}

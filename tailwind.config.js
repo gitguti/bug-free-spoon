@@ -12,20 +12,34 @@ module.exports = {
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "cta-app": "url('/CTAApp.png')"
       },
-        colors: {
-          'light-grey': '#E5E5E533',
-          'new-black': '#212121',
-          'lila': '#EEF0FF', // Color con opacidad del 4%
-          'grey-medium': '#1D1D1D0D',
-          'soft-lila': '#CDC0E9',
-          'new-white': '#F4F4F4',
-          'purple': '#2B213E',
-          'purple-vanish': '#6D5E8B',
-          'dirty-grey': '#EDEDED',
+      colors: {
+        'light-grey': '#E5E5E533',
+        'new-black': '#212121',
+        'lila': '#EEF0FF', // Color con opacidad del 4%
+        'grey-medium': '#1D1D1D0D',
+        'soft-lila': '#CDC0E9',
+        'new-white': '#F4F4F4',
+        'purple': '#2B213E',
+        'purple-vanish': '#6D5E8B',
+        'dirty-grey': '#EDEDED',
+      },
+      fontFamily: {
+        'tomato': ['"Tomato Grotesk"', 'sans-serif'],
+      },
+      animation: {
+        'scroll-left': 'loop-scroll-left 30s linear infinite',
+        'scroll-right': 'loop-scroll-right 30s linear infinite',
+      },
+      keyframes: {
+        'loop-scroll-left': {
+          '0%': { transform: 'translateX(80%)' },
+          '100%': { transform: 'translateX(-100%)' },
         },
-    fontFamily: {
-      'tomato': ['"Tomato Grotesk"', 'sans-serif'],
-    },
+        'loop-scroll-right': {
+          '0%': { transform: 'translateX(-80%)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
+      },
     },
   },
   plugins: [],
