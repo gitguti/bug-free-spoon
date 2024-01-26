@@ -3,9 +3,9 @@ import Button from "../ui/Button.jsx";
 
 const Section3 = () => {
   return (
-    <div className="bg-white p-16 md:p-32">
+    <div className="bg-white p-8 md:p-40">
       <div className="mb-12">
-      <Button variant="outlined" className="text-red-500">Securely trade your bets with other users</Button>
+      <h2 className="text-3xl md:text-5xl font-semibold leading-normal mb-4 text-center text-gradientfont-semibold leading-normal mb-4 text-center text-gradient">The Marketplace</h2>
       </div>
       <div className="flex flex-col md:flex-row space-between gap-8 md:gap-16">
         <Card title="List your NFTs" backgroundImage="/section31.jpg"     titleColor="text-white"/>

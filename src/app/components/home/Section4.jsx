@@ -5,8 +5,8 @@ import Image from 'next/image';
 const Section4 = () => {
   return (
     <div className="bg-dirty-grey p-12 md:p-16">
-      <div className="mb-12">
-      <h2 className="text-[3.5rem] md:text-[8.75rem] text-4xl font-semibold leading-normal mb-4 text-center text-gradientfont-semibold leading-normal mb-4 text-center text-gradient">How it works</h2>
+      <div className="mb-12">      <h2 className="text-[3.5rem] md:text-[8.75rem] text-4xl font-semibold leading-none mb-4 text-center text-gradientfont-semibold leading-normal mb-4 text-center text-gradient">How it works</h2>
+
       </div>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-16">
         <Card title="1. Pick" description="Choose the bet you wish to mint by simply clicking a button"  titleColor="text-new-black" backgroundColor="#CDC0E9" image="/hiw1.png" width="170" height="50"/>

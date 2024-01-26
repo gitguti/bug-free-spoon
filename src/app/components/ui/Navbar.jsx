@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-8 xl:px-0">
         <div className="flex mx-auto justify-between w-full">
           {/* Primary menu and logo */}
-          <div className="flex items-center justify-between my-6 md:my-10 w-full">
+          <div className="flex items-center justify-between my-6 md:my-4 w-full">
             {/* logo */}
             <div>
               <Link href="/">

@@ -35,17 +35,6 @@ body {
 
 
 
-.module-border-wrap {
-  @apply rounded-lg p-px relative; /* Tailwind classes for max-width and padding */
-  background: linear-gradient(113deg, #690F8D 100%, rgba(25, 14, 175, 0.35) 35%);
-}
-
-.module {
-  @apply bg-[#EEF0FF] rounded-md text-white p-4 text-center; /* Centrado y estilo de fondo */
-}
-
-
-
 /* En tu archivo CSS (por ejemplo, globals.css) */
 .card {
   background-size: cover; /* Asegura que la imagen de fondo cubra todo el Card */

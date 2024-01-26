@@ -22,7 +22,7 @@ module.exports = {
           'purple': '#2B213E',
           'purple-vanish': '#6D5E8B',
           'dirty-grey': '#EDEDED',
-    },
+        },
     fontFamily: {
       'tomato': ['"Tomato Grotesk"', 'sans-serif'],
     },
