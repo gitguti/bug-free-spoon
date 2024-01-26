@@ -16,6 +16,12 @@ module.exports = {
           'light-grey': '#E5E5E533',
           'new-black': '#212121',
           'lila': 'rgba(60, 13, 159, 0.04)', // Color con opacidad del 4%
+          'grey-medium': '#1D1D1D0D',
+          'soft-lila': '#CDC0E9',
+          'new-white': '#F4F4F4',
+          'purple': '#2B213E',
+          'purple-vanish': '#6D5E8B',
+          'dirty-grey': '#EDEDED'
     },
     },
   },
