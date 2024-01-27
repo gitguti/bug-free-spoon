@@ -8,13 +8,13 @@ const Section5 = () => {
     <>
       <div className="px-8 py-24 md:py-48  bg-lila mx-auto">
       <div
-        class="flex overflow-x-scroll pb-10 scrollbar-hide">
+        className="flex overflow-x-scroll pb-10 scrollbar-hide">
         <div
-          class="flex flex-nowrap w-full gap-4 md:gap-16 md:justify-center">
-          <div class="inline-block">
+          className="flex flex-nowrap w-full gap-4 md:gap-16 md:justify-center">
+          <div className="inline-block">
             <Card />
           </div>
-          <div class="inline-block">
+          <div className="inline-block">
             <CTAApp />
           </div>
         </div>
