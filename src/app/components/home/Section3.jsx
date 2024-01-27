@@ -20,7 +20,7 @@ const Card = ({ title, backgroundImage, titleColor }) => {
   const titleClasses = `absolute top-6 left-6 p-2 xl:p-8 text-xl w-3/4 xl:text-5xl  ${titleColor}`;
 
   return (
-    <div className="card h-80 lg:h-[30rem] 2xl:h-[50rem] sm:w-full lg:w-1/3 rounded-lg overflow-hidden relative" style={{ backgroundImage: `url(${backgroundImage})` }}>
+    <div className="card h-80 lg:h-[30rem] 2xl:h-[50rem] sm:w-full lg:w-1/3 rounded-lg lg:rounded-2xl overflow-hidden relative" style={{ backgroundImage: `url(${backgroundImage})` }}>
       <span className={titleClasses}>{title}</span>
     </div>
   );
