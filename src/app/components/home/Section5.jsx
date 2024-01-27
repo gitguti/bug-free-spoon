@@ -6,7 +6,7 @@ import Button from "../ui/Button";
 const Section5 = () => {
   return (
     <>
-      <div className="px-8 py-24 md:py-36 lg:py-48  bg-lila mx-auto">
+      <div className="px-8 py-24 md:py-36 lg:py-64  bg-lila mx-auto">
       <div
         className="flex overflow-x-scroll pb-10 scrollbar-hide">
         <div
