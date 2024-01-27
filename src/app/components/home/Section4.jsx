@@ -6,10 +6,10 @@ const Section4 = () => {
   return (
     <div className="bg-dirty-grey p-16 md:px-32 md:py-44">
       <div className="mb-12">
-        <h2 className="text-[3.5rem] md:text-[8.75rem] font-semibold mb-4 text-center text-gradientfont-semibold leading-none md:leading-normal text-center text-gradient">How it works
+        <h2 className="text-[3.5rem] md:text-[6.5rem] lg:text-[8.75rem] font-semibold mb-4 text-center text-gradientfont-semibold leading-none xl:leading-normal text-center text-gradient">How it works
         </h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 md:gap-16">
         <Card title="1. Pick" description="Choose the bet you wish to mint by simply clicking a button" titleColor="text-new-black" backgroundColor="#CDC0E9" image="/hiw1.png" width="170" height="50" />
         <Card title="2. Mint" description="Transform your bet into a certified asset in form of an NFT" titleColor="text-new-black" backgroundColor="#F4F4F4" image="/hiw2.png" width="70" height="70" />
         <Card title="3. Trade" description="Your NFT is now ready to be traded on the global marketplace" titleColor="text-new-white" backgroundColor=" #2B213E" image="/hiw3.png" width="70" height="70" />
