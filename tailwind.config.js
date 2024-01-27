@@ -32,12 +32,12 @@ module.exports = {
       },
       keyframes: {
         'loop-scroll-left': {
-          '0%': { transform: 'translateX(80%)' },
-          '100%': { transform: 'translateX(-100%)' },
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0%)' },
         },
         'loop-scroll-right': {
-          '0%': { transform: 'translateX(-80%)' },
-          '100%': { transform: 'translateX(100%)' },
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0%)' },
         },
       },
     },
