@@ -10,7 +10,7 @@ const Section5 = () => {
       <div
         className="flex overflow-x-scroll pb-10 scrollbar-hide">
         <div
-          className="flex flex-nowrap w-full gap-4 md:gap-16 lg:justify-center">
+          className="flex flex-nowrap w-full gap-4 md:gap-16 md:justify-start lg:justify-center">
           <div className="inline-block">
             <Card />
           </div>
