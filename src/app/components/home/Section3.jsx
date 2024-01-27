@@ -3,7 +3,7 @@ import Button from "../ui/Button.jsx";
 
 const Section3 = () => {
   return (
-    <div className="bg-white px-8 py-16 md:px-20 xl:px-32 md:py-64 lg:py-64">
+    <div className="bg-white px-8 py-16 md:px-20 xl:px-32 md:py-48 2xl:py-64">
       <div className="mb-12">
       <h2 className="text-3xl md:text-5xl 2xl:text-7xl font-semibold leading-normal mb-7 md:mb-14 text-center text-gradient">The Marketplace</h2>
       </div>
@@ -17,10 +17,10 @@ const Section3 = () => {
 };
 
 const Card = ({ title, backgroundImage, titleColor }) => {
-  const titleClasses = `absolute top-6 left-6 p-2 xl:p-8 text-xl w-3/4 xl:text-5xl  ${titleColor}`;
+  const titleClasses = `absolute top-6 left-6 p-2 xl:p-8 text-2xl w-3/4 2xl:text-5xl  ${titleColor}`;
 
   return (
-    <div className="card h-80 lg:h-[30rem] 2xl:h-[50rem] sm:w-full lg:w-1/3 rounded-lg lg:rounded-2xl overflow-hidden relative" style={{ backgroundImage: `url(${backgroundImage})` }}>
+    <div className="card h-80 lg:h-[30rem] 2xl:h-[50rem] sm:w-full 2xl:w-1/3 rounded-lg 2xl:rounded-2xl overflow-hidden relative" style={{ backgroundImage: `url(${backgroundImage})` }}>
       <span className={titleClasses}>{title}</span>
     </div>
   );
