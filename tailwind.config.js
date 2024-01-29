@@ -27,15 +27,25 @@ module.exports = {
         'tomato': ['"Tomato Grotesk"', 'sans-serif'],
       },
       animation: {
-        'scroll-left': 'loop-scroll-left 30s linear infinite',
+        'scroll-left': 'loop-scroll-left 30s  linear infinite',
         'scroll-right': 'loop-scroll-right 30s linear infinite',
+        'marquee2': 'marquee2 30s linear infinite',
+        'marquee1': 'marquee1 30s linear infinite',
       },
       keyframes: {
         'loop-scroll-left': {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        'marquee2': {
           '0%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(0%)' },
         },
         'loop-scroll-right': {
+          '0%': { transform: 'translateX(-10%)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
+        'marquee1': {
           '0%': { transform: 'translateX(-100%)' },
           '100%': { transform: 'translateX(0%)' },
         },

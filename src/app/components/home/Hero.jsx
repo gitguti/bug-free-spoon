@@ -38,17 +38,25 @@ const Hero = () => {
 
   return (
     <>
-<div className="flex flex-col overflow-hidden space-x-16 group">
-  <div className="flex space-x-16 overflow-x-hidden animate-scroll-right group-hover:paused">
-    {images1}
-    </div>
-  <div className="flex space-x-16 overflow-x-hidden animate-scroll-left group-hover:paused">
+<div className="flex flex-col overflow-hidden space-x-16 space-y-8 group mx-auto relative my-8">
+     <div className="flex space-x-16 overflow-x-hidden animate-scroll-left whitespace-nowrap delay-0" style={{width: `${7 * 279}px`}}>
   {images2}
-   </div>
+    </div>
+    <div className="flex space-x-16 overflow-x-hidden animate-marquee2 whitespace-nowrap delay-0 absolute -top-8 " style={{width: `${7 * 279}px`}}>
+  {images1}
+    </div>
+</div>
+<div className="flex flex-col overflow-hidden space-x-16 space-y-8 group mx-auto relative">
 
+    <div className="flex space-x-16 overflow-x-hidden animate-marquee1  whitespace-nowrap delay-0" style={{width: `${7 * 279}px`}}>
+  {images2}
+    </div>
+    <div className="flex row-reverse  space-x-16 overflow-x-hidden animate-scroll-right whitespace-nowrap delay-0 absolute -top-[1.9rem] left-[12rem] " style={{width: `${7 * 279}px`}}>
+  {images1}
+    </div>
 </div>
 
-    <div className="flex justify-center mt-32 mb-24 px-2">
+    <div className="flex justify-center mt-10 mb-24 px-2">
       <div className="text-center md:w-8/12 mx-auto">
         <h1 className="font-tomato text-3xl md:text-6xl font-semibold leading-normal mb-4 text-center text-gradient">Embrace the future of Bet Commerce using NFTs</h1>
         <p className="text-lg text-new-black mb-8">Transform your bets into unique digital assets and trade on the first and only bet marketplace</p>
