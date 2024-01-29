@@ -56,7 +56,7 @@ const Hero = () => {
     </div>
 </div>
 
-    <div className="flex justify-center mt-10 mb-24 px-2 2xl:mb-64">
+    <div className="flex justify-center mt-10 mb-24 px-2 2xl:mb-64 2xl:mt-32">
       <div className="text-center md:w-8/12 mx-auto">
         <h1 className="font-tomato text-3xl md:text-6xl 2xl:text-8xl font-semibold leading-normal mb-4 text-center text-gradient">Embrace the future of Bet Commerce using NFTs</h1>
         <p className="text-lg text-new-black mb-8 2xl:text-2xl ">Transform your bets into unique digital assets and trade on the first and only bet marketplace</p>
