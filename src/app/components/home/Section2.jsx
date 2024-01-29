@@ -3,7 +3,7 @@ import SwitchHorizontal from '../icons/SwitchHorizontal';
 
 const Section2 = () => {
   return (
-    <div className="bg-lila px-8 md:px-32 py-16 md:py-44 lg:py-48 2xl:py-64 lg:px-64">
+    <div className="bg-lila px-8 md:px-32 py-16 md:py-44 lg:py-48 2xl:py-64 lg:px-48">
       <div className="mb-12">
       <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden font-medium rounded-lg group bg-gradient-to-br from-lila via-[#690F8D] to-[#190EAF] pointer-events-none">
 <span className="relative px-3 py-2.5 transition-all ease-in duration-75 bg-[#EEF0FF] rounded-md group-hover:bg-opacity-0 flex">
