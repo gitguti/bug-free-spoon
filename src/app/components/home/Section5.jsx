@@ -8,7 +8,7 @@ const Section5 = () => {
     <>
       <div className="px-8 py-24 md:py-36 2xl:py-64  bg-lila mx-auto">
       <div
-        className="flex overflow-x-scroll pb-10 scrollbar-hide">
+        className="flex overflow-x-scroll lg:overflow-x-auto pb-10 scrollbar-hide">
         <div
           className="flex flex-nowrap w-full gap-4 md:gap-16 md:justify-start lg:justify-center">
           <div className="inline-block">
@@ -38,7 +38,7 @@ return (
         <>
           <div className="w-72 md:w-96 h-80 px-8 md:px-12 py-4 md:py-8 md:h-96 2xl:h-[30rem] max-w-xs md:max-w-md 2xl:max-w-2xl overflow-hidden rounded-xl  bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out  justify-content-start" style={{ backgroundColor: "#492C75" }}>
             <p className="text-2xl md:text-3xl 2xl:text-5xl font-bold mt-4 mb-4 text-gradient2">Get the Mobile App</p>
-            <p className=" text-[#c4c4c4] mt-4 mb-4 text-xs md:text-base 2xl:text-2xl">Key features of our app:</p>
+            <p className=" text-[#c4c4c4] mt-4 mb-4 text-xs md:text-base 2xl:text-xl">Key features of our app:</p>
             <ul className='text-[#fafafa] text-xs md:text-sm 2xl:text-lg mb-8 list-disc'>
               <li>Get real-time notifications when buyers are interested in your bet</li>
               <li>Be the first to know when a bet is available for trade</li>

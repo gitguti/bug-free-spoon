@@ -25,7 +25,7 @@ const Card = ({ title, backgroundImage, titleColor }) => {
   const titleClasses = `absolute top-6 left-6 p-2 text-xl md:text-3xl 2xl:text-5xl 2xl:p-8 w-3/4 font-tomato font-normal ${titleColor}`;
 
   return (
-    <div className="card h-[20rem] md:h-[30rem] 2xl:h-[40rem] sm:w-full md:w-1/2 rounded-lg 2xl:rounded-2xl overflow-hidden bg-cover bg-bottom relative" style={{ backgroundImage: `url(${backgroundImage})` }}>
+    <div className="card h-[20rem] md:h-[30rem] 2xl:h-[40rem] sm:w-full lg:w-1/2 rounded-lg 2xl:rounded-2xl overflow-hidden bg-cover bg-bottom relative" style={{ backgroundImage: `url(${backgroundImage})` }}>
       <p className={`${titleClasses}`}>{title}</p>
     </div>
   );
