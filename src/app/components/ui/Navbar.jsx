@@ -22,15 +22,15 @@ const Navbar = () => {
             {/* logo */}
             <div>
               <Link href="/">
-                {/* Logo visible solo en desktop */}
-                <div className="hidden lg:block">
-                  <Image
-                    src="/logoDesktop.png"
-                    alt="Logo de la compañía"
-                    width={101}
-                    height={39}
-                  />
-                </div>
+              <div className="hidden lg:block relative w-[101px] h-[39px] 2xl:w-[202px] 2xl:h-[78px]">
+  <Image
+    src="/logoDesktop.png"
+    alt="Logo de la compañía"
+    layout="fill"
+    objectFit="contain"
+  />
+</div>
+
                 {/* Logo visible solo en móvil */}
                 <div className="lg:hidden">
                   <Image
