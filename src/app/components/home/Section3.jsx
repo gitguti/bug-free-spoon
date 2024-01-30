@@ -4,20 +4,29 @@ import Button from "../ui/Button.jsx";
 import Carousel from "../home/Carousel.jsx";
 
 const Section3 = () => {
-  const slides = [ "/section31.png", "/section32.png", "/section33.png"]
+  const slides = [
+    { src: "/section31.png", title: "List your NFTs", titleColor: "text-white" },
+    { src: "/section32.png", title: "Cashout", titleColor: "text-white" },
+    { src: "/section33.png", title: "Buy, sell and auction", titleColor: "text-white" },
 
+  ];
+  
   
   return (
     <div className="bg-white px-8 py-16 md:px-20 xl:px-32 md:py-48 2xl:py-64">
       <div className="mb-12">
       <h2 className="text-3xl md:text-5xl 2xl:text-7xl font-semibold leading-normal mb-7 md:mb-14 text-center text-gradient">The Marketplace</h2>
       </div>
-      <div className="flex flex-col lg:flex-row space-between gap-8 lg:gap-16">
-        {/* <Card title="List your NFTs" backgroundImage="/section31.png"     titleColor="text-white"/>
-        <Card title="Cashout" backgroundImage="/section32.png" titleColor="text-white" />
-        <Card title="Buy, sell and auction" backgroundImage="/section33.png" titleColor="text-white" /> */}
-        <Carousel> {slides.map((s)=> <img src={s} />)} </Carousel>
+      <div className="flex flex-col lg:flex-row space-between gap-8 lg:gap-16 block md:hidden">
+      <Carousel slides={slides} />
       </div>
+
+      <div className="space-between gap-8 lg:gap-16 hidden md:flex">
+    <Card title="List your NFTs" backgroundImage="/section31.png"     titleColor="text-white"/>
+        <Card title="Cashout" backgroundImage="/section32.png" titleColor="text-white" />
+        <Card title="Buy, sell and auction" backgroundImage="/section33.png" titleColor="text-white" /> 
+              </div>
+
     </div>
   );
 };
