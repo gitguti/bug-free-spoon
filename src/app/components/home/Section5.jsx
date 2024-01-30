@@ -6,7 +6,8 @@ import Button from "../ui/Button";
 const Section5 = () => {
   return (
     <>
-      <div className="px-8 py-24 md:py-36 2xl:py-64  bg-lila mx-auto">
+      <div className="bg-lila mx-auto">
+      <div className="px-8 py-24 md:py-36 2xl:px-0 2xl:max-w-screen-3xl 2xl:py-64 mx-auto">
       <div
         className="flex overflow-x-scroll lg:overflow-x-auto pb-10 scrollbar-hide">
         <div
@@ -26,6 +27,7 @@ const Section5 = () => {
       <div className="flex justify-center">
         <Button variant="filled">Go to marketplace</Button>
         </div>
+      </div>
       </div>
       </div>
     </>
@@ -55,7 +57,7 @@ return (
         const CTAApp = ({ }) => {
   return (
         <>
-          <div className="w-96 md:w-[120rem] h-80  px-12 py-10 md:h-96 2xl:h-[30rem] max-w-4xl 2xl:max-w-6xl overflow-hidden rounded-xl shadow-md bg-cta-app bg-cover  hover:shadow-xl transition-shadow duration-300 ease-in-out">
+          <div className="w-96 md:w-[120rem] h-80  px-12 py-10 md:h-96 2xl:h-[30rem] max-w-4xl 2xl:max-w-6xl overflow-hidden rounded-xl bg-cta-app bg-cover  hover:shadow-xl transition-shadow duration-300 ease-in-out">
           </div>
         </>
         )

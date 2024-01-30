@@ -50,6 +50,9 @@ module.exports = {
           '100%': { transform: 'translateX(0%)' },
         },
       },
+      maxWidth: {
+        'screen-3xl': '120rem',
+      },
     },
   },
   plugins: [],

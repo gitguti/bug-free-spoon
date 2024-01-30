@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Button = ({ children, variant }) => {
-  const buttonClasses = `rounded-lg text-base 2xl:text-xl px-6 py-4 focus:outline-none transition transition-colors transition-opacity duration-300 ${
+  const buttonClasses = `rounded-lg text-base lg:text-xl 2xl:text-2xl px-6 py-4 focus:outline-none transition transition-colors transition-opacity duration-300 ${
     variant === 'filled'
       ? 'bg-new-black hover:bg-new-black hover:opacity-75 text-white'
       : 'button-outlined text-new-black'
