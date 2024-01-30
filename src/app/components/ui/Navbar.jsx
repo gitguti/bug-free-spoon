@@ -44,8 +44,8 @@ const Navbar = () => {
             </div>
             {/* primary */}
             <div className="hidden lg:flex gap-8 items-center transition transition-colors transition-opacity duration-300 lg:text-md 2xl:text-2xl ">
-              <Link href="#">Features</Link>
-              <Link href="#">About us</Link>
+              <Link href="/features">Features</Link>
+              <Link href="/about">About us</Link>
               <Button variant="filled" className="text-red-500">Go to marketplace</Button>
 
             </div>
