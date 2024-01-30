@@ -4,17 +4,12 @@ import SwitchHorizontal from '../icons/SwitchHorizontal';
 const Section2 = () => {
   return (
     <div className="bg-lila px-8 md:px-32 py-16 md:py-44 lg:py-48 2xl:py-64 lg:px-48">
-      <div className="mb-12">
-      <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden font-medium rounded-lg group bg-gradient-to-br from-lila via-[#690F8D] to-[#190EAF] pointer-events-none">
-<span className="relative px-3 py-2.5 transition-all ease-in duration-75 bg-[#EEF0FF] rounded-md group-hover:bg-opacity-0 flex">
-<SwitchHorizontal/>
-  <p className="pl-2 sm:text-xs md:text-base 2xl:text-3xl text-new-black font-tomato inline-block align-center">Securely trade your bets with other users</p>
-</span>
-</button>
-
+      <div className="mb-12 flex items-center">
+        <SwitchHorizontal />
+        <p className="pl-2 sm:text-xs md:text-base 2xl:text-3xl text-new-black font-tomato inline-block align-center">Securely trade your bets with other users</p>
       </div>
       <div className="flex flex-col lg:flex-row space-between gap-8 md:gap-16">
-        <Card title="Transform your bet into a blockchain certified ticket" backgroundImage="/section21.jpg"     titleColor="text-white"/>
+        <Card title="Transform your bet into a blockchain certified ticket" backgroundImage="/section21.jpg" titleColor="text-white" />
         <Card title="Explore and trade on the marketplace" backgroundImage="/section22.jpg" titleColor="text-new-black" />
       </div>
     </div>
@@ -31,6 +26,6 @@ const Card = ({ title, backgroundImage, titleColor }) => {
   );
 };
 
-  
+
 
 export default Section2;
