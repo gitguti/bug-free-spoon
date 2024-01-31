@@ -22,8 +22,8 @@ const FeaturesCard = ({ title, description, image, hoverColor, isDarkBackground 
     <Image
       src={image}
       alt="Logo de la compañía"
-      className="w-10/12 absolute bottom-0 right-0"
-      width={800}
+      className="w-1/2 absolute bottom-0 right-4"
+      width={500}
       height={500}
     />
   </div>
