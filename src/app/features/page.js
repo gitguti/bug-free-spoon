@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image';
 import React from 'react';
 import FeaturesCard from '../components/features/FeaturesCard';
@@ -8,25 +9,30 @@ export default function Features() {
       title: "Easy Process",
       description: "Seamless one-click process to transform your bets into NFTs",
       image: "/footerImage.png",
-      hoverColor: "bg-purple-500" // Ejemplo de clase de color para el hover
+      hoverColor: "#2A2155", // Ejemplo de clase de color para el hover
+      isDarkBackground: true
     },
     {
       title: "Ownership",
       description: "Mint your bet as an NFT for exclusive ownership and undeniable proof in your crypto wallet.",
       image: "/footerImage.png",
-      hoverColor: "bg-purple-500" // Ejemplo de clase de color para el hover
+      hoverColor: "#E7E7FB", // Ejemplo de clase de color para el hover
+      isDarkBackground: false
+
     },
     {
       title: "Secure",
       description: "Each NFT represents a verified bet from licensed sportsbooks, ensuring authenticity and confidence",
       image: "/footerImage.png",
-      hoverColor: "bg-purple-500" // Ejemplo de clase de color para el hover
+      hoverColor: "#87ABF1",
+      isDarkBackground: true
     },
     {
       title: "Privacy",
       description: "Trade NFT bets anonymously in our secure marketplace, prioritizing your privacy and anonymity",
       image: "/footerImage.png",
-      hoverColor: "bg-purple-500" // Ejemplo de clase de color para el hover
+      hoverColor: "#1941A6",
+      isDarkBackground: true
     },
     // Repite el objeto para las otras tarjetas, cambiando los valores según sea necesario
   ];
@@ -44,6 +50,8 @@ export default function Features() {
       description={card.description}
       image={card.image}
       hoverColor={card.hoverColor}
+      isDarkBackground={card.isDarkBackground}
+
     />
   ))}
 </div>

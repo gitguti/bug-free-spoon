@@ -1,13 +1,21 @@
 // FeaturesCard.jsx
-import React from 'react';
+import React, {useState} from 'react';
 import Image from 'next/image'; // Asumiendo que estás utilizando Next.js
 
-const FeaturesCard = ({ title, description, image }) => {
+const FeaturesCard = ({ title, description, image, hoverColor, isDarkBackground }) => {
+  const [isHovered, setIsHovered] = useState(false);
+  const textColorClass = isHovered && !isDarkBackground ? 'text-white' : 'text-new-black';
+
+
   return (
     <>
-<div className="relative bg-another-grey px-10 py-12 flex flex-col w-96 h-96 m-48 rounded-lg border-t-8 border-purple transition-all duration-500 ease-in-out hover:before:h-full before:bg-purple-500 overflow-hidden featuresCard">
-  <div className="font-tomato text-2xl md:text-3xl 2xl:text-4xl font-semibold leading-normal mb-4 text-new-black">{title}</div>
-  <div className=" text-sm lg:text-base 2xl:text-lg mb-8 2xl:text-md text-new-black">
+<div className={"relative px-10 py-12 flex flex-col w-96 h-96 m-48 rounded-lg overflow-hidden featuresCard"}     onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      style={{ '--hover-bg-color': hoverColor }} // Variable CSS para el color de fondo
+    >
+<div className={`font-tomato text-2xl md:text-3xl 2xl:text-4xl font-semibold leading-normal mb-4 ${textColorClass}`}> 
+{title}</div>
+  <div className={`text-sm lg:text-base 2xl:text-lg mb-8 2xl:text-md text-new-black ${textColorClass}`}>
     <p>{description}</p>
   </div>
   <div className="opacity-25">

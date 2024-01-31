@@ -80,6 +80,9 @@ background-clip: text;
   }
 }
 
+.featuresCard {
+  border-top: var(--hover-bg-color) 8px solid;
+}
 .featuresCard::before {
   content: '';
   position: absolute;
@@ -88,7 +91,7 @@ background-clip: text;
   right: 0;
   bottom: 0;
   height: 0;
-  background-color: #2B213E; /* o usa una clase de color de Tailwind aquí */
+  background-color: var(--hover-bg-color);
   transition: height 0.5s ease-in-out;
   z-index: 0;
 }
@@ -97,13 +100,24 @@ background-clip: text;
   height: 100%;
 }
 
-.featuresCard:hover .text-new-black {
+.featuresCard:hover .textHovered{
+  color: var(--hover-color); /* Cambia el color del texto a blanco */
+  z-index: 100;
+  transition: color 0.5s ease-in-out; /* Agrega una transición al color */
+}
+
+
+.featuresCard:hover .text-new-black{
   color: white; /* Cambia el color del texto a blanco */
   z-index: 100;
   transition: color 0.5s ease-in-out; /* Agrega una transición al color */
-
 }
 
+.featuresCard:hover .text-white{
+  color: black; /* Cambia el color del texto a blanco */
+  z-index: 100;
+  transition: color 0.5s ease-in-out; /* Agrega una transición al color */
+}
 .featuresCard:hover .opacity-25 {
   opacity: 1; /* Cambia la opacidad de la imagen a 100% */
   transition: opacity 0.5s ease-in-out; /* Agrega una transición a la opacidad */
