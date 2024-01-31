@@ -79,3 +79,33 @@ background-clip: text;
     animation-play-state: paused;
   }
 }
+
+.featuresCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0;
+  background-color: #2B213E; /* o usa una clase de color de Tailwind aquí */
+  transition: height 0.5s ease-in-out;
+  z-index: 0;
+}
+
+.featuresCard:hover::before {
+  height: 100%;
+}
+
+.featuresCard:hover .text-new-black {
+  color: white; /* Cambia el color del texto a blanco */
+  z-index: 100;
+  transition: color 0.5s ease-in-out; /* Agrega una transición al color */
+
+}
+
+.featuresCard:hover .opacity-25 {
+  opacity: 1; /* Cambia la opacidad de la imagen a 100% */
+  transition: opacity 0.5s ease-in-out; /* Agrega una transición a la opacidad */
+
+}
