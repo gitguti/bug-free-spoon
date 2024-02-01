@@ -7,11 +7,11 @@ const Section5 = () => {
   return (
     <>
       <div className="bg-lila mx-auto">
-      <div className="px-8 py-24 md:py-36 2xl:px-0 2xl:max-w-screen-3xl 2xl:py-64 mx-auto">
+      <div className="px-8 w-full md:px-0 md:w-10/12 xl:max-w-screen-3xl py-16 lg:py-40 2xl:py-48 mx-auto xl:justify-center">
       <div
         className="flex overflow-x-scroll lg:overflow-x-auto pb-10 scrollbar-hide md:hidden">
         <div
-          className="flex flex-nowrap w-full gap-4 md:gap-16 md:justify-start lg:justify-center">
+          className="flex flex-nowrap w-full h-full gap-4 md:gap-4 md:justify-center">
           <div className="inline-block">
             <Card />
           </div>

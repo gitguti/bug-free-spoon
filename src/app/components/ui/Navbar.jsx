@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-light-grey">
-      <div className="lg:max-w-screen-xl 2xl:max-w-screen-3xl mx-auto px-8 md:max-w-screen-sm">
+      <div className="px-8 md:px-0 md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg mx-auto 2xl:max-w-screen-3xl">
         <div className="flex mx-auto justify-between w-full">
           {/* Primary menu and logo */}
           <div className="flex items-center justify-between my-6 md:my-4 w-full">
