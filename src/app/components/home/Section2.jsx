@@ -4,7 +4,7 @@ import SwitchHorizontal from '../icons/SwitchHorizontal';
 const Section2 = () => {
   return (
     <div className="bg-lila">
-    <div className="bg-lila px-8 md:px-0 md:max-w-screen-md xl:max-w-screen-lg py-16 lg:py-40 2xl:py-48 mx-auto 2xl:max-w-screen-3xl ">
+    <div className="bg-lila px-8 md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg py-16 lg:py-40 2xl:py-48 mx-auto 2xl:max-w-screen-3xl ">
       <div className="mb-12 flex items-center">
         <SwitchHorizontal />
         <p className="pl-2 sm:text-xs md:text-base 2xl:text-3xl text-new-black font-tomato inline-block align-center">Securely trade your bets with other users</p>

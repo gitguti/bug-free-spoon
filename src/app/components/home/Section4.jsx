@@ -5,7 +5,7 @@ import Image from 'next/image';
 const Section4 = () => {
   return (
     <div className="bg-dirty-grey">
-    <div className="px-8 md:px-0 md:max-w-screen-md xl:max-w-screen-lg py-16 lg:py-40 2xl:py-48 mx-auto 2xl:max-w-screen-3xl">
+    <div className="px-8 md:px-0 md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg py-16 lg:py-40 2xl:py-48 mx-auto 2xl:max-w-screen-3xl">
       <div className="mb-12 ">
         <h2 className="text-[3.5rem] md:text-[6.5rem] 2xl:text-[8.75rem] font-semibold mb-4 text-center text-gradientfont-semibold leading-none xl:leading-normal text-center text-gradient">How it works
         </h2>
