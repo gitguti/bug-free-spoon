@@ -9,7 +9,7 @@ const FeaturesCard = ({ title, description, image, hoverColor, isDarkBackground 
 
   return (
     <>
-<div className={"relative px-10 py-12 flex flex-col w-96 h-96 m-48 rounded-lg overflow-hidden featuresCard"}     onMouseEnter={() => setIsHovered(true)}
+<div className={"relative flex flex-col px-6 pt-8 pb-24 rounded-lg overflow-hidden featuresCard"}     onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{ '--hover-bg-color': hoverColor }} // Variable CSS para el color de fondo
     >
