@@ -4,6 +4,15 @@ import Image from 'next/image';
 
 const Hero = () => {
 
+  function shuffleArray(array) {
+    const shuffledArray = [...array]; // Copiar el array original
+    for (let i = shuffledArray.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+    }
+    return shuffledArray; // Devolver la copia barajada
+  }
+
  const images1 = [];
   for (let i = 1; i <= 7; i++) {
     images1.push(
@@ -49,10 +58,10 @@ const Hero = () => {
 <div className="flex flex-col overflow-hidden space-x-16 space-y-8 group mx-auto relative 2xl:max-w-screen-3xl">
 
     <div className="flex space-x-16 overflow-x-hidden animate-marquee1  whitespace-nowrap delay-0" style={{width: `${7 * 279}px`}}>
-  {images2}
+  {shuffleArray(images2)}
     </div>
     <div className="flex row-reverse  space-x-16 overflow-x-hidden animate-scroll-right whitespace-nowrap delay-0 absolute -top-[1.9rem] left-[12rem] " style={{width: `${7 * 279}px`}}>
-  {images1}
+  {shuffleArray(images1)}
     </div>
 </div>
 
