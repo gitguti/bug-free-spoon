@@ -22,6 +22,13 @@ module.exports = {
         'purple': '#2B213E',
         'purple-vanish': '#6D5E8B',
         'dirty-grey': '#EDEDED',
+        'another-grey': '#F1F1F1',
+        'lavanda': '#E7E7FB',
+        'sad-blue':  '#87ABF1',
+        'navy-blue': '#1941A6'
+      },
+      borderColor: {
+        'navy-blue': '#1941A6'
       },
       fontFamily: {
         'tomato': ['"Tomato Grotesk"', 'sans-serif'],
@@ -51,7 +58,7 @@ module.exports = {
         },
       },
       maxWidth: {
-        'screen-3xl': '120rem',
+        'screen-3xl': '90rem',
       },
     },
   },

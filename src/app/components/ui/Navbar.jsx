@@ -15,14 +15,14 @@ const Navbar = () => {
 
   return (
     <nav className="bg-light-grey">
-      <div className="md:max-w-7xl 2xl:max-w-screen-3xl mx-auto px-8 xl:px-0">
+      <div className="lg:max-w-screen-xl 2xl:max-w-screen-3xl mx-auto px-8 md:px-0">
         <div className="flex mx-auto justify-between w-full">
           {/* Primary menu and logo */}
           <div className="flex items-center justify-between my-6 md:my-4 w-full">
             {/* logo */}
             <div>
               <Link href="/">
-              <div className="hidden lg:block relative w-[101px] h-[39px] 2xl:w-[202px] 2xl:h-[78px]">
+              <div className="hidden lg:block relative w-[101px] h-[39px] 2xl:w-[150px] 2xl:h-[78px]">
   <Image
     src="/logoDesktop.png"
     alt="Logo de la compañía"
@@ -43,7 +43,7 @@ const Navbar = () => {
               </Link>
             </div>
             {/* primary */}
-            <div className="hidden lg:flex gap-8 items-center transition transition-colors transition-opacity duration-300 lg:text-md 2xl:text-2xl ">
+            <div className="hidden lg:flex gap-8 items-center transition transition-colors transition-opacity duration-300 md:text-md xl:text-base 2xl:text-xl ">
               <Link href="/features">Features</Link>
               <Link href="/about">About us</Link>
               <Button variant="filled" className="text-red-500">Go to marketplace</Button>

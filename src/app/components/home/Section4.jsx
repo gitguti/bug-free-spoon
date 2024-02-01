@@ -5,12 +5,12 @@ import Image from 'next/image';
 const Section4 = () => {
   return (
     <div className="bg-dirty-grey">
-    <div className="p-16 md:px-32 md:py-44 2xl:py-64 lg:px-32 mx-auto 2xl:max-w-screen-3xl">
+    <div className="px-8 md:px-0 md:max-w-screen-md xl:max-w-screen-lg py-16 lg:py-40 2xl:py-48 mx-auto 2xl:max-w-screen-3xl">
       <div className="mb-12 ">
         <h2 className="text-[3.5rem] md:text-[6.5rem] 2xl:text-[8.75rem] font-semibold mb-4 text-center text-gradientfont-semibold leading-none xl:leading-normal text-center text-gradient">How it works
         </h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 md:gap-16 2xl:gap-32">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6 2xl:gap-32">
         <Card title="1. Pick" description="Choose the bet you wish to mint by simply clicking a button" titleColor="text-new-black" backgroundColor="#CDC0E9" image="/hiw1.png" width="170" height="50" />
         <Card title="2. Mint" description="Transform your bet into a certified asset in form of an NFT" titleColor="text-new-black" backgroundColor="#F4F4F4" image="/hiw2.png" width="70" height="70" />
         <Card title="3. Trade" description="Your NFT is now ready to be traded on the global marketplace" titleColor="text-new-white" backgroundColor=" #2B213E" image="/hiw3.png" width="70" height="70" />
@@ -32,7 +32,7 @@ const Card = ({ title, backgroundImage, titleColor, description, backgroundColor
     <>
       <div className="card px-7 py-10 h-72 w-full 2xl:h-96 rounded-lg 2xl:rounded-2xl overflow-hidden justify-content-start" style={{ backgroundColor: `${backgroundColor}` }}>
         <Image src={image} alt="Icon" width={width} height={height} />
-        <p className={`${titleColor}  + "text-2xl 2xl:text-4xl font-bold mt-4 mb-4 xl:mt-8`}>{title}</p>
+        <p className={`${titleColor}  + "text-2xl 2xl:text-4xl font-bold mt-4 mb-2 xl:mt-8`}>{title}</p>
         <p className={`${titleColor} + "text-base 2xl:text-2xl font-bold"`}>{description}</p>
       </div>
     </>
