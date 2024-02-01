@@ -43,7 +43,7 @@ export default function Features() {
     <div className="px-8 md:px-0 md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-xl py-16 lg:py-40 2xl:py-48 mx-auto 2xl:max-w-screen-3xl ">
         <h2 className="text-3xl md:text-5xl 2xl:text-7xl font-semibold leading-normal mb-7 md:mb-14 text-gradient">Features</h2>
 
-      <div className="grid grid-flow-col gap-8 relative">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 gap-8 relative">
   {featureInfo.map((card, index) => (
     <FeaturesCard
       key={index}

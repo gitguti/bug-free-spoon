@@ -77,10 +77,18 @@ const Navbar = () => {
       >
         <div className="px-8 pt-8 pb-24 text-new-black bg-grey-light">
           <div className="flex flex-col gap-8 tracking-wider">
-            <Link href="#" className="">Home</Link>
-            <Link href="#">Features</Link>
-            <Link href="#">About us</Link>
-            <Button variant="filled" className="text-red-500">Go to marketplace</Button>
+          <Link href="/" onClick={toggleMenu}>
+  Home
+</Link>
+<Link href="/features" onClick={toggleMenu}>
+  Features
+</Link>
+<Link href="/about" onClick={toggleMenu}>
+  About us
+</Link>
+<Button variant="filled" className="text-red-500" onClick={toggleMenu}>
+  Go to marketplace
+</Button>
           </div>
         </div>
       </div>
