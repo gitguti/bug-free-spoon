@@ -58,7 +58,7 @@ module.exports = {
         },
       },
       maxWidth: {
-        'screen-3xl': '120rem',
+        'screen-3xl': '90rem',
       },
     },
   },
