@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import Image from 'next/image';
 import Faqs from '../components/about/faqs';
@@ -49,13 +50,13 @@ export default function About() {
   const faqsContent = [
     {
       question: "Do you have an early future bet with improved and appealing odds compared to the current market conditions?",
-      image: "",
+      image: "/transparency.png",
       backgroundColor: "bg-purple",
       textColor: "text-white"
     },
     {
       question: "Would you like to sell your original stake at a discounted price to clear it from your account?",
-      image: "",
+      image: "/tangible.png",
       backgroundColor: "bg-[#87ABF1]",
       textColor: "text-white"
     },
@@ -91,7 +92,17 @@ export default function About() {
       <div className="w-1/2">
       <h2 className="font-tomato text-3xl md:text-6xl 2xl:text-8xl font-semibold leading-normal mb-4 text-gradient">Why should you consider trading your bets?</h2>
       </div>
-      <Faqs faqs={faqsContent} />
+<div className="w-full grid grid-cols-2 gap-3">
+  {faqsContent.map((faq, index) => (
+    <Faqs
+      key={index}
+      question={faq.question}
+      image={faq.image}
+      backgroundColor={faq.backgroundColor}
+    />
+  ))}
+</div>
+
     </div>
     <div className='bg-lila h-10rem text-center flex flex-col justify-center mx-auto lg:max-w-md'>
         <p>For these and many other reasons, whe have created Betsell, a platform that allows gamblers to sell their bets to other players in a secure and privacy preserving marketplace</p>

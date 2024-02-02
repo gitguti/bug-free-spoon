@@ -94,6 +94,7 @@ background-clip: text;
   background-color: var(--hover-bg-color);
   transition: height 0.5s ease-in-out;
   z-index: 0;
+  display: none;
 }
 
 .featuresCard:hover::before {
@@ -124,12 +125,33 @@ background-clip: text;
 
 }
 
-.imageBox {
-  width: 215px;
-  height: 196px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.faq-example {
+  display: grid;
+  grid-template-rows: auto 0; /* Inicialmente, solo se muestra el texto */
+  transition: grid-template-rows 500ms ease-in-out;
+}
+
+.faq-example > div:first-child {
+  /* Contenedor del texto */
+}
+
+.faq-example > div:last-child {
+  /* Contenedor de la imagen */
+  max-height: 0;
   overflow: hidden;
-  background-color: white;
+  transition: max-height 500ms ease-in-out, opacity 500ms ease-in-out;
+  opacity: 0;
+}
+
+.faq-example:hover {
+  grid-template-rows: auto 200px; /* Al hacer hover, asigna espacio para la imagen */
+}
+
+.faq-example:hover > div:last-child {
+  max-height: 200px; /* Altura máxima para la imagen */
+  opacity: 1;
+}
+
+.imageBox {
+  transition: opacity 500ms ease-in-out;
 }

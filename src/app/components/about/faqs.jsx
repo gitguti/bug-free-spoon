@@ -1,16 +1,30 @@
 // Faqs.jsx
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 
-const Faqs = ({ faqs }) => {
+const Faqs = ({ question, image, backgroundColor }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <div className="w-full grid grid-cols-2 gap-3">
-      {faqs.map((faq, index) => (
-        <div key={index} className={`px-10 py-8 rounded-lg ${faq.backgroundColor}`}>
-          <p className={`text-${faq.textColor}`}>{faq.question}</p>
-        </div>
-      ))}
+    <div
+    className={`px-10 py-8 rounded-lg overflow-hidden ${backgroundColor} faq-example`}
+    onMouseEnter={() => setIsHovered(true)}
+    onMouseLeave={() => setIsHovered(false)}
+  >
+    <div>
+      <p className="text-new-black">{question}</p>
     </div>
+    <div className={`imageBox ${isHovered ? '' : 'hidden'}`}>
+      <Image
+        src={image}
+        alt="FAQ Image"
+        width={215}
+        height={196}
+        layout="responsive"
+      />
+    </div>
+  </div>
+  
   );
 };
 
