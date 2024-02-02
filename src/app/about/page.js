@@ -5,6 +5,7 @@ import Faqs from '../components/about/faqs';
 import Section2 from '../components/about/Section2';
 import SwitchHorizontal from '../components/icons/SwitchHorizontal';
 import Button from '../components/ui/Button';
+import CarouselHorizontal from '../components/about/CarouselHorizontal';
 
 export default function About() {
 
@@ -95,7 +96,7 @@ export default function About() {
     
   return (
     <>
-<div className="grid grid-cols-1 md:grid-cols-3 grid-rows-1 px-8 md:px-0 md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg mx-auto 2xl:max-w-screen-3xl py-16 lg:py-24mx-auto items-center">
+<div className="hidden md:grid grid-cols-1 md:grid-cols-3 grid-rows-1 px-8 md:px-0 md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg mx-auto 2xl:max-w-screen-3xl py-16 lg:py-24mx-auto items-center">
       <div className="col-span-1">
       <h2 className="font-tomato text-2xl md:text-4xl 2xl:text-5xl font-semibold leading-normal mb-4 text-gradient shrink-0">Why should you consider trading your bets?</h2>
       </div>
@@ -111,8 +112,10 @@ export default function About() {
     />
   ))}
 </div>
-
     </div>
+    <div className="flex flex-col px-8 lg:flex-row space-between gap-4 md:gap-6 block md:hidden">
+<CarouselHorizontal faqsContent={faqsContent} />
+</div>
     <Section2/>
 <div className='bg-lila mx-auto'>
     <div className=" px-8 md:px-0 md:max-w-screen-sm justify-center lg:max-w-screen-md xl:max-w-screen-lg pt-16 lg:pt-24 2xl:py-48 mx-auto 2xl:max-w-screen-3xl ">
