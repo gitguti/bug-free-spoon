@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import React from 'react';
 import FeaturesCard from '../components/features/FeaturesCard';
+import FeaturesCardMobile from '../components/features/FeaturesCardMobile';
 import Section5 from '../components/home/Section5';
 import Charts from '../components/icons/Charts';
 import FeaturesCarousel from '../components/features/FeaturesCarousel';
@@ -114,17 +115,31 @@ export default function Features() {
         <Charts />
         <p className="pl-2 sm:text-xs md:text-base 2xl:text-3xl text-new-black font-tomato inline-block align-center">Adding  value to your betting assets</p>
       </div>
-<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  gap-8 relative">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 relative">
   {value.map((card, index) => (
-    <FeaturesCard
-      key={index}
-      title={card.title}
-      description={card.description}
-      image={card.image}
-      hoverColor={card.hoverColor}
-      isDarkBackground={card.isDarkBackground}
+    <>
+      {/* FeaturesCard para dispositivos no móviles */}
+      <div key={index} className="hidden md:block">
+        <FeaturesCard
+          title={card.title}
+          description={card.description}
+          image={card.image}
+          hoverColor={card.hoverColor}
+          isDarkBackground={card.isDarkBackground}
+        />
+      </div>
 
-    />
+      {/* FeaturesCardMobile para dispositivos móviles */}
+      <div key={index} className="block md:hidden">
+        <FeaturesCardMobile
+          title={card.title}
+          description={card.description}
+          image={card.image}
+          hoverColor={card.hoverColor}
+          isDarkBackground={card.isDarkBackground}
+        />
+      </div>
+    </>
   ))}
 </div>
 </div>
