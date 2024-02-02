@@ -39,6 +39,8 @@ module.exports = {
         'marquee2': 'marquee2 30s linear infinite',
         'marquee1': 'marquee1 30s linear infinite',
         'infinite-scroll': 'infinite-scroll 25s linear infinite',
+        'move1': 'marquee2 10s linear infinite',
+        'move2': 'marquee1 10s linear infinite',
 
       },
       keyframes: {
