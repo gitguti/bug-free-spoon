@@ -2,8 +2,10 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-const Faqs = ({ question, image, backgroundColor }) => {
+const Faqs = ({ question, image, backgroundColor, isDarkBackground }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const textColorClass = !isDarkBackground ? 'text-white' : 'text-new-black';
+
 
   return (
     <div
@@ -12,7 +14,7 @@ const Faqs = ({ question, image, backgroundColor }) => {
     onMouseLeave={() => setIsHovered(false)}
   >
     <div>
-      <p className="text-new-black">{question}</p>
+      <p className={`${textColorClass}`}>{question}</p>
     </div>
     <div className={`imageBox ${isHovered ? '' : 'hidden'}`}>
       <Image

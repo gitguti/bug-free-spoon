@@ -52,37 +52,38 @@ export default function About() {
       question: "Do you have an early future bet with improved and appealing odds compared to the current market conditions?",
       image: "/transparency.png",
       backgroundColor: "bg-purple",
-      textColor: "text-white"
+      isDarkBackground: false
+
     },
     {
       question: "Would you like to sell your original stake at a discounted price to clear it from your account?",
       image: "/tangible.png",
       backgroundColor: "bg-[#87ABF1]",
-      textColor: "text-white"
+      isDarkBackground: false
     },
     {
       question: "Is your pending parlay bet just a few legs away from the potential to win a significant payout?",
       image: "",
       backgroundColor: "bg-[#CDC0E9]",
-      textColor: "text-new-black"
+      isDarkBackground: true
     },
     {
       question: "Do you wish to cash out early on your bet securing a guaranteed win?",
       image: "",
       backgroundColor: "bg-[#F4F4F4]",
-      textColor: "text-new-black"
+      isDarkBackground: true
     },
     {
       question: "Have the odds for your pending bet undergone drastic changes in the market, now favouring your original stake?",
       image: "",
       backgroundColor: "bg-[#907BCB]",
-      textColor: "text-white"
+      isDarkBackground: false
     },
     {
-      question: "Are you looking for a way to leverage your bet for a higher return on investment?",
+      question: "",
       image: "",
       backgroundColor: "bg-purple",
-      textColor: "text-white"
+      isDarkBackground: false
     }
   ];
     
@@ -99,6 +100,8 @@ export default function About() {
       question={faq.question}
       image={faq.image}
       backgroundColor={faq.backgroundColor}
+      isDarkBackground={faq.isDarkBackground}
+
     />
   ))}
 </div>
