@@ -57,25 +57,25 @@ export default function About() {
     },
     {
       question: "Would you like to sell your original stake at a discounted price to clear it from your account?",
-      image: "/tangible.png",
+      image: "/sell.png",
       backgroundColor: "bg-[#87ABF1]",
       isDarkBackground: false
     },
     {
       question: "Is your pending parlay bet just a few legs away from the potential to win a significant payout?",
-      image: "",
+      image: "/comunist.png",
       backgroundColor: "bg-[#CDC0E9]",
       isDarkBackground: true
     },
     {
       question: "Do you wish to cash out early on your bet securing a guaranteed win?",
-      image: "",
+      image: "/privacy.png",
       backgroundColor: "bg-[#F4F4F4]",
       isDarkBackground: true
     },
     {
       question: "Have the odds for your pending bet undergone drastic changes in the market, now favouring your original stake?",
-      image: "",
+      image: "/easyProcess.png",
       backgroundColor: "bg-[#907BCB]",
       isDarkBackground: false
     },

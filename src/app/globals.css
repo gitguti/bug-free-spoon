@@ -124,7 +124,6 @@ background-clip: text;
   transition: opacity 0.5s ease-in-out; /* Agrega una transición a la opacidad */
 
 }
-
 .faq-example {
   display: grid;
   grid-template-rows: auto 0; /* Inicialmente, solo se muestra el texto */
@@ -139,7 +138,7 @@ background-clip: text;
   /* Contenedor de la imagen */
   max-height: 0;
   overflow: hidden;
-  transition: max-height 500ms ease-in-out, opacity 500ms ease-in-out;
+  transition: max-height 500ms ease-in-out;
   opacity: 0;
 }
 
@@ -150,8 +149,9 @@ background-clip: text;
 .faq-example:hover > div:last-child {
   max-height: 200px; /* Altura máxima para la imagen */
   opacity: 1;
+  transition: max-height 300ms ease-in-out, opacity 300ms ease-in-out 200ms; /* Retraso en la transición de opacidad */
 }
 
-.imageBox {
-  transition: opacity 500ms ease-in-out;
-}
+/* .imageBox {
+  transition: opacity 300ms ease-in-out 100ms; /* Retraso en la transición de opacidad 
+} */

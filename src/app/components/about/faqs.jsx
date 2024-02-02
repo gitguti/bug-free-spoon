@@ -16,14 +16,16 @@ const Faqs = ({ question, image, backgroundColor, isDarkBackground }) => {
     <div>
       <p className={`${textColorClass}`}>{question}</p>
     </div>
-    <div className={`imageBox ${isHovered ? '' : 'hidden'}`}>
+    <div className={`relative imageBox`}>
+      <div className='absolute bottom-0 right-0 imageBox'>
       <Image
         src={image}
         alt="FAQ Image"
-        width={215}
+        width={155}
         height={196}
-        layout="responsive"
+        className='imageBox'
       />
+      </div>
     </div>
   </div>
   
