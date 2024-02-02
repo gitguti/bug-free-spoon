@@ -127,7 +127,7 @@ background-clip: text;
 .faq-example {
   display: grid;
   grid-template-rows: auto 0; /* Inicialmente, solo se muestra el texto */
-  transition: grid-template-rows 500ms ease-in-out;
+  transition: grid-template-rows 500ms ease-in-out, padding-bottom 500ms ease-in-out;
 }
 
 .faq-example > div:first-child {
@@ -143,11 +143,12 @@ background-clip: text;
 }
 
 .faq-example:hover {
-  grid-template-rows: auto 200px; /* Al hacer hover, asigna espacio para la imagen */
+  grid-template-rows: auto 150px; /* Al hacer hover, asigna espacio para la imagen */
+  padding-bottom: 0;
 }
 
 .faq-example:hover > div:last-child {
-  max-height: 200px; /* Altura máxima para la imagen */
+  max-height: 150px; /* Altura máxima para la imagen */
   opacity: 1;
   transition: max-height 300ms ease-in-out, opacity 300ms ease-in-out 200ms; /* Retraso en la transición de opacidad */
 }

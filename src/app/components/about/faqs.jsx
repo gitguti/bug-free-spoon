@@ -9,7 +9,7 @@ const Faqs = ({ question, image, backgroundColor, isDarkBackground }) => {
 
   return (
     <div
-    className={`px-10 py-8 rounded-lg overflow-hidden ${backgroundColor} faq-example`}
+    className={`px-10 pt-8 pb-8 rounded-lg overflow-hidden ${backgroundColor} faq-example`}
     onMouseEnter={() => setIsHovered(true)}
     onMouseLeave={() => setIsHovered(false)}
   >

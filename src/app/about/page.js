@@ -5,14 +5,6 @@ import Faqs from '../components/about/faqs';
 
 export default function About() {
 
-  function shuffleArray(array) {
-    const shuffledArray = [...array]; // Copiar el array original
-    for (let i = shuffledArray.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
-    }
-    return shuffledArray; // Devolver la copia barajada
-  }
 
   const images1 = [];
   for (let i = 1; i <= 3; i++) {
@@ -89,11 +81,11 @@ export default function About() {
     
   return (
     <>
-    <div className="flex">
-      <div className="w-1/2">
-      <h2 className="font-tomato text-3xl md:text-6xl 2xl:text-8xl font-semibold leading-normal mb-4 text-gradient">Why should you consider trading your bets?</h2>
+<div className="grid grid-cols-1 md:grid-cols-3 grid-rows-1 px-8 md:px-0 md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg mx-auto 2xl:max-w-screen-3xl py-16 lg:py-24mx-auto items-center">
+      <div className="col-span-1">
+      <h2 className="font-tomato text-2xl md:text-4xl 2xl:text-5xl font-semibold leading-normal mb-4 text-gradient shrink-0">Why should you consider trading your bets?</h2>
       </div>
-<div className="w-full grid grid-cols-2 gap-3">
+<div className="w-full grid grid-cols-2 gap-3 col-span-2 min-h-0 min-h-full">
   {faqsContent.map((faq, index) => (
     <Faqs
       key={index}
