@@ -82,6 +82,7 @@ background-clip: text;
 
 .featuresCard {
   border-top: var(--hover-bg-color) 8px solid;
+  background-color: #FFF;
 }
 .featuresCard::before {
   content: '';
@@ -94,7 +95,6 @@ background-clip: text;
   background-color: var(--hover-bg-color);
   transition: height 0.5s ease-in-out;
   z-index: 0;
-  display: none;
 }
 
 .featuresCard:hover::before {
