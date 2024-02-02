@@ -123,3 +123,13 @@ background-clip: text;
   transition: opacity 0.5s ease-in-out; /* Agrega una transición a la opacidad */
 
 }
+
+.imageBox {
+  width: 215px;
+  height: 196px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: white;
+}

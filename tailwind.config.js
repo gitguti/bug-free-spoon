@@ -38,6 +38,8 @@ module.exports = {
         'scroll-right': 'loop-scroll-right 30s linear infinite',
         'marquee2': 'marquee2 30s linear infinite',
         'marquee1': 'marquee1 30s linear infinite',
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+
       },
       keyframes: {
         'loop-scroll-left': {
@@ -56,6 +58,10 @@ module.exports = {
           '0%': { transform: 'translateX(-100%)' },
           '100%': { transform: 'translateX(0%)' },
         },
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        }
       },
       maxWidth: {
         'screen-3xl': '90rem',
