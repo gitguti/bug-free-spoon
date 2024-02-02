@@ -55,8 +55,11 @@ export default function About() {
       <h2 className="font-tomato text-3xl md:text-6xl 2xl:text-8xl font-semibold leading-normal mb-4 text-gradient">Why should you consider trading your bets?</h2>
       </div>
       <Faqs faqs={faqsContent} />
-
     </div>
+    <div className='bg-lila h-10rem text-center flex flex-col justify-center mx-auto lg:max-w-md'>
+        <p>For these and many other reasons, whe have created Betsell, a platform that allows gamblers to sell their bets to other players in a secure and privacy preserving marketplace</p>
+      <Image src="/about.png" width={800} height={300}/>
+      </div>
     </>
   );
 }
