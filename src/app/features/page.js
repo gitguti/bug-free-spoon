@@ -12,14 +12,14 @@ export default function Features() {
     {
       title: "Easy Process",
       description: "Seamless one-click process to transform your bets into NFTs",
-      image: "/easyProcess.png",
+      image: "/no-bg/easyProcess.png",
       hoverColor: "#2A2155", // Ejemplo de clase de color para el hover
       isDarkBackground: true
     },
     {
       title: "Ownership",
       description: "Mint your bet as an NFT for exclusive ownership and undeniable proof in your crypto wallet.",
-      image: "/ownership.png",
+      image: "/no-bg/ownership.png",
       hoverColor: "#E7E7FB", // Ejemplo de clase de color para el hover
       isDarkBackground: false
 
@@ -27,14 +27,14 @@ export default function Features() {
     {
       title: "Secure",
       description: "Each NFT represents a verified bet from licensed sportsbooks, ensuring authenticity and confidence",
-      image: "/secure.png",
+      image: "/no-bg/secure.png",
       hoverColor: "#87ABF1",
       isDarkBackground: true
     },
     {
       title: "Privacy",
       description: "Trade NFT bets anonymously in our secure marketplace, prioritizing your privacy and anonymity",
-      image: "/privacy.png",
+      image: "/no-bg/privacy.png",
       hoverColor: "#1941A6",
       isDarkBackground: true
     },
@@ -44,14 +44,14 @@ export default function Features() {
     {
       title: "Tangible Value",
       description: "NFTs provides a unique digital identity that can be bought, sold and traded like a collectable item.",
-      image: "/tangible.png",
+      image: "/no-bg/tangible.png",
       hoverColor: "#87ABF1", // Ejemplo de clase de color para el hover
       isDarkBackground: true
     },
     {
       title: "Ownership & Provenance",
       description: "Each NFT represents a unique bet, verifying its authenticity and boosting its tradable value.",
-      image: "/ownership.png",
+      image: "/no-bg/ownership.png",
       hoverColor: "#102400", // Ejemplo de clase de color para el hover
       isDarkBackground: true
 
@@ -59,28 +59,28 @@ export default function Features() {
     {
       title: "Open Market Opportunities",
       description: "Minting your sportsbets as NFTs gives you access to a global marketplace and unlocks revenue-generating opportunities.",
-      image: "/openMarket.png",
+      image: "/no-bg/openMarket.png",
       hoverColor: "#2A2155",
       isDarkBackground: true
     },
     {
       title: "Exclusivity",
       description: "NFTs add scarcity and exclusivity to bets, making your original stake more valuable and appealing to gamblers who seek unique market opportunities",
-      image: "/exclusivity.png",
+      image: "/no-bg/exclusivity.png",
       hoverColor: "#0052B3",
       isDarkBackground: true
     },
     {
       title: "Transparency & Verification",
       description: "The unchanging nature of the blockchain ensures that anyone can easily track and confirm the authenticity of your bets, promoting trust in the authenticity of your NFTs.",
-      image: "/transparency.png",
+      image: "/no-bg/secure.png",
       hoverColor: "#6D83D2",
       isDarkBackground: true
     },
     {
       title: "Integration of Technology",
       description: "Integrating sports betting with blockchain technology through NFTs adds a futuristic edge, attracting tech-savvy users and demonstrating your commitment to innovation.",
-      image: "/integration.png",
+      image: "/no-bg/integration.png",
       hoverColor: "#21A0B2",
       isDarkBackground: true
     },

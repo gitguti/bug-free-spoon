@@ -16,11 +16,11 @@ const FeaturesCarousel = ({ features, autoSlide = true, autoSlideInterval = 3000
     }, [next, autoSlide, autoSlideInterval]);
 
     const slideWidth = 100 / features.length;
-    const totalWidth = 100 * features.length;
+    const totalWidth = 90 * features.length;
 
     return (
         <div className="overflow-hidden relative flex flex-col pb-4">
-            <div className="flex transition-transform ease-out duration-500" style={{ width: `${totalWidth}%`, transform: `translateX(-${curr * slideWidth}%)` }}>
+            <div className="flex gap-4 transition-transform ease-out duration-500" style={{ width: `${totalWidth}%`, transform: `translateX(-${curr * slideWidth}%)` }}>
                 {features.map((feature, index) => (
                     <div key={index} className="w-full flex justify-center" style={{ width: `${slideWidth}%` }}>
                         <FeaturesCardMobile {...feature} />
