@@ -6,17 +6,15 @@ const Footer = () => {
     return (
         <footer className="bg-white font-sans">
             <div className="pt-12 mx-auto">
-                <div className="relative grid gap-8 grid-flow-col grid-cols-1 grid-rows-3  sm:grid-cols-3 md:grid-rows-2 lg:grid-cols-4 px-4 md:px-16">
+                <div className="relative grid gap-8 md:gap-2 grid-flow-col grid-cols-1 grid-rows-3  sm:grid-cols-3 md:grid-rows-2 lg:grid-cols-4 px-4 md:px-16">
                     <div className="sm:col-start-1 sm:row-start-1 flex flex-col items-center md:items-start">
                     <Link href="/">
-  <div className="relative block w-[120px] h-[34px] lg:w-[151px] 2xl:w-[201px] 2xl:h-[56px]">
+  <div className="relative block">
     <Image
       src="/newLogo.png"
       alt="Logo de la compañía"
       layout="responsive"
-      width={201}
-      height={89}
-      objectFit="contain"
+      width={160} height={40}
     />
   </div>
 </Link>
@@ -51,7 +49,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex sm:items-end  flex-col md:flex-row gap-8 text-sm md:text-base 2xl:text-xl sm:col-start-1 sm:col-span-3 sm:row-start-3 md:row-start-2 place-items-start md:place-items-end lg:pb-4 relative'>
+                    <div className='flex sm:items-end sm:mb-4 md:mb-4 flex-col md:flex-row gap-8 text-sm md:text-base 2xl:text-xl sm:col-start-1 sm:col-span-3 sm:row-start-3 md:row-start-2 place-items-start md:place-items-end lg:pb-4 relative'>
                         <div className='flex flex-row  md:order-last gap-4 '>
                             <Link href="/" className="text-new-black transition-colors duration-300  hover:underline hover:cursor-pointer text-center">Privacy policy</Link>
                             <Link href="/" className="text-new-black transition-colors duration-300  hover:underline hover:cursor-pointer text-center">Terms of Use</Link>
@@ -64,7 +62,7 @@ const Footer = () => {
                         <Image
                             src="/footerImage.png"
                             alt="Logo de la compañía"
-                            className="w-1/2 lg:w-[30%] 2xl:w-1/4 absolute bottom-0 right-0"
+                            className="w-1/2 md:w-2/5 lg:w-[30%] 2xl:w-1/4 absolute bottom-0 right-0"
                             width={800} // Ajusta estas propiedades para el logo móvil
                             height={500}
                         />

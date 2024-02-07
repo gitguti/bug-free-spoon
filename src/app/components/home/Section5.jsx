@@ -47,7 +47,7 @@ const Card = ({ }) => {
 return (
         <>
           <div className="w-full h-full px-8 py-4 max-w-xs md:max-w-md lg:max-w-screen-md 2xl:max-w-2xl overflow-hidden rounded-xl  bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out  justify-content-start" style={{ backgroundColor: "#492C75" }}>
-            <p className="font-tomato text-2xl md:text-3xl 2xl:text-5xl font-bold mt-4 mb-4 text-gradient2">Get the Mobile App</p>
+            <p className="font-tomato text-2xl lg:text-3xl 2xl:text-5xl font-bold mt-4 mb-4 text-gradient2">Get the Mobile App</p>
             <div className='md:hidden lg:flex flex-col'>
             <p className=" text-[#c4c4c4] mt-4 mb-4 text-xs md:text-base 2xl:text-xl">Key features of our app:</p>
             <ul className='text-[#fafafa] text-xs md:text-sm 2xl:text-lg mb-8 list-disc'>
