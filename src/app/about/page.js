@@ -113,11 +113,12 @@ export default function About() {
   ))}
 </div>
     </div>
-    <div className="flex flex-col px-8 lg:flex-row space-between gap-4 md:gap-6 block md:hidden">
+    <div className="flex flex-col px-4 sm:px-8 md:px-0 lg:flex-row space-between gap-4 md:gap-6 block md:hidden mt-12 mb-4">
+    <h2 className="font-tomato text-3xl md:text-4xl 2xl:text-5xl font-semibold leading-normal mb-4 text-gradient shrink-0">Why should you consider trading your bets?</h2>
 <CarouselHorizontal faqsContent={faqsContent} />
 </div>
     <Section2/>
-<div className='bg-lila mx-auto'>
+<div className='bg-blue-100 mx-auto'>
     <div className=" px-8 md:px-0 md:max-w-screen-sm justify-center lg:max-w-screen-md xl:max-w-screen-lg pt-16 lg:pt-24 2xl:py-48 mx-auto 2xl:max-w-screen-3xl ">
       <div className="mb-12 flex items-center justify-center">
         <SwitchHorizontal />
