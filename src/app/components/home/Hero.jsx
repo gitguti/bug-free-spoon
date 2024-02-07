@@ -17,10 +17,10 @@ const Hero = () => {
   }
 
   const images1 = [];
-  for (let i = 1; i <= 14; i++) {
+  for (let i = 1; i <= 16; i++) {
     images1.push(
       <Image
-        src={`/${i}.png`}
+        src={`/Hero/${i}.png`}
         alt={`Image ${i}`}
         width={279}
         height={245}
