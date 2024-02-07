@@ -15,18 +15,18 @@ const Navbar = () => {
 
   return (
     <nav className="bg-light-grey">
-      <div className="px-8 md:px-0 md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg mx-auto 2xl:max-w-screen-3xl">
+      <div className="px-2 sm:px-8 w-11/12 mx-auto 3xl:w-10/12">
         <div className="flex mx-auto justify-between w-full">
           {/* Primary menu and logo */}
           <div className="flex items-center justify-between my-6 md:my-4 w-full">
             {/* logo */}
             <div>
               <Link href="/">
-              <div className="hidden lg:block relative w-[101px] h-[39px] 2xl:w-[150px] 2xl:h-[78px]">
+              <div className="hidden lg:block relative ">
   <Image
-    src="/logoDesktop.png"
+    src="/newLogo.png"
     alt="Logo de la compañía"
-    layout="fill"
+    width={160} height={40}
     objectFit="contain"
   />
 </div>
@@ -43,7 +43,7 @@ const Navbar = () => {
               </Link>
             </div>
             {/* primary */}
-            <div className="hidden lg:flex gap-8 items-center transition transition-colors transition-opacity duration-300 md:text-md xl:text-base 2xl:text-xl ">
+            <div className="hidden lg:flex gap-8 items-center transition transition-colors transition-opacity duration-300 md:text-md xl:text-base 2xl:text-lg ">
               <Link href="/features">Features</Link>
               <Link href="/about">About us</Link>
               <Button variant="filled" className="text-red-500">Go to marketplace</Button>

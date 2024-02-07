@@ -11,7 +11,7 @@ const Footer = () => {
                     <Link href="/">
   <div className="relative block w-[120px] h-[49px] lg:w-[151px] lg:h-[59px] 2xl:w-[201px] 2xl:h-[89px]">
     <Image
-      src="/logoDesktop.png"
+      src="/newLogo.png"
       alt="Logo de la compañía"
       layout="responsive"
       width={201}

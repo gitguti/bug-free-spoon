@@ -55,21 +55,21 @@ background-clip: text;
 /* En styles/fonts.css */
 @font-face {
   font-family: 'Tomato Grotesk';
-  src: url('/TomatoGrotesk-Regular.ttf') format('truetype');
+  src: url('/fonts/TomatoGrotesk-Regular.ttf') format('truetype');
   font-weight: 400; /* Regular */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Tomato Grotesk';
-  src: url('/TomatoGrotesk-Medium.ttf') format('truetype');
+  src: url('/fonts/TomatoGrotesk-Medium.ttf') format('truetype');
   font-weight: 500; /* Medium */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Tomato Grotesk';
-  src: url('/TomatoGrotesk-SemiBold.ttf') format('truetype');
+  src: url('/fonts/TomatoGrotesk-SemiBold.ttf') format('truetype');
   font-weight: 600; /* Semibold */
   font-style: normal;
 }
@@ -153,7 +153,12 @@ background-clip: text;
   transition: max-height 300ms ease-in-out, opacity 300ms ease-in-out 200ms; /* Retraso en la transición de opacidad */
 }
 
-/* .imageBox {
-  transition: opacity 300ms ease-in-out 100ms; /* Retraso en la transición de opacidad 
-} */
+.lst-box {
+  white-space: nowrap;
+  display: flex;
+}
 
+.lst-box li :last-child {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
