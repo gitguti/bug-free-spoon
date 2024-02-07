@@ -43,9 +43,14 @@ background-clip: text;
 
 /* En tu archivo CSS (por ejemplo, globals.css) */
 .card {
-  background-size: cover; /* Asegura que la imagen de fondo cubra todo el Card */
-  background-position: center; /* Centra la imagen de fondo */
-  transition: transform 0.3s ease; /* Transición suave para efectos de hover */
+  position: relative;
+  width: 100%;
+  padding-top: 45.25%; /* Proporción de aspecto 16:9 */
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+  max-height: min-content;
+  min-height: 300px;
 }
 
 .card:hover {
