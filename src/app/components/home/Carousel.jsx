@@ -22,12 +22,12 @@ export default function Carousel({
     }, []);
   
     const slideWidth = 100 / slides.length;
-    const totalWidth = 100 * slides.length; 
+    const totalWidth = 90 * slides.length; 
   
     return (
       <div className="overflow-hidden relative flex flex-col pb-4">
         <div
-          className="flex transition-transform ease-out duration-500"
+          className="flex gap-4 transition-transform ease-out duration-500"
           style={{ width: `${totalWidth}%`, transform: `translateX(-${curr * slideWidth}%)` }}
         >
           {slides.map((slide, index) => (

@@ -19,7 +19,7 @@ const FeaturesCarousel = ({ features, autoSlide = true, autoSlideInterval = 3000
     const totalWidth = 100 * features.length;
 
     return (
-        <div className="overflow-hidden relative">
+        <div className="overflow-hidden relative flex flex-col pb-4">
             <div className="flex transition-transform ease-out duration-500" style={{ width: `${totalWidth}%`, transform: `translateX(-${curr * slideWidth}%)` }}>
                 {features.map((feature, index) => (
                     <div key={index} className="w-full flex justify-center" style={{ width: `${slideWidth}%` }}>
@@ -27,14 +27,20 @@ const FeaturesCarousel = ({ features, autoSlide = true, autoSlideInterval = 3000
                     </div>
                 ))}
             </div>
-            <div className="inset-0 flex items-center p-4 justify-end">
-                <button onClick={prev} className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white">
-                    <ChevronLeft />
-                </button>
-                <button onClick={next} className="p-1 rounded-full shadow bg-purple text-white ml-6">
-                    <ChevronRight />
-                </button>
-            </div>
+            <div className="inline-flex mt-2 p-2 justify-end bg-white rounded-full shadow-md self-end">
+        <button
+          onClick={prev}
+          className="p-1 text-[#909090]"
+        >
+          <ChevronLeft />
+        </button>
+        <button
+          onClick={next}
+          className="p-1 rounded-full shadow bg-[#3C0D9F] text-white ml-4"
+        >
+        <ChevronRight />
+        </button>
+      </div>
         </div>
     );
 };
