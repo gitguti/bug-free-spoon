@@ -90,7 +90,6 @@ background-clip: text;
   background-color: #FFF;
   height: 100%;
   min-height: 200px;
-  max-width: 500px;
   max-height: 340px;
 }
 .featuresCard::before {
@@ -178,6 +177,11 @@ background-clip: text;
     background-color: #FFF;
     height: 100%;
     min-height: 350px;
-    max-width: 500px;
+  }
+}
+
+@media (min-width: 2400px) {
+  .featuresCard {
+    min-height: 380px;
   }
 }
