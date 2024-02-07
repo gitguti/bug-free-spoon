@@ -13,7 +13,6 @@ const Footer = () => {
     <Image
       src="/newLogo.png"
       alt="Logo de la compañía"
-      layout="responsive"
       width={160} height={40}
     />
   </div>
