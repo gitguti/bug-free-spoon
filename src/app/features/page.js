@@ -110,7 +110,7 @@ export default function Features() {
 </div>
 </div>
 <div className='bg-lila '>
-<div className="px-px sm:px-8 w-11/12 3xl:w-10/12 mx-auto flex flex-col justify-center pt-16 pb-16 2xl:pb-40 2xl:pt-16 3xl:pt-48 3xl:pb-24">
+<div className="px-px sm:px-8 w-11/12 3xl:w-10/12 mx-auto flex flex-col justify-center pt-16 pb-16 2xl:pb-40 lg:pt-24 3xl:pt-48 3xl:pb-24">
 <div className="flex items-center  text-center justify-center">
         <Charts />
         <p className="pl-2 sm:text-xs md:text-base 2xl:text-3xl text-new-black font-tomato inline-block align-center">Adding  value to your betting assets</p>
