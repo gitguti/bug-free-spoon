@@ -83,6 +83,7 @@ background-clip: text;
 .featuresCard {
   border-top: var(--hover-bg-color) 8px solid;
   background-color: #FFF;
+  height: 100%;
 }
 .featuresCard::before {
   content: '';
