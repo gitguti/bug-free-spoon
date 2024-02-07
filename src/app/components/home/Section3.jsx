@@ -17,7 +17,7 @@ const Section3 = () => {
     <div className="py-16 lg:py-40 2xl:py-48 mx-auto px-px sm:px-8  md:px-0  w-11/12 3xl:w-10/12">
     <div className="">
       <div className="mb-12">
-        <h2 className="text-3xl md:text-5xl 2xl:text-7xl font-semibold leading-normal mb-7 md:mb-14 text-center text-gradient">The Marketplace</h2>
+        <h2 className="text-3xl md:text-5xl 2xl:text-7xl font-tomato font-semibold leading-normal mb-7 md:mb-14 text-center text-gradient">The Marketplace</h2>
       </div>
       <div className="flex flex-col lg:flex-row space-between gap-4 md:gap-6 block md:hidden">
         <Carousel slides={slides} />

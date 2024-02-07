@@ -7,7 +7,7 @@ const Section4 = () => {
     <div className="bg-dirty-grey">
     <div className="px-px sm:px-8 md:px-0 py-24 lg:py-48 2xl:py-64 mx-auto w-11/12 3xl:w-9/12 3xl:w-9/12">
       <div className="mb-12 ">
-        <h2 className="text-[3.5rem] md:text-[6.5rem] 2xl:text-[8.75rem] font-semibold mb-4 text-center text-gradientfont-semibold leading-none xl:leading-normal text-center text-gradient">How it works
+        <h2 className="text-[3.5rem] md:text-[6.5rem] 2xl:text-[8.75rem] font-semibold mb-4 text-center text-gradientfont-semibold leading-none xl:leading-normal text-center text-gradient font-tomato">How it works
         </h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6 2xl:gap-8">
