@@ -23,7 +23,7 @@ const Section3 = () => {
         <Carousel slides={slides} />
       </div>
 
-      <div className="space-between gap-4 md:gap-6 hidden md:flex">
+      <div className="space-between gap-4 md:gap-6 xl:gap-12 hidden md:flex">
         <Card title="List your NFTs" backgroundImage="/section31.png" titleColor="text-white" />
         <Card title="Cashout" backgroundImage="/section32.png" titleColor="text-white" />
         <Card title="Buy, sell and auction" backgroundImage="/section33.png" titleColor="text-white" />
