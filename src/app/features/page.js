@@ -89,7 +89,7 @@ export default function Features() {
   return (
     <>
     <div>
-    <div className="px-px sm:px-8 w-11/12 3xl:w-10/12 mx-auto flex flex-col justify-center mt-8 mb-24 2xl:mb-40 2xl:mt-16 3xl:mt-40 3xl:mb-48">
+    <div className="px-px sm:px-8 w-11/12 3xl:w-10/12 mx-auto flex flex-col justify-center mt-8 mb-16 2xl:mb-40 2xl:mt-16 3xl:mt-40 3xl:mb-48">
         <h2 className="font-tomato text-3xl md:text-5xl 2xl:text-7xl font-semibold leading-normal mb-7 md:mb-14 text-gradient">Features</h2>
 
       <div className="hidden md:grid md:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-8 3xl:gap-24 relative">

@@ -96,8 +96,8 @@ export default function About() {
     
   return (
     <>
-<div className="hidden md:grid grid-cols-1 md:grid-cols-2 grid-rows-1 px-8 md:px-0 md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg mx-auto 2xl:max-w-screen-3xl py-16 lg:py-24mx-auto items-center">
-      <div className="col-span-1">
+<div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-1 items-center gap-4 px-px sm:px-8 md:px-0 py-16 lg:py-48 2xl:py-64 mx-auto w-11/12 3xl:w-9/12 3xl:w-9/12">
+      <div className="col-span-2 lg:col-span-1 text-center lg:text-left w-3/4 mx-auto">
       <h2 className="font-tomato text-2xl md:text-4xl 2xl:text-5xl font-semibold leading-normal mb-4 text-gradient shrink-0">Why should you consider trading your bets?</h2>
       </div>
 <div className="w-full grid grid-cols-2 gap-3 col-span-2 min-h-0 min-h-full">

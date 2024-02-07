@@ -22,12 +22,12 @@ export default function Carousel({
     }, []);
   
     const slideWidth = 100 / slides.length;
-    const totalWidth = 100 * slides.length; 
+    const totalWidth = 90 * slides.length; 
   
     return (
-      <div className="overflow-hidden relative">
+      <div className="overflow-hidden relative flex flex-col pb-4">
         <div
-          className="flex transition-transform ease-out duration-500"
+          className="flex gap-4 transition-transform ease-out duration-500"
           style={{ width: `${totalWidth}%`, transform: `translateX(-${curr * slideWidth}%)` }}
         >
           {slides.map((slide, index) => (
@@ -37,16 +37,16 @@ export default function Carousel({
             </div>
           ))}
         </div>
-            <div className="inset-0 flex items-center p-4 justify-end">
+            <div className="inline-flex mt-2 p-2 justify-end bg-white rounded-full shadow-md self-end">
         <button
           onClick={prev}
-          className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
+          className="p-1 text-[#909090]"
         >
           <ChevronLeft />
         </button>
         <button
           onClick={next}
-          className="p-1 rounded-full shadow bg-purple text-white ml-6"
+          className="p-1 rounded-full shadow bg-[#3C0D9F] text-white ml-4"
         >
         <ChevronRight />
         </button>

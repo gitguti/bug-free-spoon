@@ -14,7 +14,7 @@ const Section3 = () => {
 
   return (
     <div className="bg-white">
-    <div className="px-8 md:px-0 md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg py-16 lg:py-40 2xl:py-48 mx-auto 2xl:max-w-screen-3xl">
+    <div className="py-16 lg:py-40 2xl:py-48 mx-auto px-px sm:px-8  md:px-0  w-11/12 3xl:w-10/12">
     <div className="">
       <div className="mb-12">
         <h2 className="text-3xl md:text-5xl 2xl:text-7xl font-semibold leading-normal mb-7 md:mb-14 text-center text-gradient">The Marketplace</h2>
@@ -35,7 +35,7 @@ const Section3 = () => {
 };
 
 const Card = ({ title, backgroundImage, titleColor }) => {
-  const titleClasses = `absolute top-2 left-2 md:top-4 md:left-4 xl:p-8 md:text-xl 2xl:text-3xl w-2/3  ${titleColor}`;
+  const titleClasses = `absolute top-2 left-2 md:top-4 md:left-4 xl:p-8 md:text-xl xl:text-2xl 3xl:text-3xl w-2/3  ${titleColor}`;
 
   return (
     <div className="card h-80 lg:h-[20rem] xl:h-[25rem] 2xl:h-[36rem] sm:w-full 2xl:w-1/3 rounded-lg 2xl:rounded-2xl overflow-hidden relative" style={{ backgroundImage: `url(${backgroundImage})` }}>
