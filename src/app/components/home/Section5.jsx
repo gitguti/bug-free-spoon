@@ -7,7 +7,7 @@ const Section5 = () => {
   return (
     <>
       <div className="bg-lila mx-auto">
-      <div className="px-8 w-full md:px-0 md:w-10/12 xl:max-w-screen-3xl py-16 lg:py-40 2xl:py-48 mx-auto xl:justify-center">
+      <div className="px-8 w-full md:px-0 md:w-10/12 xl:max-w-screen-3xl  py-16 lg:py-48  mx-auto xl:justify-center">
       <div
         className="flex overflow-x-scroll lg:overflow-x-auto pb-10 scrollbar-hide md:hidden">
         <div
