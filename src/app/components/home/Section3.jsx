@@ -35,7 +35,7 @@ const Section3 = () => {
 };
 
 const Card = ({ title, backgroundImage, titleColor }) => {
-  const titleClasses = `absolute top-2 left-2 md:top-4 md:left-4 xl:p-8 md:text-xl xl:text-2xl 3xl:text-3xl w-2/3  ${titleColor}`;
+  const titleClasses = `absolute top-2 left-2 md:top-4 md:left-4 xl:p-8 md:text-xl xl:text-3xl w-2/3  ${titleColor}`;
 
   return (
     <div className="card h-80 lg:h-[20rem] xl:h-[25rem] 2xl:h-[36rem] sm:w-full 2xl:w-1/3 rounded-lg 2xl:rounded-2xl overflow-hidden relative" style={{ backgroundImage: `url(${backgroundImage})` }}>
