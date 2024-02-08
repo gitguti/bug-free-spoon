@@ -184,6 +184,6 @@ background-clip: text;
 @media (min-width: 2400px) {
   .featuresCard {
     min-height: 400px;
-    max-height: 410px;
+    max-height: 412px;
   }
 }
