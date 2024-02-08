@@ -77,10 +77,10 @@ const Hero = () => {
           </ul>
         </Marquee>
       </div>
-        <div className="px-px sm:px-8 w-11/12 3xl:w-10/12 mx-auto flex justify-center mt-10 mb-24 2xl:mb-40 2xl:mt-16 3xl:mt-24">
+        <div className="px-px sm:px-8 w-11/12 lg:w-9/12 3xl:w-10/12 mx-auto flex justify-center mt-10 mb-24 2xl:mb-40 2xl:mt-16 3xl:mt-24">
           <div className="text-center mx-auto 3xl:w-9/12">
             <h1 className="font-tomato text-2xl md:text-6xl 2xl:text-8xl font-semibold leading-7 mb-4 text-center text-gradient">Embrace the future of Bet Commerce using NFTs</h1>
-            <p className="text-sm md:text-lg text-new-black mb-8 2xl:text-2xl lg:w-1/3 3xl:w-1/2 mx-auto ">Transform your bets into unique digital assets and trade on the first and only bet marketplace</p>
+            <p className="text-sm md:text-lg text-new-black mb-8 2xl:text-2xl md:w-9/12 lg:w-2/3 3xl:w-1/2 mx-auto ">Transform your bets into unique digital assets and trade on the first and only bet marketplace</p>
             <Button variant="filled" className="text-red-500">Go to marketplace</Button>
           </div>
         </div>
