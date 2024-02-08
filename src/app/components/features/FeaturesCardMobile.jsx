@@ -12,7 +12,7 @@ const FeaturesCardMobile = ({ title, description, image, hoverColor, isDarkBackg
       <div className={`text-sm lg:text-base 2xl:text-lg mb-8 ${textColorClass}`}>
         <p>{description}</p>
       </div>
-      <div className="opacity-100 absolute -bottom-8 right-4">
+      <div className="opacity-100 absolute -bottom-8 right-4 ">
         <Image
           src={image}
           alt="Logo de la compañía"
