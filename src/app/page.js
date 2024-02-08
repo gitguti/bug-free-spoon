@@ -1,3 +1,4 @@
+"use client"
 import Hero from "./components/home/Hero";
 import Section2 from "./components/home/Section2"
 import Section3 from "./components/home/Section3"
