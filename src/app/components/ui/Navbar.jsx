@@ -27,7 +27,6 @@ const Navbar = () => {
     src="/newLogo.png"
     alt="Logo de la compañía"
     width={160} height={40}
-    objectFit="contain"
   />
 </div>
 

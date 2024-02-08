@@ -90,7 +90,7 @@ background-clip: text;
   background-color: #FFF;
   height: 100%;
   min-height: 200px;
-  max-height: 340px;
+  /* max-height: 340px; */
 }
 .featuresCard::before {
   content: '';
@@ -176,12 +176,12 @@ background-clip: text;
     border-top: var(--hover-bg-color) 8px solid;
     background-color: #FFF;
     height: 100%;
-    min-height: 350px;
+    min-height: 380px;
   }
 }
 
 @media (min-width: 2400px) {
   .featuresCard {
-    min-height: 380px;
+    min-height: 400px;
   }
 }
