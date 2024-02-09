@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer className="bg-white font-sans">
             <div className="pt-12 4xl:pt-24 mx-auto">
-                <div className="relative grid gap-8 md:gap-2 grid-flow-col grid-cols-1 grid-rows-3  sm:grid-cols-3 md:grid-rows-2 lg:grid-cols-4 px-4 md:px-16">
+                <div className="relative grid gap-x-0 gap-y-4 md:gap-8 md:gap-2 grid-flow-col grid-cols-1 grid-rows-3  sm:grid-cols-3 md:grid-rows-2 lg:grid-cols-4 px-4 md:px-16">
                     <div className="sm:col-start-1 sm:row-start-1 flex flex-col items-center md:items-start">
                     <Link href="/">
   <div className="relative block">
