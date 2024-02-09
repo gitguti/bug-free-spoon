@@ -130,8 +130,8 @@ export default function About() {
 
 </div>
 </div>
-<div className='bg-lila '>
-<div className="mx-auto w-11/12 md:w-9/12 2xl:w-8/12  py-16 lg:py-48 text-center">
+<div className='bg-lila px-4 md:px-8'>
+<div className="mx-auto sm:w-11/12 lg:w-8/12 xl:w-1/2 3xl:w-2/5  py-16 lg:py-32 text-center">
       <h2 className="font-tomato text-3xl md:text-4xl lg:text-5xl 2xl:text-7xl font-semibold leading-8 md:leading-normal my-8 text-gradient md:max-w-screen-md lg:max-w-screen-lg mx-auto">
         Make your bets accessible to players worldwide
       </h2>
