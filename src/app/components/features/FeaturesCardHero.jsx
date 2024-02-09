@@ -16,7 +16,7 @@ const FeaturesCardHero = ({ title, description, image, hoverColor, isDarkBackgro
   <div className={`text-sm lg:text-base 2xl:text-lg mb-8 2xl:text-md font-medium ${textColorClass}`}>
     <p>{description}</p>
   </div>
-  <div className="opacity-25 absolute -bottom-8 right-4 w-3/5">
+  <div className="opacity-25 absolute -bottom-8 right-4 w-[65%] lg:w-[45%] xl:w-[75%] 2xl:w-3/5">
         <Image
           src={image}
           alt="Logo de la compañía"

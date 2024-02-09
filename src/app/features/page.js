@@ -81,7 +81,7 @@ export default function Features() {
     {
       title: "Integration of Technology",
       description: "Integrating sports betting with blockchain technology through NFTs adds a futuristic edge, attracting tech-savvy users and demonstrating your commitment to innovation.",
-      image: "/no-bg/integration.png",
+      image: "/no-bg/comunist.png",
       hoverColor: "#21A0B2",
       isDarkBackground: true
     },
@@ -90,8 +90,8 @@ export default function Features() {
   return (
     <>
     <div>
-    <div className="px-px sm:px-8 w-11/12 4xl:w-10/12 mx-auto flex flex-col justify-center mt-8 mb-16 2xl:mb-40 2xl:mt-16 4xl:mt-40 4xl:mb-48">
-        <h2 className="font-tomato text-3xl md:text-5xl 2xl:text-7xl font-semibold leading-normal mb-7 md:mb-14 text-gradient">Features</h2>
+    <div className="px-px sm:px-8 w-11/12 4xl:w-10/12 mx-auto flex flex-col justify-center py-10 md:py-16 lg:py-20">
+        <h2 className="font-tomato text-3xl md:text-5xl 2xl:text-7xl font-semibold leading-normal mb-8 3xl:mb-12 4xl:mb-16 text-gradient">Features</h2>
 
       <div className="hidden md:grid md:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-8 4xl:gap-24 relative">
   {featureInfo.map((card, index) => (

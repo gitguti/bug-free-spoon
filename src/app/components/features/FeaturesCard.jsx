@@ -34,7 +34,7 @@ const FeaturesCard = ({ title, description, image, hoverColor, isDarkBackground 
     >
 <div className={`font-tomato text-2xl md:text-3xl 2xl:text-4xl font-semibold leading-normal mb-4 ${textColorClass}`}> 
 {title}</div>
-  <div className={`text-sm lg:text-base 2xl:text-lg mb-8 2xl:text-md ${textColorClass}`}>
+  <div className={`text-sm lg:text-base 2xl:text-lg mb-8 2xl:text-md font-medium ${textColorClass}`}>
     <p>{description}</p>
   </div>
   <div className="opacity-25 absolute -bottom-8 right-4">
