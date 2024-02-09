@@ -30,13 +30,13 @@ const Faqs = ({ question, image, backgroundColor, isDarkBackground }) => {
   } else {
     return (
       <div
-        className={`rounded-lg overflow-hidden ${backgroundColor} relative h-full w-full hover:shadow-xl transition-shadow duration-300 ease-in-out`}
+        className={`rounded-lg overflow-hidden ${backgroundColor} relative h-full w-full hover:scale-105 transition-scale duration-300 ease-in-out`}
       >
         <Image
           src={image}
           alt="Descripción"
           className="absolute w-full bottom-0 h-2/3"
-          width={130}
+          width={400}
           height={120}
         />
       </div>

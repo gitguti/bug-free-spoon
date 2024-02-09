@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import ChevronLeft from "../icons/ChevronLeft"
 import ChevronRight from "../icons/ChevronRight"
+import Image from 'next/image'; 
 
 export default function CarouselHorizontal({
   faqsContent,
@@ -33,7 +34,7 @@ export default function CarouselHorizontal({
        {faqsContent.map((faq, index) => (
   <div key={index} className={`flex flex-col items-center overflow-hidden justify-start relative rounded-lg ${faq.backgroundColor}`} style={{ width: `${slideWidth}%`, minHeight: "300px" }}>
     <h2 className={`px-8 text-base w-full pt-8 ${!faq.isDarkBackground ? "text-white" : "text-black"}`}>{faq.question}</h2>
-    <img src={faq.image} alt={`Slide ${index}`} style={{ position: "absolute", right: 0, zIndex: 1 }} className={faq.question ? "w-1/2 h-auto -bottom-4" : "w-full object-cover -bottom-28 fill-available"}/>
+    <Image src={faq.image} width={800} height={120} alt={`Slide ${index}`} style={{ position: "absolute", right: 0, zIndex: 1 }} className={faq.question ? "w-1/2 h-auto -bottom-4" : "w-full object-cover -bottom-28 fill-available"}/>
   </div>
 ))}
 
