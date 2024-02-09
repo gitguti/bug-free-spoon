@@ -42,7 +42,7 @@ const Navbar = () => {
               </Link>
             </div>
             {/* primary */}
-            <div className="hidden lg:flex gap-8 items-center transition transition-colors transition-opacity duration-300 md:text-md xl:text-base 2xl:text-lg 4xl:text-2xl">
+            <div className="hidden lg:flex gap-8 items-center transition transition-colors transition-opacity duration-300 md:text-md xl:text-base 2xl:text-lg 3xl:text-[1.3rem] 4xl:text-2xl">
               <Link href="/features">Features</Link>
               <Link href="/about">About us</Link>
               <Button variant="filled" className="text-red-500">Go to marketplace</Button>
