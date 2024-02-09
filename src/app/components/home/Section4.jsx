@@ -5,9 +5,9 @@ import Image from 'next/image';
 const Section4 = () => {
   return (
     <div className="bg-dirty-grey">
-    <div className="px-px sm:px-8 md:px-0  py-16 lg:py-48  mx-auto w-11/12 4xl:w-9/12 4xl:w-9/12">
-      <div className="mb-12 ">
-        <h2 className="text-[3.5rem] md:text-[6.5rem] 2xl:text-[8.75rem] mb-4 text-center text-gradient font-semibold leading-none xl:leading-normal text-center text-gradient font-tomato">How it works
+    <div className="px-px sm:px-8 md:px-0 py-16 md:py-20 lg:py-24 3xl:py-36 4xl:py-48 mx-auto w-11/12 4xl:w-9/12 4xl:w-9/12">
+      <div className="mb-12 xl:mb-8 3xl:mb-12 4xl:mb-16">
+        <h2 className="text-[3.5rem] md:text-[6.5rem] 2xl:text-[8.75rem] text-center text-gradient font-semibold leading-none xl:leading-normal text-center text-gradient font-tomato">How it works
         </h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6 2xl:gap-8">
@@ -32,8 +32,8 @@ const Card = ({ title, backgroundImage, titleColor, description, backgroundColor
     <>
       <div className="px-7 py-10 h-72 w-full 2xl:h-96 rounded-lg 2xl:rounded-2xl overflow-hidden justify-content-start" style={{ backgroundColor: `${backgroundColor}` }}>
         <Image src={image} alt="Icon" width={width} height={height} />
-        <p className={`${titleColor}  + "font-tomato text-2xl 2xl:text-4xl font-bold mt-4 mb-2 xl:mt-8`}>{title}</p>
-        <p className={`${titleColor} + "font-tomato text-base 2xl:text-2xl font-bold"`}>{description}</p>
+        <p className={`${titleColor}  font-tomato text-2xl 2xl:text-4xl font-semibold mt-4 mb-2 xl:mt-8`}>{title}</p>
+        <p className={`${titleColor} text-base 2xl:text-2xl`}>{description}</p>
       </div>
     </>
 
