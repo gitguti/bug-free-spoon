@@ -22,11 +22,11 @@ const Navbar = () => {
             {/* logo */}
             <div>
               <Link href="/">
-              <div className="hidden lg:block relative ">
+              <div className="hidden lg:block relative md:w-2/3 3xl:w-4/5  4xl:w-full">
   <Image
     src="/newLogo.png"
     alt="Logo de la compañía"
-    width={160} height={40}
+    width={224} height={60}
   />
 </div>
 
@@ -51,15 +51,6 @@ const Navbar = () => {
           </div>
           {/* secondary */}
           <div className="flex gap-6">
-            <div className="hidden xs:flex items-center gap-10">
-              <div className="hidden lg:flex items-center gap-2">
-                <p>moon</p>
-                <p>sun</p>
-              </div>
-              <div>
-                <Button variant="filled" className="text-red-500">Go to marketplace</Button>
-              </div>
-            </div>
             {/* Mobile navigation toggle */}
             <div className="lg:hidden flex items-center">
               <button onClick={toggleMenu}>
