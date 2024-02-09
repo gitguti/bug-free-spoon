@@ -187,3 +187,7 @@ background-clip: text;
     max-height: 412px;
   }
 }
+
+.fill-available {
+  height: 40vh;
+}

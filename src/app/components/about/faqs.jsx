@@ -10,7 +10,7 @@ const Faqs = ({ question, image, backgroundColor, isDarkBackground }) => {
   if (hasQuestion) {
     return (
       <div
-        className={`px-10 pt-8 pb-8 rounded-lg overflow-hidden ${backgroundColor} faq-example relative min-h-52 max-h-72 `}
+        className={`px-10 pt-8 pb-8 rounded-lg overflow-hidden ${backgroundColor} faq-example relative min-h-52 max-h-72 3xl:min-h-64 3xl:max-h-96`}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -30,12 +30,14 @@ const Faqs = ({ question, image, backgroundColor, isDarkBackground }) => {
   } else {
     return (
       <div
-        className={`rounded-lg overflow-hidden ${backgroundColor} relative h-full w-full hover:shadow-xl transition-shadow duration-300 ease-in-out object-cover`}
+        className={`rounded-lg overflow-hidden ${backgroundColor} relative h-full w-full hover:shadow-xl transition-shadow duration-300 ease-in-out`}
       >
         <Image
           src={image}
           alt="Descripción"
-          layout="fill"
+          className="absolute w-full bottom-0 h-2/3"
+          width={130}
+          height={120}
         />
       </div>
     );

@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image'; // Asumiendo que estás utilizando Next.js
+import Image from 'next/image'; 
 
 const FeaturesCardMobile = ({ title, description, image, hoverColor, isDarkBackground }) => {
   const textColorClass = isDarkBackground ? 'text-white' : 'text-new-black';

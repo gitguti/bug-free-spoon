@@ -22,6 +22,7 @@ export default function CarouselHorizontal({
 
   const slideWidth = 100 / faqsContent.length;
   const totalWidth = 90 * faqsContent.length;
+  const hasQuestion = faqsContent.question && faqsContent.question.trim().length > 0;
 
   return (
     <div className="overflow-hidden relative  flex flex-col pb-4">
@@ -30,9 +31,9 @@ export default function CarouselHorizontal({
         style={{ width: `${totalWidth}%`, transform: `translateX(-${curr * slideWidth}%)` }}
       >
        {faqsContent.map((faq, index) => (
-  <div key={index} className={`flex flex-col items-center justify-start relative rounded-lg ${faq.backgroundColor}`} style={{ width: `${slideWidth}%`, minHeight: "300px" }}>
+  <div key={index} className={`flex flex-col items-center overflow-hidden justify-start relative rounded-lg ${faq.backgroundColor}`} style={{ width: `${slideWidth}%`, minHeight: "300px" }}>
     <h2 className={`px-8 text-base w-full pt-8 ${!faq.isDarkBackground ? "text-white" : "text-black"}`}>{faq.question}</h2>
-    <img src={faq.image} alt={`Slide ${index}`} style={{ width: "180px", position: "absolute", bottom: 0, right: 0, zIndex: 1 }} />
+    <img src={faq.image} alt={`Slide ${index}`} style={{ position: "absolute", right: 0, zIndex: 1 }} className={faq.question ? "w-1/2 h-auto -bottom-4" : "w-full object-cover -bottom-28 fill-available"}/>
   </div>
 ))}
 
