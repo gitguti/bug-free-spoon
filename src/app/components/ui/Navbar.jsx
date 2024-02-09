@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-light-grey sticky">
+    <nav className="bg-light-grey ">
       <div className="px-2 sm:px-8 w-11/12 mx-auto 4xl:w-10/12">
         <div className="flex mx-auto justify-between w-full">
           {/* Primary menu and logo */}
