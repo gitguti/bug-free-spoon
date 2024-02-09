@@ -35,7 +35,7 @@ const Faqs = ({ question, image, backgroundColor, isDarkBackground }) => {
         <Image
           src={image}
           alt="Descripción"
-          className="absolute w-full bottom-0 h-2/3"
+          className="absolute w-full bottom-0 h-auto"
           width={400}
           height={120}
         />
