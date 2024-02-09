@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import React from 'react';
 import FeaturesCard from '../components/features/FeaturesCard';
+import FeaturesCardHero from '../components/features/FeaturesCardHero';
 import FeaturesCardMobile from '../components/features/FeaturesCardMobile';
 import Section5 from '../components/home/Section5';
 import Charts from '../components/icons/Charts';
@@ -94,7 +95,7 @@ export default function Features() {
 
       <div className="hidden md:grid md:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-8 4xl:gap-24 relative">
   {featureInfo.map((card, index) => (
-    <FeaturesCard
+    <FeaturesCardHero
       key={index}
       title={card.title}
       description={card.description}
