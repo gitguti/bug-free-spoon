@@ -14,8 +14,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-light-grey">
-      <div className="px-2 sm:px-8 w-11/12 mx-auto 3xl:w-10/12">
+    <nav className="bg-light-grey sticky">
+      <div className="px-2 sm:px-8 w-11/12 mx-auto 4xl:w-10/12">
         <div className="flex mx-auto justify-between w-full">
           {/* Primary menu and logo */}
           <div className="flex items-center justify-between my-6 md:my-4 w-full">
@@ -42,7 +42,7 @@ const Navbar = () => {
               </Link>
             </div>
             {/* primary */}
-            <div className="hidden lg:flex gap-8 items-center transition transition-colors transition-opacity duration-300 md:text-md xl:text-base 2xl:text-lg ">
+            <div className="hidden lg:flex gap-8 items-center transition transition-colors transition-opacity duration-300 md:text-md xl:text-base 2xl:text-lg 4xl:text-2xl">
               <Link href="/features">Features</Link>
               <Link href="/about">About us</Link>
               <Button variant="filled" className="text-red-500">Go to marketplace</Button>

@@ -10,12 +10,12 @@ const Faqs = ({ question, image, backgroundColor, isDarkBackground }) => {
   if (hasQuestion) {
     return (
       <div
-        className={`px-10 pt-8 pb-8 rounded-lg overflow-hidden ${backgroundColor} faq-example relative min-h-52 max-h-72 3xl:min-h-64 3xl:max-h-96`}
+        className={`px-10 pt-8 pb-8 rounded-lg overflow-hidden ${backgroundColor} faq-example relative min-h-52 max-h-72 4xl:min-h-64 4xl:max-h-96`}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
         <div>
-          <p className={`text-lg 3xl:text-2xl ${textColorClass}`}>{question}</p>
+          <p className={`text-lg 4xl:text-2xl ${textColorClass}`}>{question}</p>
         </div>
         <div className='absolute bottom-0 right-4 w-2/5 lg:w-2/5'>
           <Image

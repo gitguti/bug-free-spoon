@@ -14,7 +14,7 @@ const Section3 = () => {
 
   return (
     <div className="bg-white">
-    <div className="py-16 lg:py-40 2xl:py-48 mx-auto px-px sm:px-8  md:px-0  w-11/12 3xl:w-10/12">
+    <div className="py-16 lg:py-40 2xl:py-48 mx-auto px-px sm:px-8  md:px-0  w-11/12 4xl:w-10/12">
     <div className="">
       <div className="mb-12">
         <h2 className="text-3xl md:text-5xl 2xl:text-7xl font-tomato font-semibold leading-normal mb-7 md:mb-14 text-center text-gradient">The Marketplace</h2>

@@ -81,7 +81,7 @@ export default function About() {
     
   return (
     <>
-<div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-1 items-center gap-4 px-px sm:px-8 md:px-0 mt-8 mb-16 2xl:mb-40 2xl:mt-16 3xl:mt-40 3xl:mb-48 mx-auto w-11/12 3xl:w-9/12 3xl:w-9/12">
+<div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-1 items-center gap-4 px-px sm:px-8 md:px-0 mt-8 mb-16 2xl:mb-40 2xl:mt-16 4xl:mt-40 4xl:mb-48 mx-auto w-11/12 4xl:w-9/12 4xl:w-9/12">
       <div className="col-span-2 lg:col-span-1 text-center lg:text-left w-3/4 mx-auto">
       <h2 className="font-tomato text-2xl md:text-4xl 2xl:text-5xl font-semibold leading-normal mb-4 text-gradient shrink-0">Why should you consider trading your bets?</h2>
       </div>
@@ -107,10 +107,10 @@ export default function About() {
     <div className="  md:max-w-screen-sm justify-center lg:max-w-screen-md xl:max-w-screen-lg pt-16 lg:pt-24 2xl:pt-48 2xl:pb-36 mx-auto 2xl:max-w-screen-3xl ">
       <div className="px-8 md:px-0 mb-12 flex items-center justify-center">
         <World />
-        <p className="pl-4 sm:text-xs md:text-base lg:text-2xl 2xl:text-3xl 3xl:text-4xl text-new-black font-tomato inline-block align-center">All major events from all major sportsbooks in one place</p>
+        <p className="pl-4 sm:text-xs md:text-base lg:text-2xl 2xl:text-3xl 4xl:text-4xl text-new-black font-tomato inline-block align-center">All major events from all major sportsbooks in one place</p>
       </div>
       <div className="mx-auto flex flex-col ">
-      <div className='lg:mt-12 3xl:mt-24 flex flex-col gap-4 lg:gap-8'>
+      <div className='lg:mt-12 4xl:mt-24 flex flex-col gap-4 lg:gap-8'>
       <Marquee autoFill={true}>
           <ul className="lst-box">
             {shuffleArray(images).map((image, index) => (
@@ -131,7 +131,7 @@ export default function About() {
 </div>
 </div>
 <div className='bg-lila px-4 md:px-8'>
-<div className="mx-auto sm:w-11/12 lg:w-8/12 xl:w-1/2 3xl:w-2/5  py-16 lg:py-32 text-center">
+<div className="mx-auto sm:w-11/12 lg:w-8/12 xl:w-1/2 4xl:w-2/5  py-16 lg:py-32 text-center">
       <h2 className="font-tomato text-3xl md:text-4xl lg:text-5xl 2xl:text-7xl font-semibold leading-8 md:leading-normal my-8 text-gradient md:max-w-screen-md lg:max-w-screen-lg mx-auto">
         Make your bets accessible to players worldwide
       </h2>
