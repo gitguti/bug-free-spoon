@@ -25,7 +25,7 @@ export default function Carousel({
     const totalWidth = 90 * slides.length; 
   
     return (
-      <div className="overflow-hidden relative flex flex-col pb-4">
+      <div className="overflow-hidden relative flex flex-col pb-2">
         <div
           className="flex gap-4 transition-transform ease-out duration-500"
           style={{ width: `${totalWidth}%`, transform: `translateX(-${curr * slideWidth}%)` }}
