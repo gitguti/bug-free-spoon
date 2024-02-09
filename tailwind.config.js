@@ -13,7 +13,7 @@ module.exports = {
         "cta-app": "url('/CTAApp.png')"
       },
       colors: {
-        'light-grey': '#E5E5E533',
+        'light-grey': '#fcfcfc',
         'new-black': '#212121',
         'lila': '#EEF0FF', // Color con opacidad del 4%
         'grey-medium': '#1D1D1D0D',
