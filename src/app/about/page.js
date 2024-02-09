@@ -12,19 +12,26 @@ import { useState, useEffect } from 'react';
 
 export default function About() {
 
-
-  function shuffleArray(array) {
-    const shuffledArray = [...array]; // Copiar el array original
-    for (let i = shuffledArray.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
-    }
-    return shuffledArray; // Devolver la copia barajada
+ const images1 = [];
+  for (let i = 1; i <= 3; i++) {
+    images1.push(
+      <div className='bg-white p-16 rounded-lg object-fit flex items-center justify-center h-full'>
+        <Image
+          src={`/events/${i}.png`}
+          alt={`Image ${i}`}
+          width={300}
+          height={100}
+          className='max-h-16 max-w-16 md:max-h-24 md:max-w-24 2xl:max-h-32 2xl:max-w-32'
+          loading="lazy"
+          key={{i}}
+        />
+      </div>
+    );
   }
 
- const images = [];
-  for (let i = 1; i <= 7; i++) {
-    images.push(
+  const images2 = [];
+  for (let i = 4; i <= 7; i++) {
+    images2.push(
       <div className='bg-white p-16 rounded-lg object-fit flex items-center justify-center h-full'>
         <Image
           src={`/events/${i}.png`}
@@ -104,24 +111,24 @@ export default function About() {
 </div>
     <Section2/>
 <div className='bg-lila mx-auto'>
-    <div className="  md:max-w-screen-sm justify-center lg:max-w-screen-md xl:max-w-screen-lg pt-16 lg:pt-24 2xl:pt-48 2xl:pb-36 mx-auto 2xl:max-w-screen-3xl ">
-      <div className="px-8 md:px-0 mb-12 flex items-center justify-center">
+    <div className="pt-16 lg:pt-24 2xl:pt-48 mx-auto ">
+      <div className="px-8 md:px-0 mb-6 md:mb-8 xl:mb-12 3xl:mb-10 4xl:mb-20 flex items-center justify-center">
         <World />
-        <p className="pl-4 sm:text-xs md:text-base lg:text-2xl 2xl:text-3xl 4xl:text-4xl text-new-black font-tomato inline-block align-center">All major events from all major sportsbooks in one place</p>
+        <p className="pl-2 sm:text-xs md:text-base lg:text-2xl xl:text-[2.5rem] xl:leading-[2.9rem] 4xl:text-[3.5rem] 4xl:leading-[4.9rem] text-new-black font-tomato inline-block align-center">All major events from all major sportsbooks in one place</p>
       </div>
-      <div className="mx-auto flex flex-col ">
-      <div className='lg:mt-12 4xl:mt-24 flex flex-col gap-4 lg:gap-8'>
+      <div className="mx-auto flex flex-col md:max-w-screen-sm justify-center lg:max-w-screen-md xl:max-w-screen-lg  2xl:max-w-screen-3xl">
+      <div className='flex flex-col gap-4 lg:gap-8'>
       <Marquee autoFill={true}>
           <ul className="lst-box">
-            {shuffleArray(images).map((image, index) => (
-              <li key={`first-${index}`} >{image}</li>
+            {images2.map((image, index) => (
+              <li key={`first-${index}`} className='w-36 h-32 lg:w-64 lg:h-48 3xl:w-96 3xl:h-60' >{image}</li>
             ))}
           </ul>
         </Marquee>
         <Marquee direction='right' autoFill={true}>
           <ul className="lst-box">
-            {shuffleArray(images).map((image, index) => (
-              <li key={`first-${index}`} >{image}</li>
+            {images1.map((image, index) => (
+              <li key={`first-${index}`} className='w-36 h-32 lg:w-64 lg:h-48 3xl:w-96 3xl:h-60' >{image}</li>
               ))}
           </ul>
         </Marquee>
@@ -131,7 +138,7 @@ export default function About() {
 </div>
 </div>
 <div className='bg-lila px-4 md:px-8'>
-<div className="mx-auto sm:w-11/12 lg:w-8/12 xl:w-1/2 4xl:w-2/5  py-16 lg:py-32 text-center">
+<div className="mx-auto sm:w-11/12 lg:w-8/12 xl:w-1/2 4xl:w-2/5 py-12 lg:py-24 4xl:py-36 text-center">
       <h2 className="font-tomato text-3xl md:text-4xl lg:text-5xl 2xl:text-7xl font-semibold leading-8 md:leading-normal my-8 text-gradient md:max-w-screen-md lg:max-w-screen-lg mx-auto">
         Make your bets accessible to players worldwide
       </h2>
