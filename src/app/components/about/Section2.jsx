@@ -3,10 +3,10 @@ import Image from 'next/image';
 const Section2 = () => {
     return (
         <>
-            <div className='bg-dirty-grey pt-24 4xl:pt-48 text-center flex flex-col justify-center mx-auto space-between gap-8'>
-                <div className=' mx-auto px-8 text-base md:text-2xl font-light text-new-black md:max-w-screen-md'> <p>For these and many other reasons, whe have created Betsell, a platform that allows gamblers to sell their bets to other players in a secure and privacy preserving marketplace</p>
+            <div className='bg-dirty-grey pt-16 md:pt-20 lg:pt-24 3xl:pt-36 3xl:pt-64 text-center flex flex-col justify-center mx-auto space-between gap-8'>
+                <div className='font-tomato mx-auto px-8 text-base md:text-2xl 3xl:text-3xl 4xl:text-4xl font-light text-new-black md:max-w-screen-md 2xl:max-w-screen-lg'> <p>For these and many other reasons, whe have created Betsell, a platform that allows gamblers to sell their bets to other players in a secure and privacy preserving marketplace</p>
                 </div>
-                <div className='lg:max-w-mxl mx-auto'>      <Image src="/about.png" width={800} height={300} /></div>
+                <div className='md:max-w-xl lg:max-w-5xl 4xl:max-w-screen-2xl mx-auto'>      <Image src="/about.png" width={1600} height={300} /></div>
             </div>
         </>
     )
