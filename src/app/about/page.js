@@ -3,6 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import Faqs from '../components/about/faqs';
 import Section2 from '../components/about/Section2';
+import Section3 from '../components/about/Section3';
 import World from '../components/icons/World';
 import Button from '../components/ui/Button';
 import CarouselHorizontal from '../components/about/CarouselHorizontal';
@@ -91,7 +92,8 @@ export default function About() {
     
   return (
     <>
-<div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-1 items-center gap-4 px-px sm:px-8 md:px-0 mt-8 mb-16 2xl:mb-40 2xl:mt-16 4xl:mt-40 4xl:mb-48 mx-auto w-11/12 4xl:w-9/12 4xl:w-9/12">
+    <div className='bg-[#FAFAFA]'>
+<div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-1 items-center gap-4 px-px sm:px-8 md:px-0 pt-8 mb-16 2xl:mb-40 2xl:pt-16 4xl:pt-40 4xl:mb-48 mx-auto w-11/12 4xl:w-9/12 4xl:w-9/12 ">
       <div className="col-span-2 lg:col-span-1 text-center lg:text-left w-3/4 mx-auto">
       <h2 className="font-tomato text-2xl md:text-4xl 2xl:text-5xl font-semibold leading-normal mb-4 text-gradient shrink-0">Why should you consider trading your bets?</h2>
       </div>
@@ -113,6 +115,7 @@ export default function About() {
 <CarouselHorizontal faqsContent={contentToDisplay} />
 </div>
     <Section2/>
+    <Section3/>
 <div className='bg-lila mx-auto'>
     <div className="pt-16 lg:pt-24 2xl:pt-48 mx-auto ">
       <div className="px-8 md:px-0 mb-6 md:mb-8 xl:mb-12 3xl:mb-10 4xl:mb-20 flex items-center justify-center">
@@ -142,12 +145,13 @@ export default function About() {
 </div>
 <div className='bg-lila px-4 md:px-8'>
 <div className="mx-auto sm:w-11/12 lg:w-8/12 xl:w-1/2 4xl:w-2/5 py-12 lg:py-24 4xl:py-36 text-center">
-      <h2 className="font-tomato text-3xl md:text-4xl lg:text-5xl 2xl:text-7xl font-semibold leading-9 md:leading-normal lg:leading-[3.4rem] my-8 text-gradient md:max-w-screen-md lg:max-w-screen-lg mx-auto">
+<h2 className="font-tomato text-3xl md:text-5xl 3xl:text-[3.5rem] 3xl:leading-[4rem] 4xl:text-7xl font-semibold leading-9 md:leading-[3.5rem] 4xl:leading-[4.6rem]  my-8 text-gradient">
         Make your bets accessible to players worldwide
       </h2>
       <div className="flex justify-center">
         <Button variant="filled">Go to marketplace</Button>
         </div>
+      </div>
       </div>
       </div>
     </>
