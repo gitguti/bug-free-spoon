@@ -5,14 +5,14 @@ const FeaturesCardMobile = ({ title, description, image, hoverColor, isDarkBackg
   const textColorClass = isDarkBackground ? 'text-white' : 'text-new-black';
 
   return (
-    <div className={`relative flex flex-col px-6 pt-8 pb-24 rounded-lg overflow-hidden featuresCard`} style={{ backgroundColor: hoverColor }}>
+    <div className={`relative flex flex-col px-6 pt-8 pb-24 rounded-lg overflow-hidden featuresCardMobile`} style={{ backgroundColor: hoverColor }}>
       <div className={`font-tomato text-2xl md:text-3xl 2xl:text-4xl font-semibold leading-normal mb-2 ${textColorClass}`}>
         {title}
       </div>
-      <div className={`text-sm lg:text-base 2xl:text-lg mb-8 ${textColorClass}`}>
+      <div className={`text-sm lg:text-base 2xl:text-lg mb-8 font-normal ${textColorClass}`}>
         <p>{description}</p>
       </div>
-      <div className="opacity-100 absolute -bottom-8 right-4">
+      <div className="opacity-100 absolute -bottom-8 -right-3">
         <Image
           src={image}
           alt="Logo de la compañía"

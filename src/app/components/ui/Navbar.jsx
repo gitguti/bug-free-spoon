@@ -24,7 +24,7 @@ const Navbar = () => {
               <Link href="/">
               <div className="hidden lg:block relative md:w-2/3 3xl:w-4/5  4xl:w-full">
   <Image
-    src="/newLogo.png"
+    src="/otherLogo.png"
     alt="Logo de la compañía"
     width={224} height={60}
   />

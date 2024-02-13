@@ -85,6 +85,9 @@ export default function About() {
       isDarkBackground: false
     }
   ];
+
+  const contentToDisplay = faqsContent.slice(0, -1);
+
     
   return (
     <>
@@ -106,8 +109,8 @@ export default function About() {
 </div>
     </div>
     <div className="flex flex-col px-4 sm:px-8 md:px-0 lg:flex-row space-between gap-4 md:gap-6 block md:hidden mt-12 mb-4">
-    <h2 className="font-tomato text-3xl md:text-4xl 2xl:text-5xl font-semibold leading-normal mb-4 text-gradient shrink-0">Why should you consider trading your bets?</h2>
-<CarouselHorizontal faqsContent={faqsContent} />
+    <h2 className="font-tomato text-3xl md:text-4xl 2xl:text-5xl font-semibold leading-9 mb-4 text-gradient shrink-0">Why should you consider trading your bets?</h2>
+<CarouselHorizontal faqsContent={contentToDisplay} />
 </div>
     <Section2/>
 <div className='bg-lila mx-auto'>
@@ -139,7 +142,7 @@ export default function About() {
 </div>
 <div className='bg-lila px-4 md:px-8'>
 <div className="mx-auto sm:w-11/12 lg:w-8/12 xl:w-1/2 4xl:w-2/5 py-12 lg:py-24 4xl:py-36 text-center">
-      <h2 className="font-tomato text-3xl md:text-4xl lg:text-5xl 2xl:text-7xl font-semibold leading-8 md:leading-normal my-8 text-gradient md:max-w-screen-md lg:max-w-screen-lg mx-auto">
+      <h2 className="font-tomato text-3xl md:text-4xl lg:text-5xl 2xl:text-7xl font-semibold leading-9 md:leading-normal lg:leading-[3.4rem] my-8 text-gradient md:max-w-screen-md lg:max-w-screen-lg mx-auto">
         Make your bets accessible to players worldwide
       </h2>
       <div className="flex justify-center">

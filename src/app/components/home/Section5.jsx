@@ -36,7 +36,7 @@ const Section5 = () => {
 const Card = ({ }) => { 
 return (
         <>
-          <div className="min-w-64 max-w-80 h-full 4xl:min-w-[32rem] px-6 md:px-8 py-4 4xl:px-16 4xl:py-12 rounded-xl  transition-shadow duration-300 ease-in-out 4xl:flex 4xl:flex-col  4xl:justify-between " style={{ backgroundColor: "#492C75" }}>
+          <div className="min-w-64 max-w-80 h-full 4xl:min-w-[32rem] px-6 md:px-8 py-4 4xl:px-16 4xl:py-12 rounded-xl duration-300 ease-in-out 4xl:flex 4xl:flex-col  4xl:justify-between " style={{ backgroundColor: "#492C75" }}>
             <p className=" font-tomato text-2xl md:text-3xl 4xl:text-5xl  font-bold mt-4 mb-4 text-gradient2">Get the Mobile App</p>
             <p className=" text-[#c4c4c4] mt-4 mb-4 text-xs md:text-base 2xl:text-xl">Key features of our app:</p>
             <ul className='text-[#fafafa] text-xs md:text-sm 2xl:text-base 4xl:text-2xl  leading-normal mb-8 list-disc px-4'>
@@ -55,7 +55,7 @@ return (
         const CTAApp = ({ }) => {
   return (
         <>
-          <div className="min-w-[48rem] md:min-w-[55rem] lg:min-w-[55rem] min-h-full px-12 py-10 4xl:w-[80rem] 4xl:h-[36rem] overflow-hidden rounded-xl shadow-md bg-cta-app bg-cover  hover:shadow-xl transition-shadow duration-300 ease-in-out">
+          <div className="min-w-[48rem] md:min-w-[55rem] lg:min-w-[55rem] min-h-full px-12 py-10 4xl:w-[80rem] 4xl:h-[36rem] overflow-hidden rounded-xl bg-cta-app bg-cover duration-300 ease-in-out">
           </div>
         </>
         )

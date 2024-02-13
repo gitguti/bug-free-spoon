@@ -81,7 +81,7 @@ export default function Features() {
     {
       title: "Integration of Technology",
       description: "Integrating sports betting with blockchain technology through NFTs adds a futuristic edge, attracting tech-savvy users and demonstrating your commitment to innovation.",
-      image: "/no-bg/comunist.png",
+      image: "/no-bg/tiger.png",
       hoverColor: "#21A0B2",
       isDarkBackground: true
     },
