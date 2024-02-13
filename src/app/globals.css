@@ -191,7 +191,6 @@ background-clip: text;
 @media (min-width: 1440px) {
   .featuresCard {
     border-top: var(--hover-bg-color) 8px solid;
-    background-color: #FFF;
     height: 100%;
     min-height: 380px;
     max-height: 390px;
