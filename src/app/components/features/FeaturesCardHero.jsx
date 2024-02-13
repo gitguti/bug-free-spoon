@@ -7,7 +7,7 @@ const FeaturesCardHero = ({ title, description, image, hoverColor, isDarkBackgro
   const textColorClass = isHovered && !isDarkBackground ? 'text-white' : 'text-new-black';
   return (
     <>
-<div c className={"relative flex flex-col px-6 pt-8 pb-32 rounded-lg overflow-hidden featuresCard"}     onMouseEnter={() => setIsHovered(true)}
+<div c className={"relative flex flex-col px-6 pt-8 pb-32 rounded-lg overflow-hidden featuresCard bg-[#f1f1f1]"}     onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{ '--hover-bg-color': hoverColor }} // Variable CSS para el color de fondo
     >
