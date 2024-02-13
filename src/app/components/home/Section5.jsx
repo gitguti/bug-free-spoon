@@ -8,19 +8,19 @@ const Section5 = () => {
     <>
       <div className="px-4 md:px-8 pt-16 pb-12 md:py-20 lg:py-24 3xl:pt-36 3xl:pb-28  bg-lila mx-auto">
       <div
-        class="flex overflow-x-scroll pb-10 scrollbar-hide">
+        className="flex overflow-x-scroll pb-10 scrollbar-hide">
         <div
-          class="flex flex-nowrap lg:justify-start xl:justify-center w-full gap-3 4xl:gap-8 sm:gap-4 md:gap-6">
-          <div class="inline-block">
+          className="flex flex-nowrap lg:justify-start xl:justify-center w-full gap-3 4xl:gap-8 sm:gap-4 md:gap-6">
+          <div className="inline-block">
             <Card />
           </div>
-          <div class="inline-block">
+          <div className="inline-block">
             <CTAApp />
           </div>
         </div>
       </div>
       <div className="mx-auto sm:w-11/12 lg:w-8/12 xl:w-1/2 4xl:w-2/5 mt-12 mb-0 text-center">
-      <h2 className="font-tomato text-3xl md:text-5xl 3xl:text-[3.5rem] 3xl:leading-[4rem] 4xl:text-7xl font-semibold leading-9 md:leading-[3.5rem] 4xl:leading-[4.6rem]  my-8 text-gradient">
+      <h2 className="font-tomato text-3xl md:text-5xl 3xl:text-[3.5rem] 3xl:leading-[4rem] 4xl:text-7xl font-semibold leading-9 md:leading-[3.5rem] 4xl:leading-[4.8rem]  my-8 text-gradient">
         Make your bets accessible to players worldwide
       </h2>
       <div className="flex justify-center">
@@ -43,8 +43,16 @@ return (
               <li className="mb-2">Get real-time notifications when buyers are interested in your bet</li>
               <li>Be the first to know when a bet is available for trade</li>
             </ul>
+            <div className='flex gap-4'>
+            <a href="https://betsell.io" target="_blank">
+  <Image src="/playstore.png" alt="Icon" width={250} height={60} className='h-10 w-10 xl:h-12 xl:w-12 4xl:h-16 4xl:w-16' />
+</a>
 
-            <Image src="/downloadIOS.png" alt="Icon" width={250} height={60} />
+            <a href="https://betsell.io" target="_blank">
+            <Image src="/appstore.png" alt="Icon" width={250} height={60} className='h-10 w-10 xl:h-12 xl:w-12 4xl:h-16 4xl:w-16' />
+            </a>
+
+            </div>
 
           </div>
         </>

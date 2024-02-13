@@ -2,7 +2,7 @@ import React from 'react';
 
 const SwitchHorizontal = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"  className='w-4 md:w-8 xl:w-12 4xl:w-16 h-4 md:h-8 xl:h-12 4xl:h-16'>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"  className='mt-1 w-4 md:w-6 xl:w-8 4xl:w-14 h-4 md:h-6 xl:h-8 4xl:h-14'>
       <defs>
         <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="100%">
           <stop offset="0%" stopColor="#690F8D" />

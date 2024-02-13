@@ -112,9 +112,9 @@ export default function Features() {
 </div>
 <div className='bg-lila '>
 <div className="px-px sm:px-8 w-11/12 4xl:w-10/12 mx-auto flex flex-col justify-center py-12 lg:py-24 4xl:py-36">
-<div className="flex items-center  text-center justify-center mb-6 md:mb-8 xl:mb-12 3xl:mb-10 4xl:mb-20 ">
+<div className="flex items-center text-center justify-center mb-6 md:mb-8 xl:mb-12 3xl:mb-10 4xl:mb-20 ">
         <Charts />
-        <p className="pl-2  sm:text-xs md:text-base lg:text-2xl xl:text-[2.5rem] 4xl:text-[3.5rem] text-new-black font-tomato inline-block align-center">Adding  value to your betting assets</p>
+        <p className="pl-2  sm:text-xs md:text-base lg:text-xl xl:text-[2rem] 4xl:text-[3rem] text-new-black font-tomato inline-block align-center">Adding value to your betting assets</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-8 4xl:gap-24 relative justify-center">
   {value.map((card, index) => (
