@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Button = ({ children, variant }) => {
+const Button = ({ children, variant, ariaLabel }) => {
   const handleClick = () => {
     // Redirige a la URL deseada
     window.location.href = 'https://betsell.io';
@@ -12,7 +12,15 @@ const Button = ({ children, variant }) => {
       : 'button-outlined text-new-black'
   }`;
 
-  return <button className={buttonClasses}  onClick={handleClick}>{children}</button>;
+  return (
+    <button
+      className={buttonClasses}
+      onClick={handleClick}
+      aria-label={ariaLabel || children}
+    >
+      {children}
+    </button>
+  );
 };
 
 export default Button;
