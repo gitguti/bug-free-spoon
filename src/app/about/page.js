@@ -110,7 +110,7 @@ export default function About() {
   ))}
 </div>
     </div>
-    <div className="flex flex-col px-4 sm:px-8 md:px-0 lg:flex-row space-between gap-4 md:gap-6 block md:hidden mt-12 mb-4">
+    <div className="flex flex-col px-4 sm:px-8 md:px-0 lg:flex-row space-between gap-4 md:gap-6 block md:hidden pt-12 pb-4">
     <h2 className="font-tomato text-3xl md:text-4xl 2xl:text-5xl font-semibold leading-9 mb-4 text-gradient shrink-0">Why should you consider trading your bets?</h2>
 <CarouselHorizontal faqsContent={contentToDisplay} />
 </div>
