@@ -93,7 +93,7 @@ export default function About() {
   return (
     <>
     <div className='bg-[#FAFAFA]'>
-<div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-1 items-center gap-4 px-px sm:px-8 md:px-0 pt-8 mb-16 2xl:mb-40 2xl:pt-16 4xl:pt-40 4xl:mb-48 mx-auto w-11/12 4xl:w-9/12 4xl:w-9/12 ">
+<div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-1 items-center gap-4 px-px sm:px-8 md:px-0 pt-12 mb-16 2xl:mb-40 2xl:pt-16 4xl:pt-40 4xl:mb-48 mx-auto w-11/12 4xl:w-9/12 4xl:w-9/12 ">
       <div className="col-span-2 lg:col-span-1 text-center lg:text-left w-3/4 mx-auto">
       <h2 className="font-tomato text-2xl md:text-4xl 2xl:text-5xl font-semibold leading-normal 3xl:leading-[3.4rem]  mb-4 text-gradient shrink-0">Why should you consider trading your bets?</h2>
       </div>
@@ -120,7 +120,7 @@ export default function About() {
     <div className="pt-16 lg:pt-24 2xl:pt-48 mx-auto ">
       <div className="px-8 md:px-0 mb-6 md:mb-8 xl:mb-12 3xl:mb-10 4xl:mb-20 flex items-start md:items-center justify-center">
         <World />
-        <p className="pl-2 sm:text-xs md:text-base lg:text-xl xl:text-[2rem] xl:leading-[2.9rem] 4xl:text-[3rem] 4xl:leading-[4.9rem] text-new-black font-tomato inline-block align-left md:align-center">All major events from all major sportsbooks in one place</p>
+        <p className="pl-2 sm:text-xs md:text-base lg:text-xl xl:text-[1.8rem] xl:leading-[2.3rem] 4xl:text-[2.5rem] 4xl:leading-[4.9rem] text-new-black font-tomato inline-block align-left md:align-center">All major events from all major sportsbooks in one place</p>
       </div>
       <div className="mx-auto flex flex-col md:max-w-screen-sm justify-center lg:max-w-screen-md xl:max-w-screen-lg  2xl:max-w-screen-3xl">
       <div className='flex flex-col gap-4 lg:gap-8'>

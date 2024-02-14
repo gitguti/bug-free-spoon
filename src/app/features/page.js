@@ -93,7 +93,7 @@ export default function Features() {
     <div className="px-px sm:px-8 w-11/12 4xl:w-10/12 mx-auto flex flex-col justify-center py-10 md:py-16 lg:py-20">
         <h2 className="font-tomato text-3xl md:text-5xl 2xl:text-7xl font-semibold leading-normal mb-8 3xl:mb-12 4xl:mb-16 text-gradient">Features</h2>
 
-      <div className="hidden md:grid md:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-8 4xl:gap-24 relative">
+      <div className="hidden md:grid md:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-4 4xl:gap-[1.8rem] relative">
   {featureInfo.map((card, index) => (
     <FeaturesCardHero
       key={index}
@@ -106,7 +106,7 @@ export default function Features() {
     />
   ))}
 </div>
-<div className="flex flex-col lg:flex-row space-between gap-4 md:gap-8 block md:hidden">
+<div className="flex flex-col lg:flex-row space-between gap-4 md:gap-4 md:hidden">
 <FeaturesCarousel features={featureInfo} />
 </div>
 </div>
@@ -114,9 +114,9 @@ export default function Features() {
 <div className="px-px sm:px-8 w-11/12 4xl:w-10/12 mx-auto flex flex-col justify-center py-12 lg:py-24 4xl:py-36">
 <div className="flex items-center text-center justify-center mb-6 md:mb-8 xl:mb-12 3xl:mb-10 4xl:mb-20 ">
         <Charts />
-        <p className="pl-2  sm:text-xs md:text-base lg:text-xl xl:text-[2rem] 4xl:text-[3rem] text-new-black font-tomato inline-block align-center">Adding value to your betting assets</p>
+        <p className="pl-2  sm:text-xs md:text-base lg:text-xl xl:text-[1.8rem] 4xl:text-[2.5rem] text-new-black font-tomato inline-block align-center">Adding value to your betting assets</p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-8 4xl:gap-24 relative justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-4 4xl:gap-[1.8rem] relative justify-center">
   {value.map((card, index) => (
     <>
       {/* FeaturesCard para dispositivos no móviles */}
