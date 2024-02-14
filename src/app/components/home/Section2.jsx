@@ -10,8 +10,8 @@ const Section2 = () => {
         <p className="pl-4 sm:text-xs md:text-base lg:text-2xl xl:text-[2rem] 4xl:text-[3rem] text-new-black font-tomato inline-block align-left md:align-center">Securely trade your bets with other users</p>
       </div>
       <div className="flex flex-col md:flex-row space-between gap-4 md:gap-[1.5rem] md:gap-12">
-        <Card title="Transform your bet into a blockchain certified ticket" backgroundImage="/section21.jpg" titleColor="text-white" />
-        <Card title="Explore and trade on the marketplace" backgroundImage="/section22.jpg" titleColor="text-new-black" />
+        <Card title="Transform your bet into a blockchain certified ticket" backgroundImage="/section21.webp" titleColor="text-white" />
+        <Card title="Explore and trade on the marketplace" backgroundImage="/section22.webp" titleColor="text-new-black" />
       </div>
     </div>
     </div>

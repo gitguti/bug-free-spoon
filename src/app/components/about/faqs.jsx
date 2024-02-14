@@ -23,7 +23,6 @@ const Faqs = ({ question, image, backgroundColor, isDarkBackground }) => {
             alt="FAQ Image"
             width={305}
             height={196}
-            priority={false} 
           />
         </div>
       </div>
