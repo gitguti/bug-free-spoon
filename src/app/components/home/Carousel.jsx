@@ -41,12 +41,14 @@ export default function Carousel({
         <button
           onClick={prev}
           className="p-1 text-[#909090]"
+          aria-label='previous feature'
         >
           <ChevronLeft />
         </button>
         <button
           onClick={next}
           className="p-1 rounded-full shadow bg-[#3C0D9F] text-white ml-4"
+          aria-label='next feature'
         >
         <ChevronRight />
         </button>

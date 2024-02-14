@@ -53,7 +53,7 @@ const Navbar = () => {
           <div className="flex gap-6">
             {/* Mobile navigation toggle */}
             <div className="lg:hidden flex items-center">
-              <button onClick={toggleMenu}>
+              <button onClick={toggleMenu} aria-label='open menu'>
                 {isMenuOpen ? <XMark className="w-6 h-6 text-new-black" /> : <Hamburguer className="w-6 h-6 text-new-black" />}
               </button>
             </div>
