@@ -9,7 +9,7 @@ const Section3 = () => {
              </div>
             <div className="px-4 py-2 md:px-16 xl:px-48 xl:py-4 3xl:px-72 4xl:px-96 overflow-hidden rounded-xl">
 
-                <div className='mx-auto bg-white rounded-3xl'>      <Image src="/aboutPlaceholder.png" width={600} height={300} className='w-3/4 sm:w-2/5 mx-auto pt-36' /></div>
+                <div className='mx-auto bg-white rounded-3xl'>      <Image priority={false}  src="/aboutPlaceholder.png" width={600} height={300} className='w-3/4 sm:w-2/5 mx-auto pt-36' /></div>
                 </div>
             </div>
         </>

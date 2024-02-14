@@ -27,6 +27,7 @@ const Navbar = () => {
     src="/otherLogo.png"
     alt="Logo de la compañía"
     width={224} height={60}
+    priority={true} 
   />
 </div>
 

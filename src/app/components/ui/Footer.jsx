@@ -14,6 +14,7 @@ const Footer = () => {
       src="/otherLogo.png"
       alt="Logo de la compañía"
       width={160} height={40}
+      priority={false} 
     />
   </div>
 </Link>

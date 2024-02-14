@@ -24,6 +24,7 @@ const FeaturesCard = ({ title, description, image, hoverColor, isDarkBackground 
           alt="Logo de la compañía"
           width={300}
           height={300}  // Ajusta la altura según sea necesario
+          priority={false} 
         />
   </div>
 </div>
