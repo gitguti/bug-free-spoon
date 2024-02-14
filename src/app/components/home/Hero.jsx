@@ -24,7 +24,7 @@ const Hero = () => {
         alt={`Image ${i}`}
         width={279}
         height={245}
-        priority={trrue}
+        priority={true}
         key={{ i }}
       />
     );
