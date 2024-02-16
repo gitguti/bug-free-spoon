@@ -24,7 +24,7 @@ const Navbar = () => {
               <Link href="/">
               <div className="hidden lg:block relative md:w-2/3 3xl:w-4/5  4xl:w-full">
   <Image
-    src="/otherLogo.png"
+    src="/logo.png"
     alt="Logo de la compañía"
     width={224} height={60}
   />
@@ -42,7 +42,7 @@ const Navbar = () => {
               </Link>
             </div>
             {/* primary */}
-            <div className="hidden lg:flex gap-8 items-center transition transition-opacity duration-300 md:text-md xl:text-base 2xl:text-lg 3xl:text-[1.3rem] 4xl:text-2xl">
+            <div className="hidden lg:flex gap-8 items-center transition-opacity duration-300 md:text-md xl:text-base 2xl:text-lg 3xl:text-[1.3rem] 4xl:text-2xl">
               <Link href="/features">Features</Link>
               <Link href="/about">About us</Link>
               <Button variant="filled" className="text-red-500">Go to marketplace</Button>

@@ -57,7 +57,7 @@ const Section2 = () => {
           <SwitchHorizontal />
           <p className="pl-4 sm:text-xs md:text-base lg:text-2xl xl:text-[1.8rem] 4xl:text-[2.5rem] text-new-black font-tomato inline-block align-left md:align-center">Securely trade your bets with other users</p>
         </div>
-        <div className="flex flex-col md:flex-row space-between gap-4 md:gap-[1.5rem] md:gap-12">
+        <div className="flex flex-col md:flex-row space-between gap-4 md:gap-[1.5rem]">
           <Card title="Transform your bet into a blockchain certified ticket" backgroundImage="/section21.webp" titleColor="text-white" />
           <Card title="Explore and trade on the marketplace" backgroundImage="/section22.webp" titleColor="text-new-black" />
         </div>

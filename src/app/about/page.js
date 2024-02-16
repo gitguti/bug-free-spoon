@@ -93,11 +93,11 @@ export default function About() {
   return (
     <>
     <div className='bg-[#FAFAFA]'>
-<div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-1 items-center gap-4 px-px sm:px-8 md:px-0 pt-12 mb-16 2xl:mb-40 2xl:pt-16 4xl:pt-40 4xl:mb-48 mx-auto w-11/12 4xl:w-9/12 4xl:w-9/12 ">
+<div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-1 items-center gap-4 px-px sm:px-8 md:px-0 pt-12 mb-16 2xl:mb-40 2xl:pt-16 4xl:pt-40 4xl:mb-48 mx-auto w-11/12 4xl:w-9/12 ">
       <div className="col-span-2 lg:col-span-1 text-center lg:text-left w-3/4 mx-auto">
       <h2 className="font-tomato text-2xl md:text-4xl 2xl:text-5xl font-semibold leading-normal 3xl:leading-[3.4rem]  mb-4 text-gradient shrink-0">Why should you consider trading your bets?</h2>
       </div>
-<div className="w-full grid grid-cols-2 gap-3 col-span-2 min-h-0 min-h-full">
+<div className="w-full grid grid-cols-2 gap-3 col-span-2 min-h-full">
   {faqsContent.map((faq, index) => (
     <Faqs
       key={index}
@@ -110,7 +110,7 @@ export default function About() {
   ))}
 </div>
     </div>
-    <div className="flex flex-col px-4 sm:px-8 md:px-0 lg:flex-row space-between gap-4 md:gap-6 block md:hidden pt-12 pb-4">
+    <div className="flex flex-col px-4 sm:px-8 md:px-0 lg:flex-row space-between gap-4 md:gap-6 md:hidden pt-12 pb-4">
     <h2 className="font-tomato text-3xl md:text-4xl 2xl:text-5xl font-semibold leading-9 mb-4 text-gradient shrink-0">Why should you consider trading your bets?</h2>
 <CarouselHorizontal faqsContent={contentToDisplay} />
 </div>
