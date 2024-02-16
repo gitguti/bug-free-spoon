@@ -42,7 +42,7 @@ const Navbar = () => {
               </Link>
             </div>
             {/* primary */}
-            <div className="hidden lg:flex gap-8 items-center transition transition-colors transition-opacity duration-300 md:text-md xl:text-base 2xl:text-lg 3xl:text-[1.3rem] 4xl:text-2xl">
+            <div className="hidden lg:flex gap-8 items-center transition transition-opacity duration-300 md:text-md xl:text-base 2xl:text-lg 3xl:text-[1.3rem] 4xl:text-2xl">
               <Link href="/features">Features</Link>
               <Link href="/about">About us</Link>
               <Button variant="filled" className="text-red-500">Go to marketplace</Button>
@@ -62,7 +62,7 @@ const Navbar = () => {
       </div>
       {/* mobile navigation */}
       <div
-        className={`fixed z-40 w-full  bg-white overflow-hidden flex flex-col lg:hidden gap-12  origin-top duration-700 ${!isMenuOpen ? "h-0" : "h-full"
+        className={`fixed z-40 w-full  bg-white overflow-hidden flex flex-col lg:hidden gap-12  origin-top duration-700 inset-y-[77.7px] ${!isMenuOpen ? "h-0" : " h-screen"
           }`}
       >
         <div className="px-8 pt-8 pb-24 text-new-black bg-grey-light">

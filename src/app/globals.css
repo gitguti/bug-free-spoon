@@ -210,3 +210,9 @@ background-clip: text;
 .fill-available {
   height: 40vh;
 }
+
+@supports (-webkit-touch-callout: none) {
+  .h-screen {
+    height: -webkit-fill-available;
+  }
+}
