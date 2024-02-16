@@ -11,7 +11,7 @@ const Section4 = () => {
         </h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6 2xl:gap-8">
-        <Card title="1. Pick" description="Choose the bet you wish to mint by simply clicking a button" titleColor="text-new-black" backgroundColor="#CDC0E9" image="/pick.png" width="170" height="50" />
+        <Card title="1. Pick" description="Choose the bet you wish to mint by simply clicking a button" titleColor="text-new-black" backgroundColor="#CDC0E9" image="/Pick.png" width="170" height="50" />
         <Card title="2. Mint" description="Transform your bet into a certified asset in form of an NFT" titleColor="text-new-black" backgroundColor="#F4F4F4" image="/hiw2.png" width="70" height="70" />
         <Card title="3. Trade" description="Your NFT is now ready to be traded on the global marketplace" titleColor="text-new-white" backgroundColor=" #2B213E" image="/hiw3.png" width="70" height="70" />
         <Card title="4.Redeem" description="Get your payout effortlessly in the ‘redeem’ section of your sportsbook" titleColor="text-new-white" backgroundColor=" #6D5E8B" image="/hiw4.png" width="70" height="70" />
