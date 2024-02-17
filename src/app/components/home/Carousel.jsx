@@ -33,7 +33,7 @@ export default function Carousel({
         >
           {slides.map((slide, index) => (
             <div key={index} className="flex flex-col items-center justify-center relative" style={{ width: `${slideWidth}%` }}>
-              <Image width={300} height={200} src={slide.src} alt={`Slide ${index}`} />
+              <Image priority={true} width={300} height={200} src={slide.src} alt={`Slide ${index}`} />
               <h2 className={`${slide.titleColor} absolute top-6 left-6 p-2 text-xl md:text-3xl 2xl:text-5xl 2xl:p-8 w-3/4 font-tomato font-normal`}>{slide.title}</h2>
             </div>
           ))}
