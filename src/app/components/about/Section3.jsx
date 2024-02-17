@@ -9,7 +9,8 @@ const Section3 = () => {
              </div>
             <div className="px-4 py-2 md:px-0 md:w-3/5 xl:w-3/5 3xl:w-4/5 4xl:w-8/12 xl:py-4 3xl:px-72 4xl:px-96 overflow-hidden mx-auto ">
 
-                <div className='mx-auto bg-white rounded-xl'>      <Image priority={false}  src="/aboutPlaceholder.png" width={600} height={300} className='w-3/4 sm:w-2/5 md:w-[70%] xl:w-1/2 mx-auto pt-16 xl:pt-36' /></div>
+                <div className='mx-auto bg-white rounded-xl'>
+                    <Image priority={false}  alt="monkey placeholder" src="/aboutPlaceholder.png" width={600} height={300} className='w-3/4 sm:w-2/5 md:w-[70%] xl:w-1/2 mx-auto pt-16 xl:pt-36' /></div>
                 </div>
             </div>
         </>

@@ -19,7 +19,7 @@ const Section3 = () => {
       <div className="mb-8 lg:mb-12 3xl:mb-12 4xl:mb-16">
         <h2 className="text-3xl md:text-5xl 2xl:text-7xl font-tomato font-semibold leading-normal text-center text-gradient">The Marketplace</h2>
       </div>
-      <div className="flex flex-col lg:flex-row space-between gap-4 md:gap-6 block md:hidden">
+      <div className="flex flex-col lg:flex-row space-between gap-4 md:gap-6 md:hidden">
         <Carousel slides={slides} />
       </div>
 

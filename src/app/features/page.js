@@ -14,14 +14,14 @@ export default function Features() {
       title: "Easy Process",
       description: "Seamless one-click process to transform your bets into NFTs",
       image: "/no-bg/easyProcess.png",
-      hoverColor: "#2A2155", // Ejemplo de clase de color para el hover
+      hoverColor: "#2A2155", 
       isDarkBackground: true
     },
     {
       title: "Ownership",
       description: "Mint your bet as an NFT for exclusive ownership and undeniable proof in your crypto wallet.",
       image: "/no-bg/ownership.png",
-      hoverColor: "#E7E7FB", // Ejemplo de clase de color para el hover
+      hoverColor: "#E7E7FB", 
       isDarkBackground: false
 
     },
@@ -46,14 +46,14 @@ export default function Features() {
       title: "Tangible Value",
       description: "NFTs provides a unique digital identity that can be bought, sold and traded like a collectable item.",
       image: "/no-bg/tangible.png",
-      hoverColor: "#87ABF1", // Ejemplo de clase de color para el hover
+      hoverColor: "#87ABF1", 
       isDarkBackground: true
     },
     {
       title: "Ownership & Provenance",
       description: "Each NFT represents a unique bet, verifying its authenticity and boosting its tradable value.",
       image: "/no-bg/ownership.png",
-      hoverColor: "#102400", // Ejemplo de clase de color para el hover
+      hoverColor: "#102400", 
       isDarkBackground: true
 
     },

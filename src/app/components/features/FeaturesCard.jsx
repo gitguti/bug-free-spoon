@@ -1,6 +1,5 @@
-// FeaturesCard.jsx
-import React, {useState, useEffect, useRef } from 'react';
-import Image from 'next/image'; // Asumiendo que estás utilizando Next.js
+import React, {useState} from 'react';
+import Image from 'next/image'; 
 
 const FeaturesCard = ({ title, description, image, hoverColor, isDarkBackground }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -11,7 +10,7 @@ const FeaturesCard = ({ title, description, image, hoverColor, isDarkBackground 
     <>
 <div className={"relative flex flex-col px-6 pt-8 pb-32 rounded-lg overflow-hidden featuresCard bg-white"}     onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      style={{ '--hover-bg-color': hoverColor }} // Variable CSS para el color de fondo
+      style={{ '--hover-bg-color': hoverColor }}
     >
 <div className={`font-tomato text-2xl md:text-3xl 2xl:text-4xl font-semibold leading-normal mb-4 ${textColorClass}`}> 
 {title}</div>
@@ -23,7 +22,7 @@ const FeaturesCard = ({ title, description, image, hoverColor, isDarkBackground 
           src={image}
           alt="Logo de la compañía"
           width={300}
-          height={300}  // Ajusta la altura según sea necesario
+          height={300} 
           priority={false} 
         />
   </div>

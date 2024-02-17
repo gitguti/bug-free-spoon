@@ -8,12 +8,12 @@ import { useState, useEffect } from 'react';
 const Hero = () => {
 
   function shuffleArray(array) {
-    const shuffledArray = [...array]; // Copiar el array original
+    const shuffledArray = [...array];
     for (let i = shuffledArray.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
     }
-    return shuffledArray; // Devolver la copia barajada
+    return shuffledArray;
   }
 
   const images1 = [];
@@ -39,7 +39,7 @@ const Hero = () => {
         };
   
         window.addEventListener('resize', handleResize);
-        handleResize(); // Para establecer el tamaño inicial
+        handleResize();
   
         return () => window.removeEventListener('resize', handleResize);
       }
@@ -50,7 +50,7 @@ const Hero = () => {
 
   const [width] = useWindowSize();
 
-  const breakpoint = 768; // por ejemplo, para dispositivos sm
+  const breakpoint = 768;
 
   const style = {
     maxHeight: width < breakpoint ? '220px' : '100%',
