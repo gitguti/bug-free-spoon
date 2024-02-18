@@ -5,9 +5,13 @@ import Button from "./Button.jsx";
 import Image from 'next/image';
 import Hamburguer from '../icons/Hamburguer.jsx';
 import XMark from '../icons/XMark.jsx';
+import { useLoading } from '../../context/loadingContext';
 
-const Navbar = () => {
+
+const Navbar = (animate) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { loading } = useLoading();
+  console.log(loading);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -18,7 +22,7 @@ const Navbar = () => {
       <div className="px-2 sm:px-8 w-11/12 mx-auto 4xl:w-10/12">
         <div className="flex mx-auto justify-between w-full">
           {/* Primary menu and logo */}
-          <div className="flex items-center justify-between my-6 md:my-4 w-full">
+          <div className={`navbar flex items-center justify-between my-6 md:my-4 w-full ${animate ? 'navbar-animate' : ''}`}>
             {/* logo */}
             <div>
               <Link href="/">

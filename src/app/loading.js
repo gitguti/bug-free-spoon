@@ -1,10 +1,11 @@
 "use client"
-import { useState, useEffect } from 'react'
+import { useLoading } from './context/loadingContext';
+import { useEffect } from 'react'
 import Image from 'next/image';
 
 export default function Loading () {
-    const [loading, setLoading] = useState(true);
 
+      const { loading, setLoading } = useLoading();
     useEffect(() => {
         setTimeout(() => {
             setLoading(false);
@@ -12,7 +13,7 @@ export default function Loading () {
     }, []);
 
     if (!loading) {
-        return null;
+        return false;
     }
         
     return (
