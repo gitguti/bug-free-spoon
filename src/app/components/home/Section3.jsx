@@ -2,8 +2,36 @@
 import React from 'react';
 import Button from "../ui/Button.jsx";
 import Carousel from "../home/Carousel.jsx";
+import { useState, useEffect, useRef } from 'react';
 
 const Section3 = () => {
+
+  const [cardPositions, setCardPositions] = useState({ left: '', center: '', right: '' });
+  const ref = useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setCardPositions({ left: 'left', center: 'center', right: 'right' });
+          }
+        });
+      },
+      { threshold: 0.7 }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, []);
+
   const slides = [
     { src: "/section31.png", title: "List your NFTs", titleColor: "text-white" },
     { src: "/section32.png", title: "Cashout", titleColor: "text-white" },
@@ -11,9 +39,8 @@ const Section3 = () => {
 
   ];
 
-
   return (
-    <div className="bg-white">
+    <div className="bg-white" ref={ref}>
     <div className="py-12 md:py-20 lg:py-24 3xl:py-36 4xl:py-48 mx-auto px-px sm:px-8  md:px-0  w-11/12 4xl:w-10/12">
     <div className="">
       <div className="mb-8 lg:mb-12 3xl:mb-12 4xl:mb-16">
@@ -24,9 +51,9 @@ const Section3 = () => {
       </div>
 
       <div className="space-between gap-4 md:gap-[0.8rem] xl:gap-4 4xl:gap-6 hidden md:flex">
-        <Card title="List your NFTs" backgroundImage="/section31.png" titleColor="text-white" />
-        <Card title="Cashout" backgroundImage="/section32.png" titleColor="text-white" />
-        <Card title="Buy, sell and auction" backgroundImage="/section33.png" titleColor="text-white" />
+        <Card title="List your NFTs" backgroundImage="/section31.png" titleColor="text-white"  position={cardPositions.left} />
+        <Card title="Cashout" backgroundImage="/section32.png" titleColor="text-white" position={cardPositions.center}/>
+        <Card title="Buy, sell and auction" backgroundImage="/section33.png" titleColor="text-white" position={cardPositions.right} />
       </div>
       </div>
       </div>
@@ -34,11 +61,13 @@ const Section3 = () => {
   );
 };
 
-const Card = ({ title, backgroundImage, titleColor }) => {
-  const titleClasses = `absolute top-2 left-2 md:top-4 md:left-4 lg:top-8 lg:left-[2.2rem] 3xl:top-16 3xl:left-[2.5rem] 4xl:top-20 4xl:left-14 md:text-xl xl:text-3xl xl:top-12 w-2/3 lg:text-2xl 3xl:text-[2.5rem] 4xl:text-[2.9rem] 4xl:leading-[3.4rem] lg:w-full font-tomato font-medium  ${titleColor}`;
+const Card = ({ title, backgroundImage, titleColor, position }) => {
+  const titleClasses = `absolute top-2 left-2 md:top-4 md:left-4 lg:top-8 lg:left-[2.2rem] 3xl:top-16 3xl:left-[2.5rem] 4xl:top-20 4xl:left-14 md:text-xl xl:text-3xl xl:top-12 w-2/3 lg:text-2xl 3xl:text-[2.5rem] 4xl:text-[2.9rem] 4xl:leading-[3.4rem] lg:w-full font-tomato font-medium ${titleColor}`;
+
+  const animationClass = position === 'left' ? 'animate-moveLeft' : position === 'right' ? 'animate-moveRight' : position === 'center' ? 'animate-moveCenter' : ''
 
   return (
-    <div className="card h-80 lg:h-[20rem] xl:h-[25rem] 2xl:h-[36rem] sm:w-full 2xl:w-1/3 rounded-lg 2xl:rounded-2xl overflow-hidden relative" style={{ backgroundImage: `url(${backgroundImage})` }}>
+    <div className={`card h-80 lg:h-[20rem] xl:h-[25rem] 2xl:h-[36rem] sm:w-full 2xl:w-1/3 rounded-lg 2xl:rounded-2xl overflow-hidden opacity-0  relative ${animationClass}`} style={{ backgroundImage: `url(${backgroundImage})` }}>
       <span className={titleClasses}>{title}</span>
     </div>
   );

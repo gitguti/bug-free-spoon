@@ -40,6 +40,9 @@ module.exports = {
         'slideUp-delay-1': 'slideUp 0.5s cubic-bezier(0.42,0,0.58,1) 1s forwards',
         'slide-right': 'slideRight 1s cubic-bezier(0.42,0,0.58,1) forwards',
         'slide-left': 'slideLeft 1s cubic-bezier(0.42,0,0.58,1) 1s forwards',
+        'moveLeft': 'moveLeft 1.5s cubic-bezier(0.42,0,0.58,1) forwards',
+        'moveRight': 'moveRight 1.5s cubic-bezier(0.42,0,0.58,1) forwards',
+        'moveCenter': 'moveCenter 1.5s cubic-bezier(0.42,0,0.58,1) forwards',
       },
       keyframes: {
         slideDown: {
@@ -57,6 +60,18 @@ module.exports = {
         slideLeft: {
           '0%': { transform: 'translateX(100%)', opacity: 0 },
           '100%': { transform: 'translateX(0)', opacity: 1 },
+        },
+        moveLeft: {
+          '0%': { transform: 'translateX(100%)', opacity: 0  },
+          '100%': { transform: 'translateX(0%)', opacity: 1  },
+        },
+        moveRight: {
+          '0%': { transform: 'translateX(-100%)',opacity: 0  },
+          '100%': { transform: 'translateX(0%)',opacity: 1   },
+        },
+        moveCenter: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1   },
         },
       },
       maxWidth: {
