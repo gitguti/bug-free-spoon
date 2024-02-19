@@ -216,3 +216,56 @@ background-clip: text;
     height: -webkit-fill-available;
   }
 }
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FAFAFA;
+  z-index: 9999;
+}
+
+.loading-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 10px;
+  background-color: #3C0D9F;
+  animation: loadBar 3s linear forwards;
+}
+
+.logo-container {
+  opacity: 0;
+  animation: fadeInLogo 3s backwards;
+  animation-delay: 2.85s; /* Just before the loading bar finishes */
+}
+
+.logo {
+  width: 100px; /* Adjust based on your logo's size */
+  height: auto;
+}
+
+@keyframes loadBar {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 95%;
+  }
+}
+
+@keyframes fadeInLogo {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}

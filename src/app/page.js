@@ -7,12 +7,16 @@ import Section5 from "./components/home/Section5"
 
 export default function Home() {
   return (
-   <main>
+    <>
+
+    <main>
     <Hero/>
     <Section2/>
     <Section3/>
     <Section4/>
     <Section5/>
    </main>
+   </>
+
   );
 }

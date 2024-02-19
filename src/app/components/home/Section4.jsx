@@ -31,7 +31,7 @@ const Card = ({ title, backgroundImage, titleColor, description, backgroundColor
     <>
       <div className="px-7 py-10 h-72 w-full 2xl:h-96 rounded-lg 2xl:rounded-2xl overflow-hidden justify-content-start" style={{ backgroundColor: `${backgroundColor}` }}>
         <div className="h-[79.8633px]">
-        <Image src={image} alt="Icon" width={width} height={height} />
+        <Image src={image} priority={true} alt="Icon" width={width} height={height} />
         </div>
         <p className={`${titleColor}  font-tomato text-2xl 2xl:text-4xl font-semibold mt-4 mb-2 xl:mt-8`}>{title}</p>
         <p className={`${titleColor} text-base 2xl:text-2xl font-normal`}>{description}</p>

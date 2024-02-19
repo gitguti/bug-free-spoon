@@ -1,7 +1,9 @@
 import { Inter } from "next/font/google";
-import Navbar from './components/ui/Navbar'; // Asegúrate de que las rutas sean correctas
+import Navbar from './components/ui/Navbar';
 import Footer from './components/ui/Footer';
 import "./globals.css";
+import Loading from "./loading";
+import { LoadingProvider } from './context/loadingContext';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,12 +14,18 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    <>   
+        <LoadingProvider>
     <html lang="en">
       <body className={inter.className}>
+      <Loading />
         <Navbar />
         <main>{children}</main>
         <Footer />
       </body>
     </html>
+    </LoadingProvider>
+    </>
   );
 }
+
