@@ -39,7 +39,7 @@ const Section2 = () => {
         </div>
         <div className="flex flex-col md:flex-row space-between gap-4 md:gap-[1.5rem]">
           <Card title="Transform your bet into a blockchain certified ticket" backgroundImage="/section21.webp" titleColor="text-white" isVisible={isVisible} />
-          <Card title="Explore and trade on the marketplace" backgroundImage="/section22.webp" titleColor="text-new-black" isVisible={isVisible} delay={true} />
+          <Card title="Explore and trade on the marketplace" backgroundImage="/section22.webp" titleColor="text-new-black" isVisible={isVisible} delay="left" />
         </div>
       </div>
     </div>

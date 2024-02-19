@@ -37,7 +37,9 @@ module.exports = {
         'slideDown': 'slideDown 0.75s cubic-bezier(0.42,0,1,1) forwards 3.5s',
         'slideUp': 'slideUp 1s cubic-bezier(0.42,0,0.58,1) forwards 3.5s',
         'slideUp2': 'slideUp 1s cubic-bezier(0.42,0,0.58,1) forwards',
-        'slideUp-delay-1': 'slideUp 0.5s cubic-bezier(0.42,0,0.58,1) 1s forwards', // Añade un retraso de 0.5s
+        'slideUp-delay-1': 'slideUp 0.5s cubic-bezier(0.42,0,0.58,1) 1s forwards',
+        'slide-right': 'slideRight 1s cubic-bezier(0.42,0,0.58,1) forwards',
+        'slide-left': 'slideLeft 1s cubic-bezier(0.42,0,0.58,1) 1s forwards',
       },
       keyframes: {
         slideDown: {
@@ -47,6 +49,14 @@ module.exports = {
         slideUp: {
           '0%': { transform: 'translateY(50%)', opacity: 0 },
           '100%': { transform: 'translateY(0)', opacity: 100 },
+        },
+        slideRight: {
+          '0%': { transform: 'translateX(-100%)', opacity: 0 },
+          '100%': { transform: 'translateX(0)', opacity: 1 },
+        },
+        slideLeft: {
+          '0%': { transform: 'translateX(100%)', opacity: 0 },
+          '100%': { transform: 'translateX(0)', opacity: 1 },
         },
       },
       maxWidth: {
