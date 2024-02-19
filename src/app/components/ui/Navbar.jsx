@@ -10,8 +10,7 @@ import { useLoading } from '../../context/loadingContext';
 
 const Navbar = (animate) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { loading } = useLoading();
-  console.log(loading);
+
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);

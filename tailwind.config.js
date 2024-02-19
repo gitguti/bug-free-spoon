@@ -35,9 +35,9 @@ module.exports = {
       },
       animation: {
         'slideDown': 'slideDown 0.75s cubic-bezier(0.42,0,1,1) forwards 3.5s',
-        'slideUp': 'slideUp 1s cubic-bezier(0.42,0,0.58,1) forwards 3.5s'
-
-
+        'slideUp': 'slideUp 1s cubic-bezier(0.42,0,0.58,1) forwards 3.5s',
+        'slideUp2': 'slideUp 1s cubic-bezier(0.42,0,0.58,1) forwards',
+        'slideUp-delay-1': 'slideUp 0.5s cubic-bezier(0.42,0,0.58,1) 1s forwards', // Añade un retraso de 0.5s
       },
       keyframes: {
         slideDown: {
