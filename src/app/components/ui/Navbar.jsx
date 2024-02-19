@@ -22,7 +22,7 @@ const Navbar = (animate) => {
       <div className="px-2 sm:px-8 w-11/12 mx-auto 4xl:w-10/12">
         <div className="flex mx-auto justify-between w-full">
           {/* Primary menu and logo */}
-          <div className={`navbar flex items-center justify-between my-6 md:my-4 w-full ${animate ? 'navbar-animate' : ''}`}>
+          <div className="flex items-center justify-between my-6 md:my-4 w-full animate-slideDown">
             {/* logo */}
             <div>
               <Link href="/">

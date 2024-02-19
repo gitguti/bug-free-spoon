@@ -269,26 +269,3 @@ background-clip: text;
       opacity: 0;
   }
 }
-
-
-.navbar-animate {
-  transform: translateY(0);
-}
-
-.hero-animate {
-  transform: translateY(0);
-}
-
-/* Asegúrate de definir el estado inicial y la animación */
-.navbar, .hero-content {
-  transition: transform 0.5s ease-out;
-}
-
-/* Estado inicial fuera de la vista */
-.navbar {
-  transform: translateY(-100%);
-}
-
-.hero-content {
-  transform: translateY(100%);
-}

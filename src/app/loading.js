@@ -13,7 +13,7 @@ export default function Loading () {
     }, []);
 
     if (!loading) {
-        return false;
+        return null;
     }
         
     return (

@@ -34,36 +34,20 @@ module.exports = {
         'tomato': ['"Tomato Grotesk"', 'sans-serif'],
       },
       animation: {
-        'scroll-left': 'loop-scroll-left 30s  linear infinite',
-        'scroll-right': 'loop-scroll-right 30s linear infinite',
-        'marquee2': 'marquee2 30s linear infinite',
-        'marquee1': 'marquee1 30s linear infinite',
-        'infinite-scroll': 'infinite-scroll 25s linear infinite',
-        'move1': 'marquee2 10s linear infinite',
-        'move2': 'marquee1 10s linear infinite',
+        'slideDown': 'slideDown 0.75s cubic-bezier(0.42,0,1,1) forwards 3.5s',
+        'slideUp': 'slideUp 1s cubic-bezier(0.42,0,0.58,1) forwards 3.5s'
+
 
       },
       keyframes: {
-        'loop-scroll-left': {
-          '0%': { transform: 'translateX(0%)' },
-          '100%': { transform: 'translateX(-100%)' },
+        slideDown: {
+          '0%': { transform: 'translateY(-100%)', opacity: 0  },
+          '100%': { transform: 'translateY(0)', opacity: 100 },
         },
-        'marquee2': {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(0%)' },
+        slideUp: {
+          '0%': { transform: 'translateY(50%)', opacity: 0 },
+          '100%': { transform: 'translateY(0)', opacity: 100 },
         },
-        'loop-scroll-right': {
-          '0%': { transform: 'translateX(-10%)' },
-          '100%': { transform: 'translateX(100%)' },
-        },
-        'marquee1': {
-          '0%': { transform: 'translateX(-100%)' },
-          '100%': { transform: 'translateX(0%)' },
-        },
-        'infinite-scroll': {
-          from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(-100%)' },
-        }
       },
       maxWidth: {
         'screen-3xl': '90rem',
