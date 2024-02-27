@@ -41,6 +41,13 @@ background-clip: text;
 }
 
 
+.text-gradient3 {
+  background: linear-gradient(180deg, #252525 0%, rgba(0, 0, 0, 0.65) 100%);background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+
 /* En tu archivo CSS (por ejemplo, globals.css) */
 .card {
   position: relative;

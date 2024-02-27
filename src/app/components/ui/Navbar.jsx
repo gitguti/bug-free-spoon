@@ -17,7 +17,7 @@ const Navbar = (animate) => {
   };
 
   return (
-    <nav className="bg-light-grey sticky top-0 z-50 opacity-100">
+    <nav className="bg-white sticky top-0 z-50 opacity-100">
       <div className="px-2 sm:px-8 w-11/12 mx-auto 4xl:w-10/12">
         <div className="flex mx-auto justify-between w-full">
           {/* Primary menu and logo */}
@@ -46,8 +46,8 @@ const Navbar = (animate) => {
             </div>
             {/* primary */}
             <div className="hidden lg:flex gap-8 items-center transition-opacity duration-300 md:text-md xl:text-base 2xl:text-lg 3xl:text-[1.3rem] 4xl:text-2xl">
-              <Link href="/features">Features</Link>
-              <Link href="/about">About us</Link>
+              <Link href="/features">Overview</Link>
+              <Link href="/about">About</Link>
               <Button variant="filled" className="text-red-500">Go to marketplace</Button>
 
             </div>
@@ -74,10 +74,10 @@ const Navbar = (animate) => {
   Home
 </Link>
 <Link href="/features" onClick={toggleMenu}>
-  Features
+  Overview
 </Link>
 <Link href="/about" onClick={toggleMenu}>
-  About us
+  About
 </Link>
 <Button variant="filled" className="text-red-500" onClick={toggleMenu}>
   Go to marketplace
