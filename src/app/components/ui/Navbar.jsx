@@ -65,7 +65,7 @@ const Navbar = (animate) => {
       </div>
       {/* mobile navigation */}
       <div
-        className={`fixed z-40 w-full  bg-white overflow-hidden flex flex-col lg:hidden gap-12  origin-top duration-700 inset-y-[77.7px] ${!isMenuOpen ? "h-0" : " h-screen"
+        className={`fixed z-40 w-full  bg-white overflow-hidden flex flex-col lg:hidden gap-12  origin-top duration-700 inset-y-[77.7px] md:inset-y-[61.7px] ${!isMenuOpen ? "h-0" : " h-screen"
           }`}
       >
         <div className="px-8 pt-8 pb-24 text-new-black bg-grey-light">
