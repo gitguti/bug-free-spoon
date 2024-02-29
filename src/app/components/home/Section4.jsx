@@ -29,12 +29,12 @@ const Card = ({ title, backgroundImage, titleColor, description, backgroundColor
 
   return (
     <>
-      <div className="px-7 py-10 w-full h-[30rem] sm:h-96 3xl:h-[30rem] rounded-lg 2xl:rounded-2xl overflow-hidden flex flex-col justify-center sm:justify-end" style={{ backgroundColor: `${backgroundColor}` }}>
+      <div className="px-7 py-10 w-full h-96 3xl:h-[30rem] rounded-lg 2xl:rounded-2xl overflow-hidden flex flex-col justify-end" style={{ backgroundColor: `${backgroundColor}` }}>
         <div className="h-[79.8633px]">
         <Image src={image} priority={true} alt="Icon" width={width} height={height} />
         </div>
         <p className={`${titleColor}  font-tomato text-2xl 2xl:text-4xl font-semibold mt-4 mb-2 xl:mt-8`}>{title}</p>
-        <p className={`${titleColor} text-base 2xl:text-2xl font-normal h-36 md:h-44 lg:h-32`}>{description}</p>
+        <p className={`${titleColor} text-xs md:text-base 2xl:text-2xl font-normal h-28 md:h-44 lg:h-32`}>{description}</p>
       </div>
     </>
 
