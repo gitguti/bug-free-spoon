@@ -3,6 +3,7 @@ import React from 'react';
 import Button from "../ui/Button.jsx";
 import Carousel from "../home/Carousel.jsx";
 import { useState, useEffect, useRef } from 'react';
+import Image from 'next/image.js';
 
 const Section3 = () => {
 
@@ -39,6 +40,30 @@ const Section3 = () => {
 
   ];
 
+  const data = [
+    {
+      title: 'List your NFTs',
+      content: 'Showcase your bet to a vast community of millions of gamblers eagerly seeking bets with desirable characteristics. Our platform categorizes NFT bets by sport, league, and other relevant attributes, making it effortless for users to discover and engage with your NFT bet.',
+      backgroundImage: "/section31.png" 
+    },
+    {
+      title: 'Buy, Sell and Auction',
+      content: 'By simply registering your crypto wallet on our marketplace, our platform seamlessly detects eligible and certified BetSell NFT bets associated with your wallet account. With full control over your account settings, you can easily configure and showcase your NFT bets to potential buyers. Enjoy the convenience of anonymous and secure interactions as you explore other listings giving you the opportunity to purchase other NFT bets that align with your interests.',
+      backgroundImage:"/section32.png" 
+
+    },
+    {
+      title: 'Cashout',
+      content: 'Securely trade your NFT bet and automatically receive your payment directly into your registered crypto wallet, as your NFT bets are successfully purchased. BetSell\'s trading process ensures the safe and seamless distribution of your purchase, as well as the smooth transfer of your asset to its new owner.',
+      backgroundImage: "/section33.png"
+    },
+    {
+      title: 'Trusted',
+      content: 'BetSell\'s Marketplace guarantees the authenticity of its listings by verifying each NFT directly through its sportsbook source. Users are also rated based on their history of buying and selling bets.',
+      backgroundImage: "/section34.png"
+    }
+  ];
+
   return (
     <div className="bg-white" ref={ref}>
     <div className="py-12 md:py-20 lg:py-24 3xl:py-36 4xl:py-48 mx-auto px-px sm:px-8  md:px-0  w-11/12 4xl:w-10/12">
@@ -50,7 +75,7 @@ const Section3 = () => {
         <Carousel slides={slides} />
       </div>
 
-<div className="space-between gap-4 md:gap-[0.8rem] xl:gap-4 4xl:gap-6 hidden md:flex">
+{/* <div className="space-between gap-4 md:gap-[0.8rem] xl:gap-4 4xl:gap-6 hidden md:flex md:flex-col">
   <Card 
     title="List your NFTs" 
     backgroundImage="/section31.png" 
@@ -79,7 +104,8 @@ const Section3 = () => {
     position={cardPositions.right}
     description="BetSell's Marketplace guarantees the authenticity of its listings by verifying each NFT directly through its sportsbook source. Users are also rated based on their history of buying and selling bets."
   />
-</div>
+</div> */}
+      <Accordion data={data} />
 
       </div>
       </div>
@@ -95,12 +121,72 @@ const Card = ({ title, backgroundImage, titleColor, position, description }) => 
   const animationClass = position === 'left' ? 'animate-moveLeft' : position === 'right' ? 'animate-moveRight' : position === 'center' ? 'animate-moveCenter' : ''
 
   return (
-    <div className={`card h-80 lg:h-[20rem] xl:h-[25rem] 2xl:h-[36rem] sm:w-full 2xl:w-1/3 rounded-lg 2xl:rounded-2xl overflow-hidden opacity-0  relative ${animationClass}`} style={{ backgroundImage: `url(${backgroundImage})` }}>
-      <span className={titleClasses}>{title}</span>
-      <span className={descriptionClasses}>{description}</span>
+    <div className="flex flex-col md:flex-row md:items-center bg-white p-6 rounded-lg shadow-md">
+    <div className="md:w-1/2">
+      <h2 className="text-2xl font-bold mb-4">{title}</h2>
+      <p className="mb-4">{description}</p>
+  
+    </div>
+    <div className="md:w-1/2 mt-4 md:mt-0 md:ml-6">
+      <Image width={300} height={300} src={backgroundImage} alt={title} className="rounded-lg shadow-md" />
+    </div>
+  </div>
+  );
+};
+
+const AccordionItem = ({ title, content, index, isOpen, setOpenIndex }) => {
+  return (
+    <>
+      <button
+        onClick={() => setOpenIndex(isOpen ? null : index)}
+        className="flex justify-between items-center w-full px-4 py-2 text-left border-b border-gray-200"
+      >
+        <span className="font-medium text-xl text-new-black">{title}</span>
+        <span className="text-xl text-gray-400 font-normal">
+          {isOpen ? '-' : '+'}
+        </span>
+      </button>
+      {isOpen && (
+        <div className="px-4 pt-4 pb-2 text-gray-600">
+          {content}
+        </div>
+      )}
+    </>
+  );
+};
+
+// Componente Acordeón principal
+const Accordion = ({ data }) => {
+  const [openIndex, setOpenIndex] = useState(0); // Por defecto, el primer ítem está abierto
+
+  return (
+    <div className="w-full max-w-3xl p-2 mx-auto flex flex-col md:flex-row">
+      <div className="flex-1">
+        {data.map((item, index) => (
+          <AccordionItem
+            key={index}
+            title={item.title}
+            content={item.content}
+            index={index}
+            isOpen={openIndex === index}
+            setOpenIndex={setOpenIndex}
+          />
+        ))}
+      </div>
+      <div className="flex-1">
+        {/* Asegúrate de que la imagen se muestre para el ítem abierto */}
+        <Image
+          width={300}
+          height={300}
+          src={data[openIndex].backgroundImage}
+          alt={data[openIndex].title}
+          className="rounded-lg shadow-md"
+        />
+      </div>
     </div>
   );
 };
+
 
 
 
