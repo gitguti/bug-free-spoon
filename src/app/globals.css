@@ -211,10 +211,9 @@ background-clip: text;
   display: flex;
 }
 
-.lst-box li :last-child {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
+.lst-box {
+ gap: 1rem;
+} 
 
 @media (min-width: 1440px) {
   .featuresCard {

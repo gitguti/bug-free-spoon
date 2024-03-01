@@ -19,14 +19,57 @@ const Hero = () => {
   const images1 = [];
   for (let i = 1; i <= 18; i++) {
     images1.push(
-      <Image
+
+<div class="max-w-xs rounded-lg shadow-lg bg-white flex flex-col  overflow-hidden">
+  <div class=" w-full rounded-t-lg">
+    {/* <div>
+      <p class="text-white font-bold text-sm">TENNIS</p>
+      <p class="text-white font-bold text-sm">ATP</p>
+    </div> */}
+    <Image
         src={`/Hero/${i}.png`}
         alt={`Image ${i}`}
-        width={279}
+        width={200}
         height={245}
+        objectFit="cover" // Asegura que la imagen cubra el área sin perder su proporción
+        className="w-full rounded-t-lg rounded-b-0" // Asegura que la imagen sea responsive  
         priority={true}
         key={{ i }}
-      />
+      />  </div>
+      <div className='px-4 py-4'>
+      <div className='whitespace-normal	'>
+          <p className="text-new-black font-semibold text-lg mb-2">Carlos Alcaraz to win 2025 Australian Open</p>
+          </div>
+  <div class="flex justify-between">
+    <div class="flex flex-col justify-between items-start ">
+      <p class="text-gray-600 text-sm text-[##6B6B6B]">Floor Price</p>
+      <p class="text-new-black font-bold text-sm">25.00 USD</p>
+    </div>
+    <div class="flex flex-col justify-between items-start ">
+      <p class="text-gray-600 text-sm text-[##6B6B6B]">Odds</p>
+      <p class="text-new-black font-bold text-sm">+255</p>
+    </div>
+    <div class="flex flex-col justify-between items-start">
+      <p class="text-gray-600 text-sm text-[##6B6B6B]">Current</p>
+      <p class="text-new-black font-bold text-sm self-end">-750</p>
+    </div>
+  </div>
+  <div className=" w-full h-px bg-gray-200 my-2"></div>
+  <div class="flex justify-between text-[##6B6B6B]">
+  <div class="flex flex-col  justify-between items-start ">
+      <p class="text-gray-600 text-sm ">Source</p>
+      <p class="text-gray-600 text-sm">Sport </p>
+
+    </div>
+    <div class="flex flex-col justify-between items-end text-[##6B6B6B]">
+    <p class="text-gray-900 text-sm">Dual Sportsbook</p>
+      <p class="text-gray-900 text-sm">Tennis- ATP</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+
     );
   }
   function useWindowSize() {
@@ -62,7 +105,7 @@ const Hero = () => {
     <>
       <div className="mx-auto flex flex-col bg-new-white ">
       <div className='mt-[1.8rem] lg:mt-12 4xl:mt-24 flex flex-col md:gap-4'>
-      <Marquee autoFill={true}>
+      <Marquee autoFill={true} style={ {gap: '1rem', marginRight: '1rem' } }>
           <ul className="lst-box">
             {shuffleArray(images1).map((image, index) => (
               <li key={`first-${index}`} style={style}>{image}</li>
