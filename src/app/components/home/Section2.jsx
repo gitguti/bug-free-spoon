@@ -38,8 +38,8 @@ const Section2 = () => {
           <p className="pl-4 sm:text-xs md:text-base lg:text-2xl xl:text-[1.8rem] 3x:text-[2.3rem] 4xl:text-[2.5rem] text-new-black font-tomato inline-block align-left md:align-center font-semibold">Securely trade your bets with other users</p>
         </div>
         <div className="flex flex-col md:flex-row space-between gap-4 md:gap-[1.5rem]">
-          <Card title="Transform your bet into a blockchain certified ticket" backgroundImage="/section21.webp" titleColor="text-white" isVisible={isVisible} />
-          <Card title="Explore and trade on the marketplace" backgroundImage="/section22.webp" titleColor="text-new-black" isVisible={isVisible} delay="left" />
+          <Card title="Transform your bet into a blockchain certified ticket" backgroundImage="/section21.jpg" titleColor="text-white" isVisible={isVisible} content="Easily transform your bet into a digitall certified ticket, safely recorded on the blockchain and granting the holder exclusive ownership rights, as well access to redeem its value one they become available" button={false} />
+          <Card title={<><span>Explore and trade on</span><br /><span>the marketplace</span></>}backgroundImage="/section22.jpg" titleColor="text-new-black" isVisible={isVisible} delay="left" content="Explore across a wide range of appealing bets under a marketplace, designed to privately trade your stake, while guaranteeing the legitimacy of your purchase, and safety of your exchange transaction" button={true}/>
         </div>
       </div>
     </div>

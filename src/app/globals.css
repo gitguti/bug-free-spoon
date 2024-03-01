@@ -52,12 +52,30 @@ background-clip: text;
 .card {
   position: relative;
   width: 100%;
-  padding-top: 45.25%; /* Proporción de aspecto 16:9 */
+  padding-top: 145%;
   background-size: cover;
   background-position: center;
   transition: transform 0.3s ease;
   max-height: min-content;
   min-height: 300px;
+}
+
+@media (min-width: 415px) {
+  .card {
+    padding-top: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    padding-top: 70%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    padding-top: 50%;
+  }
 }
 
 .card:hover {
