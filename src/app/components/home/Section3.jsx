@@ -68,14 +68,14 @@ const Section3 = () => {
 
   return (
     <div className="bg-white" ref={ref}>
-    <div className="py-12 md:py-20 lg:py-24 3xl:py-36 4xl:py-48 mx-auto px-px sm:px-8  md:px-0  w-11/12 4xl:w-10/12">
+    <div className="py-12 md:py-20 lg:py-24 3xl:py-36 4xl:py-48 mx-auto px-px sm:px-8  md:px-0  w-11/12 4xl:w-9/12">
     <div className="mx-auto">
       <div className="mb-8 lg:mb-12 3xl:mb-12 4xl:mb-16">
         <h2 className="text-3xl md:text-5xl 2xl:text-7xl font-tomato font-semibold leading-normal text-center text-gradient3">The Marketplace - BetSell.io</h2>
       </div>
-      <div className="flex flex-col lg:flex-row space-between gap-4 md:gap-6 md:hidden">
+      {/* <div className="flex flex-col lg:flex-row space-between gap-4 md:gap-6 md:hidden">
         <Carousel slides={slides} />
-      </div>
+      </div> */}
 
 {/* <div className="space-between gap-4 md:gap-[0.8rem] xl:gap-4 4xl:gap-6 hidden md:flex md:flex-col">
   <Card 
@@ -107,7 +107,7 @@ const Section3 = () => {
     description="BetSell's Marketplace guarantees the authenticity of its listings by verifying each NFT directly through its sportsbook source. Users are also rated based on their history of buying and selling bets."
   />
 </div> */}
-<div className='mx-auto hidden md:flex'>
+<div className='mx-auto '>
       <Accordion data={data} />
       </div>
       </div>
@@ -116,7 +116,7 @@ const Section3 = () => {
   );
 };
 
-const AccordionItem = ({ title, content, index, isOpen, setOpenIndex }) => {
+const AccordionItem = ({ title, content, index, isOpen, setOpenIndex, backgroundImage }) => {
   return (
     <div className="accordion-panel">
       <button
@@ -124,7 +124,7 @@ const AccordionItem = ({ title, content, index, isOpen, setOpenIndex }) => {
         className="flex justify-between items-center w-full px-4 py-8 text-left border-b border-gray-200"
         aria-expanded={isOpen}
       >
-        <span className="font-medium text-xl text-new-black">{title}</span>
+        <span className="font-medium text-xl text-new-black 3xl:text-3xl">{title}</span>
         <span className="text-xl text-gray-400 font-normal">
           {isOpen ? <ChevronDown /> : <ChevronUp />}
         </span>
@@ -133,9 +133,20 @@ const AccordionItem = ({ title, content, index, isOpen, setOpenIndex }) => {
         className="accordion-content"
         aria-hidden={!isOpen}
       >
-        <div className="px-4 pt-4 text-[#6B6B6B]">
+        <div className="px-4 pt-4 text-[#6B6B6B] 3xl:text-2xl">
           {content}
         </div>
+        {isOpen && (
+          <div className="flex mt-4 lg:hidden mx-auto">
+            <Image
+              width={500}
+              height={300}
+              src={backgroundImage}
+              alt={title}
+              className="rounded-lg shadow-md"
+            />
+          </div>
+        )}
       </div>
     </div>
   );
@@ -147,27 +158,30 @@ const Accordion = ({ data }) => {
   const [openIndex, setOpenIndex] = useState(0); // Por defecto, el primer ítem está abierto
 
   return (
-    <div className="w-3/4 mx-auto flex flex-col gap-36 md:flex-row">
+    <div className="w-11/12 md:w-11/12 mx-auto flex flex-col gap-8 xl:gap-36 3xl:gap-24 md:flex-row">
       <div className="flex-1">
         {data.map((item, index) => (
-          <AccordionItem
+          <>
+           <AccordionItem
             key={index}
             title={item.title}
             content={item.content}
+            backgroundImage={item.backgroundImage}
             index={index}
             isOpen={openIndex === index}
             setOpenIndex={() => setOpenIndex(index === openIndex ? (index + 1) % data.length : index)}
           />
+          </>
         ))}
       </div>
-      <div className="flex-1 relative">
+      <div className="hidden lg:flex mx-auto flex-1 justify-center relative 3xl:left-[10%]">
         {data.map((item, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-500 ${openIndex === index ? 'opacity-100' : 'opacity-0'}`}
+            className={`absolute text-center inset-0 transition-opacity duration-500 ${openIndex === index ? 'opacity-100' : 'opacity-0'}`}
           >
             <Image
-              width={480}
+              width={460}
               height={300}
               src={item.backgroundImage}
               alt={item.title}
