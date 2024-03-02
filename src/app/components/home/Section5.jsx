@@ -27,7 +27,8 @@ const Section5 = () => {
         <Button variant="filled">Go to marketplace</Button>
         </div>
       </div>
-      </div>
+      <Image priority={false}  alt="monkey placeholder" src="/mapHome.svg" width={600} height={300} className='w-11/12 md:w-3/4 mx-auto mt-8 md:mt-20' /></div>
+
     </>
   );
 };
