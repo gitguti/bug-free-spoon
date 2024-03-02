@@ -202,7 +202,7 @@ const Hero = () => {
 
   
   const Card = ({ card }) => (
-        <div key={card.index} className="max-w-xs rounded-lg shadow-lg bg-white flex flex-col overflow-hidden mb-4">
+        <div key={card.index} className="max-w-72 md:max-w-xs rounded-lg shadow-lg bg-white flex flex-col overflow-hidden mb-4">
       <div className="w-full h-52 rounded-t-lg overflow-hidden relative">
         <Image
           src={card.imagen}
@@ -303,7 +303,7 @@ const Hero = () => {
             {/* <Button variant="filled" className="text-red-500">Go to marketplace</Button> */}
           </div>
         </div>
-        <Marquee direction='right' autoFill={true}>
+        <Marquee direction='right' className='gap-4' autoFill={true}>
         <ul className="lst-box">
           {cardsData.map((card, index) => (
             <Card key={index} card={card} />
