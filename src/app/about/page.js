@@ -121,7 +121,7 @@ export default function About() {
     <div className="pt-16 lg:pt-24 2xl:pt-48 mx-auto ">
       <div className="px-8 md:px-0 mb-6 md:mb-8 xl:mb-12 3xl:mb-10 4xl:mb-20 flex items-start md:items-center justify-center">
         <World />
-        <p className="pl-2 sm:text-xs md:text-base lg:text-xl xl:text-[1.8rem] 3x:text-[2.3rem] xl:leading-[2.3rem] 4xl:text-[2.5rem] 4xl:leading-[4.9rem] text-new-black font-tomato inline-block align-left md:align-center">All major events from all major sportsbooks in one place</p>
+        <p className="pl-2 sm:text-xs md:text-base lg:text-xl xl:text-[1.8rem] 3x:text-[2.3rem] xl:leading-[2.3rem] 4xl:text-[2.5rem] 4xl:leading-[4.9rem] text-new-black font-tomato inline-block align-left md:align-center font-semibold">All major events from all major sportsbooks in one place</p>
       </div>
       <div className="mx-auto flex flex-col md:max-w-screen-sm justify-center lg:max-w-screen-md xl:max-w-screen-lg  2xl:max-w-screen-3xl">
       <div className='flex flex-col gap-4 lg:gap-8'>
