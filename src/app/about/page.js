@@ -128,14 +128,14 @@ export default function About() {
       <Marquee autoFill={true}>
           <ul className="lst-box">
             {images2.map((image, index) => (
-              <li key={`first-${index}`} className='w-36 h-32 lg:w-64 lg:h-48 3xl:w-96 3xl:h-60' >{image}</li>
+              <li key={`first-${index}`} className='w-36 h-32 lg:w-64 lg:h-48 3xl:w-96 3xl:h-60 mr-4' >{image}</li>
             ))}
           </ul>
         </Marquee>
-        <Marquee direction='right' autoFill={true}>
+        <Marquee direction='right' className='' autoFill={true}>
           <ul className="lst-box">
             {images1.map((image, index) => (
-              <li key={`first-${index}`} className='w-36 h-32 lg:w-64 lg:h-48 3xl:w-96 3xl:h-60' >{image}</li>
+              <li key={`first-${index}`} className='w-36 h-32 lg:w-64 lg:h-48 3xl:w-96 3xl:h-60 mr-4' >{image}</li>
               ))}
           </ul>
         </Marquee>

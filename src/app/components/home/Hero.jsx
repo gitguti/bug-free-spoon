@@ -290,13 +290,13 @@ const Hero = () => {
       <div className="mx-auto flex flex-col bg-new-white ">
       <div className='mt-[1.8rem] lg:mt-12 4xl:mt-24 flex flex-col md:gap-4'>
       <Marquee autoFill={true} style={ {gap: '1rem', marginRight: '1rem' } }>
-          <ul className="lst-box">
+          <ul className="lst-box lst-box-gap">
           {cardsData.map((card, index) => (
             <Card key={index} card={card} />
           ))}
           </ul>
         </Marquee>
-        <div className="px-px sm:px-8 w-11/12 lg:w-8/12 4xl:w-full mx-auto flex justify-center mt-4 mb-4 2xl:mb-4 2xl:mt-12 4xl:mt-16  min-h-max animate-slideUp">
+        <div className="px-px sm:px-8 w-11/12 4xl:w-full mx-auto flex justify-center mt-4 mb-4 2xl:mb-4 2xl:mt-12 4xl:mt-16  min-h-max animate-slideUp">
           <div className="text-center mx-auto 4xl:w-9/12">
             <h1 className="font-tomato text-[1.7rem] md:text-[3.25rem] md:leading-[3.6rem] 2xl:text-8xl 3xl:text-7xl 4xl:text-8xl font-semibold leading-8 2xl:leading-[1.1] 3xl:leading-[1.2] mb-[0.6rem] sm:mb-4 text-center text-gradient lg:hidden">The future of <span className="text-gradient3 font-bold">Bet </span> <br></br> Commerce using NFTs</h1>
             <h1 className="font-tomato text-[1.7rem] md:text-[3.25rem] md:leading-[3.6rem] 2xl:text-8xl 3xl:text-7xl 4xl:text-8xl font-semibold leading-8 2xl:leading-[1.1rem] 3xl:leading-[5rem] 4xl:leading-[6.6rem] mb-[0.6rem] sm:mb-4 text-center text-gradient hidden lg:block">The future of <span className="text-gradient3 font-bold">Bet </span> Commerce using NFTs</h1>
@@ -305,7 +305,7 @@ const Hero = () => {
           </div>
         </div>
         <Marquee direction='right' className='gap-4' autoFill={true}>
-        <ul className="lst-box">
+        <ul className="lst-box lst-box-gap">
           {cardsData.map((card, index) => (
             <Card key={index} card={card} />
           ))}

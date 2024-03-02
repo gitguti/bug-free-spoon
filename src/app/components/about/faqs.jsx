@@ -15,7 +15,7 @@ const Faqs = ({ question, image, backgroundColor, isDarkBackground }) => {
         onMouseLeave={() => setIsHovered(false)}
       >
         <div>
-          <p className={`text-lg font-normal 4xl:text-2xl ${textColorClass}`}>{question}</p>
+          <p className={`font-tomato text-lg font-normal 3xl:text-xl 4xl:text-2xl ${textColorClass}`}>{question}</p>
         </div>
         <div className='absolute bottom-0 right-4 w-2/5 lg:w-2/5'>
           <Image
