@@ -118,31 +118,36 @@ const Section3 = () => {
 
 const AccordionItem = ({ title, content, index, isOpen, setOpenIndex }) => {
   return (
-    <>
+    <div className="accordion-panel">
       <button
         onClick={() => setOpenIndex(isOpen ? null : index)}
         className="flex justify-between items-center w-full px-4 py-8 text-left border-b border-gray-200"
+        aria-expanded={isOpen}
       >
         <span className="font-medium text-xl text-new-black">{title}</span>
         <span className="text-xl text-gray-400 font-normal">
-          {isOpen ? <ChevronDown/> : <ChevronUp/>}
+          {isOpen ? <ChevronDown /> : <ChevronUp />}
         </span>
       </button>
-      {isOpen && (
-        <div className="px-4 pt-4 pb-2 text-gray-600">
+      <div
+        className="accordion-content"
+        aria-hidden={!isOpen}
+      >
+        <div className="px-4 pt-4 text-[#6B6B6B]">
           {content}
         </div>
-      )}
-    </>
+      </div>
+    </div>
   );
 };
+
 
 // Componente Acordeón principal
 const Accordion = ({ data }) => {
   const [openIndex, setOpenIndex] = useState(0); // Por defecto, el primer ítem está abierto
 
   return (
-    <div className="w-3/4 mx-auto flex flex-col gap-4 md:flex-row">
+    <div className="w-3/4 mx-auto flex flex-col gap-36 md:flex-row">
       <div className="flex-1">
         {data.map((item, index) => (
           <AccordionItem
@@ -152,20 +157,26 @@ const Accordion = ({ data }) => {
             index={index}
             isOpen={openIndex === index}
             setOpenIndex={() => setOpenIndex(index === openIndex ? (index + 1) % data.length : index)}
-    />
+          />
         ))}
       </div>
-      <div className="flex-1">
-        {data[openIndex] && (
-         <Image
-         width={500}
-         height={300}
-         src={data[openIndex !== null ? openIndex : 0].backgroundImage}
-         alt={data[openIndex !== null ? openIndex : 0].title}
-         className="rounded-lg shadow-md"
-       />
-        )}
+      <div className="flex-1 relative">
+        {data.map((item, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-500 ${openIndex === index ? 'opacity-100' : 'opacity-0'}`}
+          >
+            <Image
+              width={480}
+              height={300}
+              src={item.backgroundImage}
+              alt={item.title}
+              className="rounded-lg shadow-md"
+            />
+          </div>
+        ))}
       </div>
+
     </div>
   );
 };
