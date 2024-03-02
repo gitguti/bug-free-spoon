@@ -4,6 +4,8 @@ import Button from "../ui/Button.jsx";
 import Carousel from "../home/Carousel.jsx";
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image.js';
+import ChevronDown from '../icons/ChevronDown.jsx';
+import ChevronUp from '../icons/ChevronUp.jsx';
 
 const Section3 = () => {
 
@@ -67,7 +69,7 @@ const Section3 = () => {
   return (
     <div className="bg-white" ref={ref}>
     <div className="py-12 md:py-20 lg:py-24 3xl:py-36 4xl:py-48 mx-auto px-px sm:px-8  md:px-0  w-11/12 4xl:w-10/12">
-    <div className="">
+    <div className="mx-auto">
       <div className="mb-8 lg:mb-12 3xl:mb-12 4xl:mb-16">
         <h2 className="text-3xl md:text-5xl 2xl:text-7xl font-tomato font-semibold leading-normal text-center text-gradient">The Marketplace</h2>
       </div>
@@ -105,32 +107,12 @@ const Section3 = () => {
     description="BetSell's Marketplace guarantees the authenticity of its listings by verifying each NFT directly through its sportsbook source. Users are also rated based on their history of buying and selling bets."
   />
 </div> */}
+<div className='mx-auto hidden md:flex'>
       <Accordion data={data} />
-
       </div>
       </div>
+      </div>
     </div>
-  );
-};
-
-const Card = ({ title, backgroundImage, titleColor, position, description }) => {
-  const titleClasses = `absolute z-10 top-2 left-2 md:top-4 md:left-4 lg:top-8 lg:left-[2.2rem] 3xl:top-16 3xl:left-[2.5rem] 4xl:top-20 4xl:left-14 md:text-xl xl:text-3xl xl:top-12 w-2/3 lg:text-2xl 3xl:text-[2.5rem] 4xl:text-[2.9rem] 4xl:leading-[3.4rem] lg:w-full font-tomato font-medium ${titleColor}`;
-  const descriptionClasses = `absolute z-10 text-xs top-2 left-2 md:top-4 md:left-4 lg:top-8 lg:left-[2.2rem] 3xl:top-16 3xl:left-[2.5rem] 4xl:top-20 4xl:left-14 xl:top-12 w-2/3 lg:w-full font-tomato font-medium ${titleColor}`;
-
-
-  const animationClass = position === 'left' ? 'animate-moveLeft' : position === 'right' ? 'animate-moveRight' : position === 'center' ? 'animate-moveCenter' : ''
-
-  return (
-    <div className="flex flex-col md:flex-row md:items-center bg-white p-6 rounded-lg shadow-md">
-    <div className="md:w-1/2">
-      <h2 className="text-2xl font-bold mb-4">{title}</h2>
-      <p className="mb-4">{description}</p>
-  
-    </div>
-    <div className="md:w-1/2 mt-4 md:mt-0 md:ml-6">
-      <Image width={300} height={300} src={backgroundImage} alt={title} className="rounded-lg shadow-md" />
-    </div>
-  </div>
   );
 };
 
@@ -139,11 +121,11 @@ const AccordionItem = ({ title, content, index, isOpen, setOpenIndex }) => {
     <>
       <button
         onClick={() => setOpenIndex(isOpen ? null : index)}
-        className="flex justify-between items-center w-full px-4 py-2 text-left border-b border-gray-200"
+        className="flex justify-between items-center w-full px-4 py-8 text-left border-b border-gray-200"
       >
         <span className="font-medium text-xl text-new-black">{title}</span>
         <span className="text-xl text-gray-400 font-normal">
-          {isOpen ? '-' : '+'}
+          {isOpen ? <ChevronDown/> : <ChevronUp/>}
         </span>
       </button>
       {isOpen && (
@@ -160,7 +142,7 @@ const Accordion = ({ data }) => {
   const [openIndex, setOpenIndex] = useState(0); // Por defecto, el primer ítem está abierto
 
   return (
-    <div className="w-full max-w-3xl p-2 mx-auto flex flex-col md:flex-row">
+    <div className="w-3/4 mx-auto flex flex-col gap-4 md:flex-row">
       <div className="flex-1">
         {data.map((item, index) => (
           <AccordionItem
@@ -169,19 +151,20 @@ const Accordion = ({ data }) => {
             content={item.content}
             index={index}
             isOpen={openIndex === index}
-            setOpenIndex={setOpenIndex}
-          />
+            setOpenIndex={() => setOpenIndex(index === openIndex ? (index + 1) % data.length : index)}
+    />
         ))}
       </div>
       <div className="flex-1">
-        {/* Asegúrate de que la imagen se muestre para el ítem abierto */}
-        <Image
-          width={300}
-          height={300}
-          src={data[openIndex].backgroundImage}
-          alt={data[openIndex].title}
-          className="rounded-lg shadow-md"
-        />
+        {data[openIndex] && (
+         <Image
+         width={500}
+         height={300}
+         src={data[openIndex !== null ? openIndex : 0].backgroundImage}
+         alt={data[openIndex !== null ? openIndex : 0].title}
+         className="rounded-lg shadow-md"
+       />
+        )}
       </div>
     </div>
   );
