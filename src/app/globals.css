@@ -215,6 +215,16 @@ background-clip: text;
  gap: 1rem;
 } 
 
+@media (min-width: 768px) {
+  .featuresCardHero {
+    border-top: var(--hover-bg-color) 8px solid;
+    height: 100%;
+    min-height: 280px;
+    height: 300px;
+    max-height: 380px;
+  }
+}
+
 @media (min-width: 1440px) {
   .featuresCard {
     border-top: var(--hover-bg-color) 8px solid;

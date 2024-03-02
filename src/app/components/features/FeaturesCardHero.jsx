@@ -7,9 +7,9 @@ const FeaturesCardHero = ({ title, description, image, hoverColor, isDarkBackgro
   const textColorClass = isHovered && !isDarkBackground ? 'text-white' : 'text-new-black';
   return (
     <>
-<div c className={"relative flex flex-col px-6 pt-8 pb-32 rounded-lg overflow-hidden featuresCard bg-white"}     onMouseEnter={() => setIsHovered(true)}
+<div className={"relative flex flex-col px-6 pt-8 pb-32 rounded-lg overflow-hidden featuresCard featuresCardHero bg-white"}     onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      style={{ '--hover-bg-color': hoverColor }} 
+      style={{ '--hover-bg-color': hoverColor }}
     >
 <div className={`font-tomato text-2xl md:text-3xl 2xl:text-4xl font-semibold leading-normal mb-4 ${textColorClass}`}> 
 {title}</div>
