@@ -202,8 +202,8 @@ const Hero = () => {
 
   
   const Card = ({ card }) => (
-        <div key={card.index} className="max-w-72 md:max-w-xs rounded-lg shadow-lg bg-white flex flex-col overflow-hidden mb-4">
-      <div className="w-full h-52 rounded-t-lg overflow-hidden relative">
+        <div key={card.index} className="max-w-52 md:max-w-xs rounded-lg shadow-lg bg-white flex flex-col overflow-hidden mb-0 md:mb-4">
+      <div className="w-full h-32 md:h-52 rounded-t-lg overflow-hidden relative">
         <Image
           src={card.imagen}
           alt={card.prediction}
@@ -212,7 +212,7 @@ const Hero = () => {
           priority={true}
         />
             <div className='absolute top-4 left-4'>
-            <p className={`${card.isWhite ? 'text-white' : 'text-new-black'} font-semibold text-xs font-tomato uppercase`}>{card.sport}</p>
+            <p className={`${card.isWhite ? 'text-white' : 'text-new-black'} font-semibold text-[0.5rem] md:text-xs font-tomato uppercase`}>{card.sport}</p>
       <Image
           src={card.sportImage}
           alt={card.sport}
@@ -223,33 +223,33 @@ const Hero = () => {
         />
     </div>
       </div>
-      <div className='px-4 py-4'>
-        <div className='whitespace-normal h-12 mb-2'>
-          <p className="text-new-black font-semibold text-lg leading-[1.5rem] mb-2">{card.prediction}</p>
+      <div className='px-2 md:px-4 py-2 md:py-4'>
+        <div className='whitespace-normal h-10 md:h-12 md:mb-2'>
+          <p className="text-new-black font-semibold text-xs md:text-lg md:leading-[1.5rem] md:mb-2">{card.prediction}</p>
         </div>
         <div className="flex justify-between">
           <div className="flex flex-col justify-between items-start">
-            <p className="text-gray-600 text-sm">Floor Price</p>
+            <p className="text-gray-600 text-[0.5rem] md:text-sm">Floor Price</p>
             <p className="text-new-black font-semibold text-sm">{card.floorPrice} USD</p>
           </div>
           <div className="flex flex-col justify-between items-start">
-            <p className="text-gray-600 text-sm">Odds</p>
+            <p className="text-gray-600 text-[0.5rem] md:text-sm">Odds</p>
             <p className="text-new-black font-semibold text-sm">{card.odds}</p>
           </div>
           <div className="flex flex-col justify-between items-start">
-            <p className="text-gray-600 text-sm">Current</p>
+            <p className="text-gray-600 text-[0.5rem] md:text-sm">Current</p>
             <p className="text-new-black font-semibold text-sm">{card.current}</p>
           </div>
         </div>
         <div className="w-full h-px bg-gray-200 my-2"></div>
         <div className="flex justify-between text-gray-600">
           <div className="flex flex-col justify-between items-start">
-            <p className="text-sm">Source</p>
-            <p className="text-sm">Sport</p>
+            <p className="text-[0.5rem] md:text-sm">Source</p>
+            <p className="text-[0.5rem] md:text-sm">Sport</p>
           </div>
           <div className="flex flex-col justify-between items-end font-medium">
-            <p className="text-gray-900 text-sm">{card.source}</p>
-            <p className="text-gray-900 text-sm">{card.sport}</p>
+            <p className="text-gray-900 text-[0.5rem] md:text-sm">{card.source}</p>
+            <p className="text-gray-900 text-[0.5rem] md:text-sm">{card.sport}</p>
           </div>
         </div>
       </div>
