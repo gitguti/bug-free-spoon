@@ -296,7 +296,7 @@ const Hero = () => {
           ))}
           </ul>
         </Marquee>
-        <div className="px-px sm:px-8 w-11/12 4xl:w-full mx-auto flex justify-center mt-4 mb-4 2xl:mb-4 2xl:mt-12 4xl:mt-16  min-h-max animate-slideUp">
+        <div className="px-px sm:px-8 w-11/12 md:px-0 lg:w-full 4xl:w-full mx-auto flex justify-center mt-4 mb-4 2xl:mb-4 2xl:mt-12 4xl:mt-16  min-h-max animate-slideUp">
           <div className="text-center mx-auto 4xl:w-9/12">
             <h1 className="font-tomato text-[1.7rem] md:text-[3.25rem] md:leading-[3.6rem] 2xl:text-8xl 3xl:text-7xl 4xl:text-8xl font-semibold leading-8 2xl:leading-[1.1] 3xl:leading-[1.2] mb-[0.6rem] sm:mb-4 text-center text-gradient lg:hidden">The future of <span className="text-gradient3 font-bold">Bet </span> <br></br> Commerce using NFTs</h1>
             <h1 className="font-tomato text-[1.7rem] md:text-[3.25rem] md:leading-[3.6rem] 2xl:text-8xl 3xl:text-7xl 4xl:text-8xl font-semibold leading-8 2xl:leading-[1.1rem] 3xl:leading-[5rem] 4xl:leading-[6.6rem] mb-[0.6rem] sm:mb-4 text-center text-gradient hidden lg:block">The future of <span className="text-gradient3 font-bold">Bet </span> Commerce using NFTs</h1>

@@ -126,7 +126,7 @@ const AccordionItem = ({ title, content, index, isOpen, setOpenIndex, background
       >
         <span className="font-medium text-xl text-new-black 3xl:text-3xl">{title}</span>
         <span className="text-xl text-gray-400 font-normal">
-          {isOpen ? <ChevronDown /> : <ChevronUp />}
+          {isOpen ? <ChevronUp /> :  <ChevronDown />}
         </span>
       </button>
       <div
