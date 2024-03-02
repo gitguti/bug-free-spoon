@@ -296,10 +296,11 @@ const Hero = () => {
           ))}
           </ul>
         </Marquee>
-        <div className="px-px sm:px-8 w-11/12 lg:w-9/12 4xl:w-10/12 mx-auto flex justify-center mt-4 mb-4 2xl:mb-4 2xl:mt-12 4xl:mt-16  min-h-max animate-slideUp">
+        <div className="px-px sm:px-8 w-11/12 lg:w-8/12 4xl:w-full mx-auto flex justify-center mt-4 mb-4 2xl:mb-4 2xl:mt-12 4xl:mt-16  min-h-max animate-slideUp">
           <div className="text-center mx-auto 4xl:w-9/12">
-            <h1 className="font-tomato text-[1.7rem] md:text-[3.25rem] md:leading-[3.6rem] 2xl:text-8xl 3xl:text-7xl 4xl:text-8xl font-semibold leading-8 2xl:leading-[1.1] 3xl:leading-[1.2] mb-[0.6rem] sm:mb-4 text-center text-gradient">The future of <span className="text-gradient3 font-bold">Bet </span> <br></br> Commerce using NFTs</h1>
-            <p className="text-sm md:text-lg text-new-black mb-[0.8rem] sm:mb-2 2xl:text-[2rem] 3xl:text-[1.8rem] 4xl:text-[2rem]leadinng-[1.4rem] 2xl:leading-[2.8rem] 3xl:leading-[2.5rem] 4xl:leading-[2.8rem] md:w-9/12 lg:w-2/3 4xl:w-1/2 mx-auto ">Transform your bets into unique digital assets and trade on the first and only bet marketplace</p>
+            <h1 className="font-tomato text-[1.7rem] md:text-[3.25rem] md:leading-[3.6rem] 2xl:text-8xl 3xl:text-7xl 4xl:text-8xl font-semibold leading-8 2xl:leading-[1.1] 3xl:leading-[1.2] mb-[0.6rem] sm:mb-4 text-center text-gradient lg:hidden">The future of <span className="text-gradient3 font-bold">Bet </span> <br></br> Commerce using NFTs</h1>
+            <h1 className="font-tomato text-[1.7rem] md:text-[3.25rem] md:leading-[3.6rem] 2xl:text-8xl 3xl:text-7xl 4xl:text-8xl font-semibold leading-8 2xl:leading-[1.1rem] 3xl:leading-[5rem] 4xl:leading-[6.6rem] mb-[0.6rem] sm:mb-4 text-center text-gradient hidden lg:block">The future of <span className="text-gradient3 font-bold">Bet </span> Commerce using NFTs</h1>
+            <p className="text-sm md:text-lg text-new-black mb-[0.8rem] sm:mb-2 2xl:text-[2rem] 3xl:text-[1.8rem] 4xl:text-[2rem] leadinng-[1.4rem] 2xl:leading-[2.8rem] 3xl:leading-[2.5rem] 4xl:leading-[2.8rem] md:w-9/12 lg:w-2/3 4xl:w-1/2 mx-auto ">Transform your bets into unique digital assets and trade on the first and only bet marketplace</p>
             {/* <Button variant="filled" className="text-red-500">Go to marketplace</Button> */}
           </div>
         </div>
