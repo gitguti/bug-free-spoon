@@ -89,9 +89,9 @@ export default function Features() {
   
   return (
     <>
-    <div>
-    <div className="px-px sm:px-8 w-11/12 4xl:w-10/12 mx-auto flex flex-col justify-center py-10 md:py-16 lg:py-20">
-        <h2 className="font-tomato text-3xl md:text-5xl 2xl:text-7xl font-semibold leading-normal mb-8 3xl:mb-12 4xl:mb-16 text-gradient">Features</h2>
+    <div className="bg-new-white">
+    <div className="px-px sm:px-8 w-11/12 4xl:w-10/12 mx-auto flex flex-col justify-center py-10 md:py-16 lg:py-20 ">
+        <h2 className="font-tomato text-3xl md:text-5xl 2xl:text-7xl font-semibold leading-normal mb-8 3xl:mb-12 4xl:mb-16 text-gradient3">Features</h2>
 
       <div className="hidden md:grid md:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-4 4xl:gap-[1.8rem] relative">
   {featureInfo.map((card, index) => (
