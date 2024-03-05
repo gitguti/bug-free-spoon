@@ -202,7 +202,7 @@ const Hero = () => {
 
   
   const Card = ({ card }) => (
-        <div key={card.index} className="max-w-52 md:max-w-xs rounded-lg shadow-lg bg-white flex flex-col overflow-hidden mb-0 md:mb-4">
+        <div key={card.index} className="max-w-52 md:max-w-xs rounded-lg bg-white flex flex-col overflow-hidden mb-0 md:mb-4">
       <div className="w-full h-32 md:h-52 rounded-t-lg overflow-hidden relative">
         <Image
           src={card.imagen}
@@ -211,7 +211,7 @@ const Hero = () => {
           height={200}
           priority={true}
         />
-            <div className='absolute top-4 left-4'>
+            <div className='absolute top-4 3xl:top-6 left-4 3xl:left-6'>
             <p className={`${card.isWhite ? 'text-white' : 'text-new-black'} font-semibold text-[0.5rem] md:text-xs font-tomato uppercase`}>{card.sport}</p>
       <Image
           src={card.sportImage}
@@ -288,7 +288,7 @@ const Hero = () => {
   return (
     <>
       <div className="mx-auto flex flex-col bg-new-white ">
-      <div className='mt-[1.8rem] lg:mt-12 4xl:mt-24 flex flex-col md:gap-4'>
+      <div className='mt-[1.8rem] lg:mt-12 3xl:mt-16 4xl:mt-24 flex flex-col md:gap-4'>
       <Marquee autoFill={true} style={ {gap: '1rem', marginRight: '1rem' } }>
           <ul className="lst-box lst-box-gap">
           {cardsData.map((card, index) => (

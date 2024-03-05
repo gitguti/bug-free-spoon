@@ -124,7 +124,7 @@ const AccordionItem = ({ title, content, index, isOpen, setOpenIndex, background
         className="flex justify-between items-center w-full px-4 py-8 text-left border-b border-gray-200"
         aria-expanded={isOpen}
       >
-        <span className="font-medium text-xl text-new-black 3xl:text-3xl">{title}</span>
+        <span className="font-medium text-xl text-new-black 3xl:text-3xl font-tomato">{title}</span>
         <span className="text-xl text-gray-400 font-normal">
           {isOpen ? <ChevronUp /> :  <ChevronDown />}
         </span>

@@ -6,9 +6,9 @@ import Button from "../ui/Button";
 const Section5 = ({ showCardCTA, showHeadline, showMap }) => {
   return (
     <>
-      <div className="px-4 md:px-8 pt-16 pb-12 md:py-20 lg:py-24 3xl:pt-36 3xl:pb-28 bg-[#DADDF6] mx-auto">
+      <div className="px-4 md:px-8 pt-10 pb-12 md:py-20 lg:py-24 3xl:pt-36 3xl:pb-28 bg-[#DADDF6] mx-auto">
         {showCardCTA && (
-          <div className="flex overflow-x-scroll pb-10 scrollbar-hide">
+          <div className="flex overflow-x-auto pb-10 scrollbar-hide">
             <div className="flex flex-nowrap lg:justify-start xl:justify-center w-full gap-3 4xl:gap-8 sm:gap-4 md:gap-6">
               <div className="inline-block">
                 <Card />
