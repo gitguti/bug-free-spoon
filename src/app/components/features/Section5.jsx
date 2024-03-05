@@ -6,7 +6,7 @@ import Button from "../ui/Button";
 const Section5 = ({ showCardCTA, showHeadline, showMap }) => {
   return (
     <>
-      <div className="px-4 sm:px-8 md:px-8 lg:px-8 xl:px-16 2xl:px-16 4xl:px-80  pt-10 pb-12 md:py-20 lg:py-24 3xl:pt-36 3xl:pb-28 bg-[#DADDF6] mx-auto">
+      <div className="px-4 sm:px-8 md:px-14 lg:px-16 xl:px-24 2xl:px-26 4xl:px-60  pt-10 pb-12 md:py-20 lg:py-24 3xl:pt-36 3xl:pb-28 bg-[#DADDF6] mx-auto">
         {showCardCTA && (
           <div className="flex  w-full overflow-x-auto pb-10 scrollbar-hide">
             <div className="flex flex-nowrap lg:justify-center xl:justify-start gap-3 3xl:gap-6 ">
@@ -71,7 +71,7 @@ return (
         const CTAApp = ({ }) => {
   return (
         <>
-          <div className="min-w-[48rem] md:min-w-[57rem] lg:min-w-[38rem] xl:min-w-[61rem] 2xl:min-w-[67rem] 3xl:min-w-[94rem] 4xl:min-w-[86rem] min-h-full px-12 py-10 4xl:w-[80rem] 4xl:h-[36rem] overflow-hidden rounded-lg bg-cta-app bg-cover bg-center duration-300 ease-in-out">
+          <div className="min-w-[48rem] md:min-w-[57rem] lg:min-w-[38rem] xl:min-w-[61rem] 2xl:min-w-[63rem] 3xl:min-w-[89rem] 4xl:min-w-[96rem] min-h-full px-12 py-10 4xl:w-[80rem] 4xl:h-[36rem] overflow-hidden rounded-lg bg-cta-app bg-cover bg-center duration-300 ease-in-out">
           </div>
         </>
         )

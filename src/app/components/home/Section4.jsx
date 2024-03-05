@@ -34,7 +34,7 @@ const Card = ({ title, backgroundImage, titleColor, description, backgroundColor
         <Image src={image} priority={true} alt="Icon" width={width} height={height} />
         </div>
         <p className={`${titleColor}  font-tomato text-2xl 2xl:text-4xl font-semibold mt-4 mb-2 lg:mb-6 xl:mt-8`}>{title}</p>
-        <p className={`${titleColor} text-xs sm:text-base 2xl:text-2xl font-normal h-28 md:h-44 lg:h-32 xl:h-28 3xl:h-32`}>{description}</p>
+        <p className={`${titleColor} text-xs sm:text-base 2xl:text-xl 3xl:text-2xl font-normal h-28 md:h-44 lg:h-32 xl:h-28 3xl:h-32`}>{description}</p>
       </div>
     </>
 
