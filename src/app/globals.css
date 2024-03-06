@@ -282,8 +282,14 @@ background-clip: text;
 }
 
 .logo {
-  width: 100px; /* Adjust based on your logo's size */
+  width: 60px; /* Adjust based on your logo's size */
   height: auto;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 100px; /* Adjust based on your logo's size */
+  }
 }
 
 @keyframes loadBar {
