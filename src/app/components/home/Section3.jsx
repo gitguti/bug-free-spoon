@@ -137,9 +137,9 @@ const AccordionItem = ({ title, content, index, isOpen, setOpenIndex, background
           {content}
         </div>
         {isOpen && (
-          <div className="flex mt-4 lg:hidden mx-auto">
+          <div className="flex my-8 lg:hidden mx-auto">
             <Image
-              width={500}
+              width={200}
               height={300}
               src={backgroundImage}
               alt={title}
