@@ -17,7 +17,7 @@ const Navbar = (animate) => {
   };
 
   return (
-    <nav className="bg-white sticky top-0 z-50 opacity-100">
+    <nav className="bg-white sticky top-0 z-50 opacity-100 border-b-[0.5px] border-[#d3d3d3]">
       <div className="px-2 sm:px-8 w-11/12 mx-auto 4xl:w-10/12">
         <div className="flex mx-auto justify-between w-full">
           {/* Primary menu and logo */}

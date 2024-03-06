@@ -70,7 +70,7 @@ const Section3 = () => {
     <div className="bg-white" ref={ref}>
     <div className="py-12 md:py-20 lg:py-24 3xl:py-36 4xl:py-48 mx-auto px-px sm:px-8  md:px-0  w-11/12 4xl:w-9/12">
     <div className="mx-auto">
-      <div className="mb-8 lg:mb-12 3xl:mb-12 4xl:mb-16">
+      <div className="mb-8 lg:mb-14 3xl:mb-16 4xl:mb-16">
         <h2 className="text-3xl md:text-5xl 2xl:text-7xl font-tomato font-semibold leading-normal text-center text-gradient3">The Marketplace - BetSell.io</h2>
       </div>
       {/* <div className="flex flex-col lg:flex-row space-between gap-4 md:gap-6 md:hidden">
@@ -133,7 +133,7 @@ const AccordionItem = ({ title, content, index, isOpen, setOpenIndex, background
         className="accordion-content"
         aria-hidden={!isOpen}
       >
-        <div className="px-4 pt-4 text-[#6B6B6B] 3xl:text-2xl">
+        <div className="px-4 pt-4 text-[#6B6B6B] text-sm mb-4">
           {content}
         </div>
         {isOpen && (
