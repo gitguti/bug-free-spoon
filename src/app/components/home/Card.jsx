@@ -19,7 +19,7 @@ const Card = ({ title, backgroundImage, titleColor, delay, isVisible, content, b
       <div className={`card lg:w-1/2 rounded-lg 2xl:rounded-2xl overflow-hidden bg-cover bg-bottom relative opacity-0 ${animationClass} ${mobileAnimationClass}`} style={{ backgroundImage: `url(${backgroundImage})` }}>
         <p className={`${titleClasses}`}>{title}</p>
         <p className={`${contentClasses}`}>{content}</p>
-        <div className="absolute left-4 md:left-6 xl:left-8 3xl:left-16 top-52 sm:top-44 md:top-56 3xl:top-[19rem] 4xl:top-96">
+        <div className="absolute left-4 md:left-6 xl:left-8 3xl:left-16 top-52 sm:top-44 md:top-56 2xl:top-64 2xl:left-16 3xl:top-[19rem] 4xl:top-96">
         {button ? <Button variant="filled" >Go to marketplace</Button>: ''}
         </div>
 

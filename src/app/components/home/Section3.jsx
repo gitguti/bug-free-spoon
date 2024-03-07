@@ -9,39 +9,6 @@ import ChevronUp from '../icons/ChevronUp.jsx';
 
 const Section3 = () => {
 
-  const [cardPositions, setCardPositions] = useState({ left: '', center: '', right: '' });
-  const ref = useRef();
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setCardPositions({ left: 'left', center: 'center', right: 'right' });
-          }
-        });
-      },
-      { threshold: 0.7 }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
-  }, []);
-
-  const slides = [
-    { src: "/section31.png", title: "List your NFTs", titleColor: "text-white" },
-    { src: "/section32.png", title: "Cashout", titleColor: "text-white" },
-    { src: "/section33.png", title: "Buy, sell and auction", titleColor: "text-white" },
-
-  ];
-
   const data = [
     {
       title: 'List your NFTs',
@@ -67,46 +34,12 @@ const Section3 = () => {
   ];
 
   return (
-    <div className="bg-white" ref={ref}>
+    <div className="bg-white" >
     <div className="py-12 md:py-20 lg:py-24 3xl:py-36 4xl:py-48 mx-auto px-px sm:px-8  md:px-0  w-11/12 4xl:w-9/12">
     <div className="mx-auto">
       <div className="mb-8 lg:mb-14 3xl:mb-16 4xl:mb-16">
         <h2 className="text-3xl md:text-5xl 2xl:text-7xl font-tomato font-semibold leading-normal text-center text-gradient3">The Marketplace - BetSell.io</h2>
       </div>
-      {/* <div className="flex flex-col lg:flex-row space-between gap-4 md:gap-6 md:hidden">
-        <Carousel slides={slides} />
-      </div> */}
-
-{/* <div className="space-between gap-4 md:gap-[0.8rem] xl:gap-4 4xl:gap-6 hidden md:flex md:flex-col">
-  <Card 
-    title="List your NFTs" 
-    backgroundImage="/section31.png" 
-    titleColor="text-white"  
-    position={cardPositions.left} 
-    description="Showcase your bet to a vast community of millions of gamblers eagerly seeking bets with desirable characteristics. Our platform categorizes NFT bets by sport, league, and other relevant attributes, making it effortless for users to discover and engage with your NFT bet."
-  />
-  <Card 
-    title="Buy, sell and auction" 
-    backgroundImage="/section32.png" 
-    titleColor="text-white" 
-    position={cardPositions.center}
-    description="By simply registering your crypto wallet on our marketplace, our platform seamlessly detects eligible and certified BetSell NFT bets associated with your wallet account. With full control over your account settings, you can easily configure and showcase your NFT bets to potential buyers. Enjoy the convenience of anonymous and secure interactions as you explore other listings giving you the opportunity to purchase other NFT bets that align with your interests."
-  />
-  <Card 
-    title="Cashout" 
-    backgroundImage="/section33.png" 
-    titleColor="text-white" 
-    position={cardPositions.right}
-    description="Securely trade your NFT bet and automatically receive your payment directly into your registered crypto wallet, as your NFT bets are successfully purchased. BetSell's trading process ensures the safe and seamless distribution of your purchase, as well as the smooth transfer of your asset to its new owner."
-  />
-    <Card 
-    title="Trusted" 
-    backgroundImage="/section34.png" 
-    titleColor="text-white" 
-    position={cardPositions.right}
-    description="BetSell's Marketplace guarantees the authenticity of its listings by verifying each NFT directly through its sportsbook source. Users are also rated based on their history of buying and selling bets."
-  />
-</div> */}
 <div className='mx-auto '>
       <Accordion data={data} />
       </div>
@@ -133,11 +66,12 @@ const AccordionItem = ({ title, content, index, isOpen, setOpenIndex, background
         className="accordion-content"
         aria-hidden={!isOpen}
       >
-        <div className="px-4 pt-4 text-[#6B6B6B] text-sm mb-4">
+        <div className="px-4 pt-4 text-[#6B6B6B] mb-4 text-sm md:leading-[22px] xl:text-base 3xl:text-xl  4xl:text-[1.75rem] 4xl:leading-[2.1rem] mx-auto">
+          <>
           {content}
-        </div>
-        {isOpen && (
-          <div className="flex my-8 lg:hidden mx-auto">
+          {isOpen && (
+          <div className={`flex my-8 lg:hidden mx-auto justify-center  transition-opacity duration-1000 delay-100 opacity-0 h-0  ${isOpen ? "opacity-100 h-auto " :  "opacity-0 "}
+          `}>
             <Image
               width={200}
               height={300}
@@ -147,6 +81,8 @@ const AccordionItem = ({ title, content, index, isOpen, setOpenIndex, background
             />
           </div>
         )}
+          </>
+        </div>
       </div>
     </div>
   );
@@ -156,6 +92,31 @@ const AccordionItem = ({ title, content, index, isOpen, setOpenIndex, background
 // Componente Acordeón principal
 const Accordion = ({ data }) => {
   const [openIndex, setOpenIndex] = useState(0); // Por defecto, el primer ítem está abierto
+  const [autoPlay, setAutoPlay] = useState(true);
+
+
+
+  useEffect(() => {
+    let interval;
+
+    if (autoPlay) {
+      interval = setInterval(() => {
+        setOpenIndex((currentOpenIndex) => (currentOpenIndex + 1) % data.length);
+      }, 3000); // Cambia el ítem cada 3000ms (3 segundos)
+    }
+
+    return () => {
+      if (interval) {
+        clearInterval(interval);
+      }
+    };
+  }, [autoPlay, data.length]);
+
+  // Agrega una función para manejar el click y pausar la reproducción automática
+  const handleItemClick = (index) => {
+    setOpenIndex(index);
+    setAutoPlay(false); // Pausa la reproducción automática cuando un ítem se abre manualmente
+  };
 
   return (
     <div className="w-11/12 md:w-11/12 mx-auto flex flex-col gap-8 xl:gap-36 3xl:gap-24 md:flex-row">
@@ -169,8 +130,7 @@ const Accordion = ({ data }) => {
             backgroundImage={item.backgroundImage}
             index={index}
             isOpen={openIndex === index}
-            setOpenIndex={() => setOpenIndex(index === openIndex ? (index + 1) % data.length : index)}
-          />
+            setOpenIndex={handleItemClick}          />
           </>
         ))}
       </div>

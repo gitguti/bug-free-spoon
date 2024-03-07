@@ -62,7 +62,7 @@ background-clip: text;
 
 @media (min-width: 415px) {
   .card {
-    padding-top: 100%;
+    padding-top: 120%;
   }
 }
 
@@ -314,7 +314,7 @@ background-clip: text;
 .accordion-content {
   display: grid;
   grid-template-rows: 0fr;
-  transition: grid-template-rows 500ms;
+  transition: grid-template-rows 1000ms ease-in-out, opacity 500ms ease-in-out;
 }
 
 .accordion-content[aria-hidden="false"] {
