@@ -35,12 +35,12 @@ const Section3 = () => {
 
   return (
     <div className="bg-white" >
-    <div className="py-12 md:py-20 lg:py-24 3xl:py-36 4xl:py-48 mx-auto px-px sm:px-8  md:px-0  w-11/12 4xl:w-9/12">
-    <div className="mx-auto">
+    <div className="py-12 md:py-20 lg:py-24 3xl:py-36 4xl:py-48 mx-auto px-px sm:px-8  md:px-0  w-11/12 4xl:w-9/12 flex justify-center flex-col">
+    <div className="mx-auto ">
       <div className="mb-8 lg:mb-14 3xl:mb-16 4xl:mb-16">
         <h2 className="text-3xl md:text-5xl 2xl:text-7xl font-tomato font-semibold leading-normal text-center text-gradient3">The Marketplace - BetSell.io</h2>
       </div>
-<div className='mx-auto '>
+<div className='mx-auto flex justify-center'>
       <Accordion data={data} />
       </div>
       </div>
@@ -70,7 +70,7 @@ const AccordionItem = ({ title, content, index, isOpen, setOpenIndex, background
           <>
           {content}
           {isOpen && (
-          <div className={`flex my-8 lg:hidden mx-auto justify-center  transition-opacity duration-1000 delay-100 opacity-0 h-0  ${isOpen ? "opacity-100 h-auto " :  "opacity-0 "}
+          <div className={`flex my-8 lg:hidden mx-auto justify-center self-center transition-opacity duration-1000 delay-100 opacity-0 h-0  ${isOpen ? "opacity-100 h-auto " :  "opacity-0 "}
           `}>
             <Image
               width={200}
@@ -141,7 +141,7 @@ const Accordion = ({ data }) => {
             className={`absolute text-center inset-0 transition-opacity duration-500 ${openIndex === index ? 'opacity-100' : 'opacity-0'}`}
           >
             <Image
-              width={460}
+              width={500}
               height={300}
               src={item.backgroundImage}
               alt={item.title}

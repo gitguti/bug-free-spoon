@@ -71,7 +71,7 @@ export default function About() {
     {
       question: "Do you wish to cash out early on your bet securing a guaranteed win?",
       image: "/no-bg/privacy.png",
-      backgroundColor: "bg-[#F4F4F4]",
+      backgroundColor: "bg-white",
       isDarkBackground: true
     },
     {
