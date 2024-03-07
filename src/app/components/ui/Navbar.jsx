@@ -36,9 +36,9 @@ const Navbar = (animate) => {
                 {/* Logo visible solo en móvil */}
                 <div className="lg:hidden">
                   <Image
-                    src="/logoMobile.png"
+                    src="/logo.png"
                     alt="Logo de la compañía"
-                    width={28} // Ajusta estas propiedades para el logo móvil
+                    width={130} // Ajusta estas propiedades para el logo móvil
                     height={30}
                   />
                 </div>
@@ -56,7 +56,7 @@ const Navbar = (animate) => {
           <div className="flex gap-6">
             {/* Mobile navigation toggle */}
             <div className="lg:hidden flex items-center">
-              <button onClick={toggleMenu} aria-label='open menu'>
+              <button onClick={toggleMenu} aria-label='open menu' className='border border-[#909090] rounded-lg p-2'>
                 {isMenuOpen ? <XMark className="w-6 h-6 text-new-black" /> : <Hamburguer className="w-6 h-6 text-new-black" />}
               </button>
             </div>

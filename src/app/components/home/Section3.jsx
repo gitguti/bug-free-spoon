@@ -119,8 +119,8 @@ const Accordion = ({ data }) => {
   };
 
   return (
-    <div className="w-11/12 md:w-11/12 mx-auto flex flex-col gap-8 xl:gap-36 3xl:gap-24 md:flex-row">
-      <div className="flex-1">
+    <div className="w-11/12 md:w-11/12 mx-auto flex flex-col gap-8 xl:gap-16 3xl:gap-20 md:flex-row">
+      <div className="flex-1 flex justify-end flex-col">
         {data.map((item, index) => (
           <>
            <AccordionItem
@@ -134,11 +134,11 @@ const Accordion = ({ data }) => {
           </>
         ))}
       </div>
-      <div className="hidden lg:flex mx-auto flex-1 justify-center relative 3xl:left-[10%]">
+      <div className="hidden lg:flex mx-auto flex-1 justify-center relative lg:justify-center 4xl:justify-end lg:items-center">
         {data.map((item, index) => (
           <div
             key={index}
-            className={`absolute text-center inset-0 transition-opacity duration-500 ${openIndex === index ? 'opacity-100' : 'opacity-0'}`}
+            className={`absolute transition-opacity duration-500 ${openIndex === index ? 'opacity-100' : 'opacity-0'}`}
           >
             <Image
               width={500}
