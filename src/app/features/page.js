@@ -4,7 +4,7 @@ import React from 'react';
 import FeaturesCard from '../components/features/FeaturesCard';
 import FeaturesCardHero from '../components/features/FeaturesCardHero';
 import FeaturesCardMobile from '../components/features/FeaturesCardMobile';
-import Section5 from '../components/features/Section5';
+import Section5 from '../components/home/Section5';
 import Charts from '../components/icons/Charts';
 import FeaturesCarousel from '../components/features/FeaturesCarousel';
 
