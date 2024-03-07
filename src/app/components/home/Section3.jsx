@@ -92,31 +92,6 @@ const AccordionItem = ({ title, content, index, isOpen, setOpenIndex, background
 // Componente Acordeón principal
 const Accordion = ({ data }) => {
   const [openIndex, setOpenIndex] = useState(0); // Por defecto, el primer ítem está abierto
-  const [autoPlay, setAutoPlay] = useState(true);
-
-
-
-  useEffect(() => {
-    let interval;
-
-    if (autoPlay) {
-      interval = setInterval(() => {
-        setOpenIndex((currentOpenIndex) => (currentOpenIndex + 1) % data.length);
-      }, 3000); // Cambia el ítem cada 3000ms (3 segundos)
-    }
-
-    return () => {
-      if (interval) {
-        clearInterval(interval);
-      }
-    };
-  }, [autoPlay, data.length]);
-
-  // Agrega una función para manejar el click y pausar la reproducción automática
-  const handleItemClick = (index) => {
-    setOpenIndex(index);
-    setAutoPlay(false); // Pausa la reproducción automática cuando un ítem se abre manualmente
-  };
 
   return (
     <div className="w-11/12 md:w-11/12 mx-auto flex flex-col gap-8 xl:gap-16 3xl:gap-20 md:flex-row">
@@ -130,7 +105,8 @@ const Accordion = ({ data }) => {
             backgroundImage={item.backgroundImage}
             index={index}
             isOpen={openIndex === index}
-            setOpenIndex={handleItemClick}          />
+            setOpenIndex={() => setOpenIndex(index === openIndex ? (index + 1) % data.length : index)}
+            />
           </>
         ))}
       </div>
