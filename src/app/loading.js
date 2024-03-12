@@ -9,7 +9,7 @@ export default function Loading () {
     useEffect(() => {
         setTimeout(() => {
             setLoading(false);
-        }, 3000); // 3 segundos
+        }, 2000); // 3 segundos
     }, []);
 
     if (!loading) {
