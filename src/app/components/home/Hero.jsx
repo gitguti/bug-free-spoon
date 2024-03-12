@@ -19,7 +19,7 @@ const Hero = () => {
       index:1,
       floorPrice: "15.00",
       isWhite: true,
-      loadLazy:true,
+      loadLazy:false,
     },
     {
       sport: "Tennis",
@@ -33,7 +33,7 @@ const Hero = () => {
       index:2,
       floorPrice: "25.00",
       isWhite: true,
-      loadLazy:true
+      loadLazy:false
     },
     {
       sport: "Football",
@@ -46,7 +46,8 @@ const Hero = () => {
       imagen: "/Hero/12.png",
       index:3,
       floorPrice: "75.00",
-      isWhite: true 
+      isWhite: true,
+      loadLazy:false,
     },
     {
       sport: "Soccer",
@@ -72,7 +73,8 @@ const Hero = () => {
       imagen: "/Hero/10.png",
       index:5,
       floorPrice: "42.00",
-      isWhite: true 
+      isWhite: true ,
+      loadLazy:false,
     },
     {
       sport: "Golf",
@@ -86,7 +88,7 @@ const Hero = () => {
       index:6,
       floorPrice: "56.00",
       isWhite: true,
-      loadLazy:true,
+      loadLazy:false,
     },
     {
       sport: "Golf",
@@ -100,7 +102,7 @@ const Hero = () => {
       index:7,
       floorPrice: "200.00",
       isWhite: true,
-      loadLazy:true,
+      loadLazy:false,
     },
     {
       sport: "Hockey",
@@ -114,7 +116,7 @@ const Hero = () => {
       index:8,
       floorPrice: "90.00",
       isWhite: true ,
-      loadLazy:true,
+      loadLazy:false,
     },
     {
       sport: "Basketball",
@@ -128,7 +130,7 @@ const Hero = () => {
       index:9,
       floorPrice: "33.00",
       isWhite: true ,
-      loadLazy:true,
+      loadLazy:false,
     },
     {
       sport: "Baseball",
@@ -142,7 +144,7 @@ const Hero = () => {
       index:10,
       floorPrice: "21.00",
       isWhite: true ,
-      loadLazy:true,
+      loadLazy:false,
     },
     {
       sport: "MMA",
@@ -156,7 +158,7 @@ const Hero = () => {
       index:11,
       floorPrice: "15.00",
       isWhite: true,
-      loadLazy:true,
+      loadLazy:false,
     },
     {
       sport: "Aussie Rules",
