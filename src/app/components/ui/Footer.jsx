@@ -50,7 +50,7 @@ const Footer = () => {
                         {links.map((section) => (
                             <div key={section.category} className='text-center md:text-left'>
                                 <p className="font-semibold text-new-black text-sm lg:text-base 2xl:text-2xl">{section.category}</p>
-                                <div className="flex flex-col items-center md:items-start mt-2 space-y-2 text-sm md:text-base lg:text-xlg 2xl:text-xl">
+                                <div className="flex flex-col items-center md:items-start mt-2 space-y-2 text-sm md:text-base lg:text-xlg 2xl:text-xl gap-2">
                                     {section.items.map((item) => (
                                         <Link key={item.name} href={item.url} className="text-new-black transition-colors duration-300  hover:underline hover:cursor-pointer text-center">{item.name}</Link>
                                     ))}

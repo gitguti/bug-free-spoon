@@ -18,7 +18,8 @@ const Hero = () => {
       imagen: "/Hero/11.png",
       index:1,
       floorPrice: "15.00",
-      isWhite: true 
+      isWhite: true,
+      loadLazy:true,
     },
     {
       sport: "Tennis",
@@ -31,7 +32,8 @@ const Hero = () => {
       imagen: "/Hero/3.png",
       index:2,
       floorPrice: "25.00",
-      isWhite: true 
+      isWhite: true,
+      loadLazy:true
     },
     {
       sport: "Football",
@@ -83,7 +85,8 @@ const Hero = () => {
       imagen: "/Hero/17.png",
       index:6,
       floorPrice: "56.00",
-      isWhite: true
+      isWhite: true,
+      loadLazy:true,
     },
     {
       sport: "Golf",
@@ -96,7 +99,8 @@ const Hero = () => {
       imagen: "/Hero/15.png",
       index:7,
       floorPrice: "200.00",
-      isWhite: true 
+      isWhite: true,
+      loadLazy:true,
     },
     {
       sport: "Hockey",
@@ -109,7 +113,8 @@ const Hero = () => {
       imagen: "/Hero/14.png",
       index:8,
       floorPrice: "90.00",
-      isWhite: true 
+      isWhite: true ,
+      loadLazy:true,
     },
     {
       sport: "Basketball",
@@ -122,7 +127,8 @@ const Hero = () => {
       imagen: "/Hero/16.png",
       index:9,
       floorPrice: "33.00",
-      isWhite: true 
+      isWhite: true ,
+      loadLazy:true,
     },
     {
       sport: "Baseball",
@@ -135,7 +141,8 @@ const Hero = () => {
       imagen: "/Hero/9.png",
       index:10,
       floorPrice: "21.00",
-      isWhite: true 
+      isWhite: true ,
+      loadLazy:true,
     },
     {
       sport: "MMA",
@@ -148,7 +155,8 @@ const Hero = () => {
       imagen: "/Hero/2.png",
       index:11,
       floorPrice: "15.00",
-      isWhite: true 
+      isWhite: true,
+      loadLazy:true,
     },
     {
       sport: "Aussie Rules",
@@ -161,7 +169,8 @@ const Hero = () => {
       imagen: "/Hero/13.png",
       index:12,
       floorPrice: "15.00",
-      isWhite: false 
+      isWhite: false ,
+      loadLazy:false,
     },
     {
       sport: "Football",
@@ -174,7 +183,8 @@ const Hero = () => {
       imagen: "/Hero/4.png",
       index:13,
       floorPrice: "105.00",
-      isWhite: true
+      isWhite: true,
+      loadLazy:false,
     },
     {
       sport: "Auto Racing",
@@ -187,19 +197,11 @@ const Hero = () => {
       imagen: "/Hero/1.png",
       index:14,
       floorPrice: "55.00",
-      isWhite: false
+      isWhite: false,
+      loadLazy:false,
+
     }
   ];
-  
-  function shuffleArray(array) {
-    const shuffledArray = [...array];
-    for (let i = shuffledArray.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
-    }
-    return shuffledArray;
-  }
-
   
   const Card = ({ card }) => (
         <div key={card.index} className="max-w-52 md:max-w-xs rounded-lg bg-white flex flex-col overflow-hidden mb-0">
@@ -207,7 +209,7 @@ const Hero = () => {
         <Image
           src={card.imagen}
           alt={card.prediction}
-          width={400}
+          width={320}
           height={200}
           priority={true}
         />
@@ -219,7 +221,7 @@ const Hero = () => {
           width={30}
           height={20}
           className='mt-1'
-          priority={true}
+          priority={card.loadLazy}
         />
     </div>
       </div>
