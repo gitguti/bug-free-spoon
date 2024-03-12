@@ -4,6 +4,7 @@ import Footer from './components/ui/Footer';
 import "./globals.css";
 import Loading from "./loading";
 import { LoadingProvider } from './context/loadingContext';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
       <Loading />
         <Navbar />
         <main>{children}</main>
+        <SpeedInsights />
         <Footer />
       </body>
     </html>
