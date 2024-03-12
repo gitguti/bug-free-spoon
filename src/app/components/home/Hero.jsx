@@ -315,7 +315,11 @@ const Hero = () => {
         <Marquee direction='right' className='gap-4' autoFill={true}>
         <ul className="lst-box lst-box-gap">
           {cardsData.map((card, index) => (
-            <Card key={index} card={card} />
+                 <>
+                 <li>
+                 <Card key={index} card={card} />
+                 </li>
+                 </>
           ))}
           </ul>
         </Marquee>
