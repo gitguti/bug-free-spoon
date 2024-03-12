@@ -293,7 +293,7 @@ const Hero = () => {
     <>
       <div className="mx-auto flex flex-col bg-new-white ">
       <div className='my-[1.8rem] lg:mt-12 lg:mb-8 3xl:my-16 4xl:my-24 flex flex-col md:gap-4'>
-      <Marquee autoFill={true} style={ {gap: '1rem', marginRight: '1rem' } }>
+      <Marquee autoFill={true} style={ {gap: '1rem', marginRight: '1rem' } } delay={3}>
           <ul className="lst-box lst-box-gap">
           {cardsData.map((card, index) => (
             <>
@@ -312,7 +312,7 @@ const Hero = () => {
             {/* <Button variant="filled" className="text-red-500">Go to marketplace</Button> */}
           </div>
         </div>
-        <Marquee direction='right' className='gap-4' autoFill={true}>
+        <Marquee direction='right' className='gap-4' autoFill={true} delay={3}>
         <ul className="lst-box lst-box-gap">
           {cardsData.map((card, index) => (
                  <>
