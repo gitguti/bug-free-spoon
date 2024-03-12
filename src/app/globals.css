@@ -325,3 +325,6 @@ background-clip: text;
   overflow: hidden;
 }
 
+image {
+  aspect-ratio: 16 / 9;
+}
