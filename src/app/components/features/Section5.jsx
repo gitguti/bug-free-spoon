@@ -53,7 +53,7 @@ return (
             </ul>
             <div className='flex gap-4'>
             <a href="https://betsell.io" target="_blank">
-  <Image priority={true}  src="/playstore.png" alt="Icon" width={250} height={60} className='h-10 w-10 xl:h-12 xl:w-12 4xl:h-16 4xl:w-16' />
+  <Image priority={false}  src="/playstore.png" alt="Icon" width={250} height={60} className='h-10 w-10 xl:h-12 xl:w-12 4xl:h-16 4xl:w-16' />
 </a>
 
             <a href="https://betsell.io" target="_blank">

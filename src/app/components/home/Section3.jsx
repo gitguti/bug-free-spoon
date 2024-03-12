@@ -78,6 +78,7 @@ const AccordionItem = ({ title, content, index, isOpen, setOpenIndex, background
               src={backgroundImage}
               alt={title}
               className="rounded-lg shadow-md"
+              priority={false}
             />
           </div>
         )}
