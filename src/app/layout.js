@@ -16,7 +16,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <>   
-        <LoadingProvider>
     <html lang="en">
       <body className={inter.className}>
       <Loading />
@@ -26,7 +25,6 @@ export default function RootLayout({ children }) {
         <SpeedInsights />
       </body>
     </html>
-    </LoadingProvider>
     </>
   );
 }
