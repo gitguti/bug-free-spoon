@@ -71,7 +71,7 @@ return (
         const CTAApp = ({ }) => {
   return (
         <>
-          <div className="min-w-[48rem] md:min-w-[55rem] lg:min-w-[55rem] min-h-full px-12 py-10 4xl:w-[80rem] 4xl:h-[36rem] overflow-hidden rounded-lg bg-cta-app bg-cover duration-300 ease-in-out">
+          <div className="min-w-[48rem] md:min-w-[55rem] lg:min-w-[55rem] min-h-full px-12 py-10 4xl:w-[80rem] 4xl:h-[36rem] overflow-hidden rounded-lg bg-cta-app bg-cover bg-bottom duration-300 ease-in-out">
           </div>
         </>
         )
