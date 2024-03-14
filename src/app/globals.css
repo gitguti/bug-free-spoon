@@ -332,9 +332,6 @@ image {
 .scroll-purple {
   border-radius: 10px; /* Ajusta esto según el redondeado que necesites */
 }
-
-/* Estilos del scrollbar para dispositivos con ancho 'md' o más */
-@media (min-width: 768px) {
   .scroll-purple::-webkit-scrollbar {
     width: 8px; /* Ajusta el grosor del scrollbar aquí */
   }
@@ -354,4 +351,3 @@ image {
     scrollbar-width: thin;
     scrollbar-color: #3C0D9F #D9D9D9;
   }
-}

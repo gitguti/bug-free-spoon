@@ -29,7 +29,7 @@ const Card = ({ title, backgroundImage, titleColor, description, backgroundColor
 
   return (
     <>
-      <div className="px-7 py-10 w-full md:min-w-96 min-h-44 3xl:h-[30rem] 4xl:h-[38rem] rounded-lg 2xl:rounded-2xl overflow-hidden flex flex-col" style={{ backgroundColor: `${backgroundColor}` }}>
+      <div className="px-7 py-10 4xl:px-10 4xl:py-12 w-full md:min-w-96 min-h-44 3xl:h-[36rem] 4xl:h-[40rem] 4xl:min-w-[36rem] rounded-lg 2xl:rounded-2xl overflow-hidden flex flex-col justify-center " style={{ backgroundColor: `${backgroundColor}` }}>
         <div className="h-[79.8633px]">
         <Image src={image} priority={false} alt="Icon" width={width} height={height} />
         </div>
