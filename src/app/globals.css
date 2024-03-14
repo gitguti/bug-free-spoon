@@ -336,7 +336,7 @@ image {
 /* Estilos del scrollbar para dispositivos con ancho 'md' o más */
 @media (min-width: 768px) {
   .scroll-purple::-webkit-scrollbar {
-    width: 12px; /* Ajusta el grosor del scrollbar aquí */
+    width: 8px; /* Ajusta el grosor del scrollbar aquí */
   }
 
   .scroll-purple::-webkit-scrollbar-track {
@@ -347,7 +347,6 @@ image {
   .scroll-purple::-webkit-scrollbar-thumb {
     background-color: #3C0D9F; /* Color del scrollbar */
     border-radius: 10px;
-    border: 3px solid #D9D9D9; /* Crea una separación entre el thumb y el track */
   }
 
   /* Para Firefox */
