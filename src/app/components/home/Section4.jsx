@@ -10,7 +10,7 @@ const Section4 = () => {
         <h2 className="text-3xl md:text-5xl 2xl:text-7xl font-semibold leading-none xl:leading-normal text-gradient3 font-tomato">How it works
         </h2>
       </div>
-      <div className="scroll-purple flex flex-col space-y-4 md:flex-row md:overflow-x-scroll md:space-x-4 md:space-y-0 md:py-8">
+      <div className="scroll-purple flex flex-col space-y-4 md:flex-row md:overflow-x-scroll md:space-x-4 md:space-y-0 md:pb-8">
         <Card title="1. Pick" description="From the open bets section of your participant Sportsbook account, choose the bet you wish to mint by simply clicking on a button" titleColor="text-new-black" backgroundColor="#CDC0E9" image="/Pick.png" width="170" height="50" />
         <Card title="2. Mint" description="The  BetSell minting process will be executed, seamlessly transfroming your selected bet into a unique and certified asset in the form of an NFT. The newly minted NFT will then be allocated in the crypto wallet of your choice and automatically listed on BetSell’s Marketplace." titleColor="text-new-black" backgroundColor="#F4F4F4" image="/hiw2.png" width="70" height="70" />
         <Card title="3. Trade" description="Your minted bet is now available on the BetSell Marketplace, enabling individuals  from around the world to buy,sell and make offers on your NFT." titleColor="text-new-white" backgroundColor=" #2B213E" image="/hiw3.png" width="70" height="70" />
