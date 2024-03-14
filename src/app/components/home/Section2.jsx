@@ -8,27 +8,36 @@ const Section2 = () => {
 
   useLayoutEffect(() => {
     if (!ref.current) {
+      console.log('ref.current no está definido.');
       return;
     }
+
+    console.log('Elemento actual en ref:', ref.current);
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-
-          setIsVisible(entry.isIntersecting);
+          if (entry.isIntersecting && !isVisible) {
+           setIsVisible(true);
+          // Si deseas detener la observación después de que se haya intersectado,
+          // descomenta la siguiente línea:
+          // observer.unobserve(ref.current);
+        }
         });
       },
       {
-        root: null,
-        threshold: 0.48,
+        root: null, // observa respecto al viewport
+        threshold: 0.51,
       }
     );
+
+    // Aquí sí es seguro llamar a observe porque ref.current ya está definido
     observer.observe(ref.current);
 
     return () => {
       observer.disconnect();
     };
-  }, []);
+  }, []); // No es necesario poner ref como dependencia aquí
 
   return (
     <div className="bg-lila "  ref={ref} >
