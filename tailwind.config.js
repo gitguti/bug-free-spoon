@@ -34,10 +34,10 @@ module.exports = {
         'tomato': ['"Tomato Grotesk"', 'sans-serif'],
       },
       animation: {
-        'slideDown': 'slideDown 0.75s cubic-bezier(0.42,0,1,1) forwards 3.5s',
-        'slideUp': 'slideUp 1s cubic-bezier(0.42,0,0.58,1) forwards 3.5s',
+        'slideDown': 'slideDown 1.2s cubic-bezier(0.42,0,1,1) forwards 3s',
+        'slideUp': 'slideUp 1.2s cubic-bezier(0.42,0,0.58,1) forwards 3s',
         'slideUp2': 'slideUp 1s cubic-bezier(0.42,0,0.58,1) forwards',
-        'slideUp-delay-1': 'slideUp 1s cubic-bezier(0.42,0,0.58,1) 1s forwards',
+        'slideUp-delay-1': 'slideUp 0.75s cubic-bezier(0.42,0,0.58,1) 1s forwards',
         'slide-right': 'slideRight 1s cubic-bezier(0.42,0,0.58,1) forwards',
         'slide-left': 'slideLeft 1s cubic-bezier(0.42,0,0.58,1) 1s forwards',
         'moveLeft': 'moveLeft 1.5s cubic-bezier(0.42,0,0.58,1) forwards',
