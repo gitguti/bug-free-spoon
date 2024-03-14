@@ -328,3 +328,31 @@ background-clip: text;
 image {
   aspect-ratio: 16 / 9;
 }
+
+.scroll-purple {
+  border-radius: 10px; /* Ajusta esto según el redondeado que necesites */
+}
+
+/* Estilos del scrollbar para dispositivos con ancho 'md' o más */
+@media (min-width: 768px) {
+  .scroll-purple::-webkit-scrollbar {
+    width: 12px; /* Ajusta el grosor del scrollbar aquí */
+  }
+
+  .scroll-purple::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #D9D9D9;
+  }
+
+  .scroll-purple::-webkit-scrollbar-thumb {
+    background-color: #3C0D9F; /* Color del scrollbar */
+    border-radius: 10px;
+    border: 3px solid #D9D9D9; /* Crea una separación entre el thumb y el track */
+  }
+
+  /* Para Firefox */
+  .scroll-purple {
+    scrollbar-width: thin;
+    scrollbar-color: #3C0D9F #D9D9D9;
+  }
+}

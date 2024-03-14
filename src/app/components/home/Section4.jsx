@@ -10,7 +10,7 @@ const Section4 = () => {
         <h2 className="text-3xl md:text-5xl 2xl:text-7xl font-semibold leading-none xl:leading-normal text-gradient3 font-tomato">How it works
         </h2>
       </div>
-      <div className="grid auto-cols-fr md:grid-cols-2 gap-4">
+      <div className="scroll-purple flex flex-col space-y-4 md:flex-row md:overflow-x-scroll md:space-x-4 md:space-y-0 md:py-8">
         <Card title="1. Pick" description="From the open bets section of your participant Sportsbook account, choose the bet you wish to mint by simply clicking on a button" titleColor="text-new-black" backgroundColor="#CDC0E9" image="/Pick.png" width="170" height="50" />
         <Card title="2. Mint" description="The  BetSell minting process will be executed, seamlessly transfroming your selected bet into a unique and certified asset in the form of an NFT. The newly minted NFT will then be allocated in the crypto wallet of your choice and automatically listed on BetSell’s Marketplace." titleColor="text-new-black" backgroundColor="#F4F4F4" image="/hiw2.png" width="70" height="70" />
         <Card title="3. Trade" description="Your minted bet is now available on the BetSell Marketplace, enabling individuals  from around the world to buy,sell and make offers on your NFT." titleColor="text-new-white" backgroundColor=" #2B213E" image="/hiw3.png" width="70" height="70" />
@@ -29,12 +29,12 @@ const Card = ({ title, backgroundImage, titleColor, description, backgroundColor
 
   return (
     <>
-      <div className="px-7 py-10 w-full min-h-52 3xl:h-[30rem] rounded-lg 2xl:rounded-2xl overflow-hidden flex flex-col justify-end" style={{ backgroundColor: `${backgroundColor}` }}>
+      <div className="px-7 py-10 w-full md:min-w-96 min-h-44 3xl:h-[30rem] 4xl:h-[38rem] rounded-lg 2xl:rounded-2xl overflow-hidden flex flex-col" style={{ backgroundColor: `${backgroundColor}` }}>
         <div className="h-[79.8633px]">
         <Image src={image} priority={false} alt="Icon" width={width} height={height} />
         </div>
         <p className={`${titleColor}  font-tomato text-2xl 2xl:text-4xl font-semibold mt-4 mb-2 lg:mb-6 xl:mt-8`}>{title}</p>
-        <p className={`${titleColor} text-sm md:leading-[22px] xl:text-base 3xl:text-xl  4xl:text-[1.75rem] 4xl:leading-[2.1rem]font-normal min-h-20 md:h-40 lg:h-24 xl:h-16 3xl:h-24 4xl:h-32`}>{description}</p>
+        <p className={`${titleColor} text-sm md:leading-[22px] xl:text-base 3xl:text-xl  4xl:text-[1.75rem] 4xl:leading-[2.1rem] font-normal min-h-20 md:h-36 lg:h-28 xl:h-44 3xl:h-24 4xl:h-32`}>{description}</p>
       </div>
     </>
 
